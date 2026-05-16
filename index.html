@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ComeUnaVolta Camp Estate 2026 — Above the Fold v1</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,400;1,9..144,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* PALETTE - Aria di Montagna bilanciata verso il caldo */
+  --petrolio:#1B3D4F;
+  --petrolio-scuro:#0F2A38;
+  --petrolio-medio:#3A6B7E;
+  --sabbia:#F5F0E6;
+  --sabbia-scura:#E8DDC5;
+  --rosso:#C9301E;
+  --rosso-acceso:#E63946;
+  --rosso-scuro:#A1241A;
+  --arancio-caldo:#FF6B35;
+  --inchiostro:#1A1815;
+  --testo:#2A2620;
+  --testo-soft:#6B6359;
+  --linea:#D8CDB6;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:'DM Sans',system-ui,sans-serif;
+  background:var(--sabbia);
+  color:var(--testo);
+  line-height:1.6;
+  font-size:18px;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:780px;margin:0 auto;padding:0 22px}
+.wrap-narrow{max-width:680px;margin:0 auto;padding:0 22px}
+
+/* ====== HERO ABOVE THE FOLD - CENTRATO VERTICALE ====== */
+.hero{
+  background:var(--sabbia);
+  padding:54px 0 40px;
+  position:relative;
+  text-align:center;
+}
+.hero::before{
+  content:"";
+  position:absolute;
+  top:0;left:0;right:0;
+  height:6px;
+  background:linear-gradient(90deg, var(--petrolio) 0%, var(--petrolio-medio) 50%, var(--rosso) 100%);
+}
+
+/* Eyebrow rosso centrato */
+.eyebrow{
+  display:block;
+  font-family:'DM Sans',sans-serif;
+  font-size:clamp(14px,1.7vw,17px);
+  font-weight:700;
+  text-transform:uppercase;
+  letter-spacing:1.2px;
+  color:var(--rosso);
+  margin:0 auto 26px;
+  line-height:1.45;
+  max-width:640px;
+}
+
+/* Headline centrata, dimensione contenuta */
+h1{
+  font-family:'Fraunces',Georgia,serif;
+  font-weight:700;
+  font-size:clamp(28px,3.6vw,40px);
+  line-height:1.18;
+  letter-spacing:-0.018em;
+  color:var(--petrolio-scuro);
+  margin:0 auto 28px;
+  max-width:720px;
+  text-wrap:balance;
+}
+h1 .highlight{
+  color:var(--rosso);
+  white-space:nowrap;
+}
+
+/* Sub-headline */
+.sub{
+  font-family:'DM Sans',sans-serif;
+  font-size:clamp(17px,1.9vw,19px);
+  line-height:1.55;
+  color:var(--testo);
+  margin:0 auto 16px;
+  font-weight:400;
+  max-width:560px;
+}
+.sub strong{font-weight:600;color:var(--petrolio)}
+
+/* Meta riga premium centrata */
+.meta{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:center;
+  gap:8px 14px;
+  font-family:'DM Sans',sans-serif;
+  font-size:14px;
+  font-weight:500;
+  color:var(--testo-soft);
+  letter-spacing:0.3px;
+  margin:0 auto 36px;
+  padding-bottom:30px;
+  border-bottom:1px solid var(--linea);
+  max-width:560px;
+}
+.meta-item{display:inline-flex;align-items:center;gap:6px}
+.meta-item .ic{
+  width:6px;height:6px;
+  background:var(--rosso);
+  border-radius:50%;
+  display:inline-block;
+}
+.meta-sep{color:var(--linea);font-weight:400}
+
+/* Foto hero - bordi smussati grandi */
+.foto-hero{
+  width:100%;
+  aspect-ratio:16/10;
+  background:
+    linear-gradient(135deg, rgba(27,61,79,0.15) 0%, rgba(27,61,79,0.4) 100%),
+    linear-gradient(180deg, #5a8fa8 0%, #2c5d75 50%, #1b3d4f 100%);
+  border-radius:24px;
+  margin:0 auto 34px;
+  position:relative;
+  overflow:hidden;
+  box-shadow:0 12px 40px rgba(15,42,56,0.18), 0 2px 8px rgba(15,42,56,0.08);
+}
+.foto-hero::before{
+  content:"FOTO: gruppo di ragazzi 7-14 anni all'aperto sui prati di Tonezza · taglio orizzontale · niente dispositivi visibili";
+  position:absolute;
+  inset:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:36px;
+  color:var(--sabbia);
+  font-family:'DM Sans',sans-serif;
+  font-size:13px;
+  font-weight:600;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  background:rgba(15,42,56,0.5);
+}
+
+/* CTA - rounded pill con gradient caldo acceso */
+.cta-block{
+  max-width:540px;
+  margin:0 auto;
+}
+.cta-btn{
+  display:block;
+  width:100%;
+  background:linear-gradient(135deg, var(--arancio-caldo) 0%, var(--rosso-acceso) 50%, var(--rosso) 100%);
+  background-size:200% 200%;
+  background-position:0% 50%;
+  color:white;
+  font-family:'DM Sans',sans-serif;
+  font-size:clamp(15px,1.7vw,17px);
+  font-weight:700;
+  letter-spacing:0.4px;
+  padding:22px 28px;
+  border:none;
+  border-radius:100px;
+  text-decoration:none;
+  text-align:center;
+  cursor:pointer;
+  transition:all 0.35s ease;
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.25) inset,
+    0 -2px 0 rgba(0,0,0,0.12) inset,
+    0 10px 24px rgba(201,48,30,0.32),
+    0 4px 10px rgba(201,48,30,0.2);
+  line-height:1.3;
+  position:relative;
+  overflow:hidden;
+  text-transform:uppercase;
+}
+.cta-btn::before{
+  content:"";
+  position:absolute;
+  top:0;left:-100%;
+  width:100%;height:100%;
+  background:linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.25) 50%, transparent 100%);
+  transition:left 0.6s ease;
+}
+.cta-btn:hover{
+  background-position:100% 50%;
+  transform:translateY(-2px);
+  box-shadow:
+    0 1px 0 rgba(255,255,255,0.3) inset,
+    0 -2px 0 rgba(0,0,0,0.12) inset,
+    0 14px 32px rgba(201,48,30,0.4),
+    0 6px 14px rgba(201,48,30,0.25);
+}
+.cta-btn:hover::before{left:100%}
+.cta-btn:active{transform:translateY(0)}
+.cta-btn .freccia{display:inline-block;margin-left:8px;transition:transform 0.25s}
+.cta-btn:hover .freccia{transform:translateX(5px)}
+
+.cta-nota{
+  font-family:'DM Sans',sans-serif;
+  font-size:14px;
+  color:var(--testo-soft);
+  text-align:center;
+  margin-top:16px;
+  font-weight:500;
+}
+.cta-nota strong{color:var(--rosso);font-weight:600}
+
+/* ====== CORPO EMOZIONALE (sinistra per leggibilità copy lungo) ====== */
+.corpo{
+  padding:72px 0 40px;
+  background:var(--sabbia);
+}
+
+.corpo p{
+  font-family:'DM Sans',sans-serif;
+  font-size:19px;
+  line-height:1.65;
+  color:var(--inchiostro);
+  margin-bottom:22px;
+}
+
+.corpo p.intro{
+  font-family:'Fraunces',serif;
+  font-size:clamp(22px,2.9vw,27px);
+  line-height:1.4;
+  color:var(--petrolio-scuro);
+  font-weight:600;
+  margin-bottom:38px;
+  letter-spacing:-0.01em;
+  text-align:center;
+}
+
+.corpo .scena{
+  color:var(--testo);
+  font-size:19px;
+}
+
+/* Quote del genitore */
+.corpo .virgolette{
+  display:block;
+  font-family:'Fraunces',serif;
+  font-style:italic;
+  font-weight:600;
+  font-size:clamp(22px,2.8vw,26px);
+  color:var(--petrolio);
+  padding:0 0 0 24px;
+  border-left:3px solid var(--rosso);
+  margin:6px 0 28px;
+  line-height:1.4;
+}
+
+/* Urla del bambino - MAIUSCOLO come da copy originale */
+.corpo .urlo{
+  display:block;
+  font-family:'Fraunces',serif;
+  font-weight:800;
+  font-size:clamp(20px,2.7vw,25px);
+  color:var(--rosso-scuro);
+  letter-spacing:0.005em;
+  padding:0 0 0 24px;
+  border-left:3px solid var(--petrolio);
+  margin:0 0 16px;
+  line-height:1.28;
+}
+.corpo .urlo:last-of-type{margin-bottom:30px}
+
+/* Stacco editoriale */
+.corpo .stacco{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:14px;
+  margin:52px 0;
+  color:var(--petrolio);
+}
+.corpo .stacco::before,
+.corpo .stacco::after{
+  content:"";
+  flex:0 0 60px;
+  height:1px;
+  background:var(--linea);
+}
+.corpo .stacco-simbolo{
+  font-family:'Fraunces',serif;
+  font-size:22px;
+  font-style:italic;
+  font-weight:400;
+  color:var(--petrolio-medio);
+  letter-spacing:6px;
+}
+
+/* Domanda di chiusura sezione */
+.domanda{
+  font-family:'Fraunces',serif;
+  font-weight:600;
+  font-size:clamp(24px,3.4vw,30px);
+  color:var(--petrolio-scuro);
+  line-height:1.25;
+  margin:42px 0 16px;
+  letter-spacing:-0.015em;
+  text-align:center;
+}
+
+.risposta-no{
+  font-family:'Fraunces',serif;
+  font-weight:800;
+  font-size:clamp(36px,5.8vw,52px);
+  background:linear-gradient(135deg, var(--rosso-acceso) 0%, var(--rosso) 100%);
+  -webkit-background-clip:text;
+  background-clip:text;
+  -webkit-text-fill-color:transparent;
+  line-height:1.05;
+  letter-spacing:-0.025em;
+  margin:14px 0 22px;
+  text-align:center;
+}
+
+.chiusa{
+  font-family:'Fraunces',serif;
+  font-weight:600;
+  font-size:clamp(22px,2.9vw,27px);
+  color:var(--petrolio-scuro);
+  line-height:1.3;
+  margin-bottom:32px;
+  letter-spacing:-0.012em;
+  text-align:center;
+}
+
+/* Responsive */
+@media(max-width:640px){
+  body{font-size:16px}
+  .hero{padding:40px 0 30px}
+  .corpo{padding:48px 0 30px}
+  .corpo p{font-size:17px}
+  .cta-btn{padding:20px 24px}
+  .foto-hero{border-radius:18px}
+  .corpo .stacco::before,
+  .corpo .stacco::after{flex-basis:36px}
+}
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="wrap">
+    <span class="eyebrow">TI PIACEREBBE LIBERARE TUO FIGLIO DALLE "CATENE DIGITALI" DI SMARTPHONE, TABLET E PLAYSTATION QUESTA ESTATE?</span>
+
+    <h1>ComeUnaVolta#Camp Estate 2026: il <span class="highlight">METODO DIGITAL-DETOX™</span> dove i bambini riscoprono il piacere delle avventure all'aria aperta e delle amicizie reali.</h1>
+
+    <p class="sub">A <strong>Tonezza del Cimone (VI)</strong>, primo "Borgo del Respiro" certificato del Veneto.</p>
+
+    <div class="meta">
+      <span class="meta-item"><span class="ic"></span> Hotel Bucaneve</span>
+      <span class="meta-sep">·</span>
+      <span class="meta-item"><span class="ic"></span> 7-14 anni</span>
+      <span class="meta-sep">·</span>
+      <span class="meta-item"><span class="ic"></span> Luglio-Agosto 2026</span>
+    </div>
+
+    <div class="foto-hero"></div>
+
+    <div class="cta-block">
+      <a href="#prenota" class="cta-btn">OK, VOGLIO PRENOTARE IL POSTO PER MIO FIGLIO! <span class="freccia">→</span></a>
+      <p class="cta-nota">Offerta valida fino al <strong>31 maggio</strong>.</p>
+    </div>
+  </div>
+</section>
+
+<section class="corpo">
+  <div class="wrap-narrow">
+    <p class="intro">Caro genitore che stai leggendo questa pagina…<br>Te lo ritrovi davanti ogni pomeriggio. Ed è una stretta al cuore.</p>
+
+    <p class="scena">Tuo figlio, rannicchiato sul divano, il viso illuminato dalla luce bluastra dello smartphone.</p>
+    <p>Non si muove.</p>
+    <p>Non parla.</p>
+    <p>Le dita scorrono meccanicamente sullo schermo, lo sguardo fisso e vuoto.</p>
+    <p>Passano le ore. E lui non se ne accorge nemmeno.</p>
+
+    <span class="virgolette">«Amore, basta telefono per oggi.»</span>
+
+    <p>È come se premessi un interruttore. Il viso assente si trasforma in una maschera di rabbia e frustrazione. Le lacrime spuntano, la voce si alza:</p>
+
+    <span class="urlo">«ANCORA CINQUE MINUTI!»</span>
+    <span class="urlo">«NON È GIUSTO, HO APPENA INIZIATO!»</span>
+    <span class="urlo">«TUTTI I MIEI COMPAGNI POSSONO USARLO QUANTO VOGLIONO!»</span>
+
+    <p>E mentre lotti questa battaglia quotidiana, il tempo passa inesorabile.</p>
+
+    <p>L'infanzia di tuo figlio sta scivolando via, giorno dopo giorno. E i ricordi che sta costruendo non sono di avventure nel parco o di risate con gli amici. Sono ricordi di video, notifiche e like.</p>
+
+    <div class="stacco">
+      <span class="stacco-simbolo">✦ ✦ ✦</span>
+    </div>
+
+    <p class="domanda">È <strong>NORMALE</strong> tutto questo? Sei <strong>TU</strong> che stai sbagliando qualcosa?</p>
+    <p class="risposta-no">NO. NON È COLPA TUA.</p>
+    <p class="chiusa">È una battaglia persa in partenza.</p>
+  </div>
+</section>
+
+</body>
+</html>
