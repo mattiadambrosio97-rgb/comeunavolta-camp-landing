@@ -2,7 +2,7 @@
 <html lang="it">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>ComeUnaVolta#Camp Estate 2026 — Liberare tuo figlio dalle catene digitali</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -76,8 +76,8 @@ h1 .highlight{color:var(--brand);white-space:nowrap}
 .cta-btn .freccia{display:inline-block;margin-left:8px}
 .sticky-cta{display:none}
 @media(max-width:768px){
-  .sticky-cta{position:fixed;bottom:10px;left:10px;right:10px;background:var(--cta);color:white;font-family:'Poppins',sans-serif;font-weight:800;font-size:14px;padding:15px 18px;border-radius:100px;text-decoration:none;text-align:center;text-transform:uppercase;letter-spacing:0.4px;box-shadow:0 6px 24px rgba(230,57,70,0.5);z-index:100;display:flex;align-items:center;justify-content:center;gap:8px;line-height:1.2}
-  body{padding-bottom:80px}
+  .sticky-cta{position:fixed;bottom:calc(10px + env(safe-area-inset-bottom, 0px));left:10px;right:10px;background:var(--cta);color:white;font-family:'Poppins',sans-serif;font-weight:800;font-size:14px;padding:15px 18px;border-radius:100px;text-decoration:none;text-align:center;text-transform:uppercase;letter-spacing:0.4px;box-shadow:0 6px 24px rgba(230,57,70,0.5);z-index:9999;display:flex;align-items:center;justify-content:center;gap:8px;line-height:1.2;transform:translateZ(0);-webkit-transform:translateZ(0);will-change:transform}
+  body{padding-bottom:calc(80px + env(safe-area-inset-bottom, 0px))}
 }
 .cta-nota{display:block;background:none;border:none;box-shadow:none;color:var(--testo-soft);padding:0;font-family:'Poppins',sans-serif;font-size:13px;font-weight:500;letter-spacing:0.2px;text-transform:none;margin:14px auto 0;text-align:center;line-height:1.45}
 .cta-nota::before{content:"⏰ ";font-size:14px;line-height:1;margin-right:2px}
