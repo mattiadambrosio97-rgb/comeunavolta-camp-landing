@@ -3,365 +3,459 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ComeUnaVolta Camp Estate 2026 — Above the Fold v1</title>
+<title>ComeUnaVolta#Camp Estate 2026 — Liberare tuo figlio dalle catene digitali</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,400;1,9..144,600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&display=swap" rel="stylesheet">
 <style>
 :root{
-  /* PALETTE - Aria di Montagna bilanciata verso il caldo */
-  --petrolio:#1B3D4F;
-  --petrolio-scuro:#0F2A38;
-  --petrolio-medio:#3A6B7E;
-  --sabbia:#F5F0E6;
-  --sabbia-scura:#E8DDC5;
-  --rosso:#C9301E;
-  --rosso-acceso:#E63946;
-  --rosso-scuro:#A1241A;
-  --arancio-caldo:#FF6B35;
-  --inchiostro:#1A1815;
-  --testo:#2A2620;
-  --testo-soft:#6B6359;
-  --linea:#D8CDB6;
+  --bg:#FCFAF5;
+  --testo-scuro:#0F1419;
+  --testo:#2A2F35;
+  --testo-soft:#6B7280;
+  --linea:#E5E1D6;
+  --brand:#2E5F2B;
+  --brand-soft:#E8F0E5;
+  --cta:#E63946;
+  --cta-hover:#C9303B;
+  --cta-scuro:#A3242E;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{
-  font-family:'DM Sans',system-ui,sans-serif;
-  background:var(--sabbia);
+  font-family:'Poppins',system-ui,sans-serif;
+  background:var(--bg);
   color:var(--testo);
   line-height:1.6;
   font-size:18px;
   -webkit-font-smoothing:antialiased;
 }
-.wrap{max-width:780px;margin:0 auto;padding:0 22px}
-.wrap-narrow{max-width:680px;margin:0 auto;padding:0 22px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+.wrap-narrow{max-width:760px;margin:0 auto;padding:0 24px}
 
-/* ====== HERO ABOVE THE FOLD - CENTRATO VERTICALE ====== */
-.hero{
-  background:var(--sabbia);
-  padding:54px 0 40px;
-  position:relative;
-  text-align:center;
-}
-.hero::before{
-  content:"";
-  position:absolute;
-  top:0;left:0;right:0;
-  height:6px;
-  background:linear-gradient(90deg, var(--petrolio) 0%, var(--petrolio-medio) 50%, var(--rosso) 100%);
-}
+.hero{padding:22px 0 32px;text-align:center;background:linear-gradient(180deg, #F1ECDE 0%, #EDE6D2 100%);border-bottom:1px solid var(--linea);position:relative}
+.hero::after{content:"";position:absolute;bottom:-1px;left:50%;transform:translateX(-50%);width:84px;height:5px;background:var(--cta);border-radius:4px 4px 0 0}
 
-/* Eyebrow rosso centrato */
-.eyebrow{
-  display:block;
-  font-family:'DM Sans',sans-serif;
-  font-size:clamp(14px,1.7vw,17px);
-  font-weight:700;
-  text-transform:uppercase;
-  letter-spacing:1.2px;
-  color:var(--rosso);
-  margin:0 auto 26px;
-  line-height:1.45;
-  max-width:640px;
-}
+.trust-badge{display:inline-flex;align-items:center;gap:10px;font-family:'Poppins',sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1.4px;color:var(--brand);background:var(--brand-soft);padding:8px 14px;border-radius:100px;margin:0 auto 21px;line-height:1}
+.trust-badge .dot{width:6px;height:6px;background:var(--brand);border-radius:50%;display:inline-block}
+.trust-badge .sep{width:1px;height:11px;background:var(--brand);opacity:0.3;display:inline-block}
 
-/* Headline centrata, dimensione contenuta */
-h1{
-  font-family:'Fraunces',Georgia,serif;
-  font-weight:700;
-  font-size:clamp(28px,3.6vw,40px);
-  line-height:1.18;
-  letter-spacing:-0.018em;
-  color:var(--petrolio-scuro);
-  margin:0 auto 28px;
-  max-width:720px;
-  text-wrap:balance;
-}
-h1 .highlight{
-  color:var(--rosso);
-  white-space:nowrap;
-}
+.eyebrow{display:block;font-family:'Poppins',sans-serif;font-size:15px;font-weight:700;text-transform:uppercase;letter-spacing:1.4px;color:var(--cta);margin:0 auto 17px;line-height:1.45;max-width:680px}
 
-/* Sub-headline */
-.sub{
-  font-family:'DM Sans',sans-serif;
-  font-size:clamp(17px,1.9vw,19px);
-  line-height:1.55;
-  color:var(--testo);
-  margin:0 auto 16px;
-  font-weight:400;
-  max-width:560px;
-}
-.sub strong{font-weight:600;color:var(--petrolio)}
+h1{font-family:'Poppins',sans-serif;font-weight:800;font-size:29px;line-height:1.18;letter-spacing:-0.02em;color:var(--testo-scuro);margin:0 auto 20px;max-width:960px;text-wrap:balance}
+h1 .highlight{color:var(--brand);white-space:nowrap}
 
-/* Meta riga premium centrata */
-.meta{
-  display:flex;
-  flex-wrap:wrap;
-  align-items:center;
-  justify-content:center;
-  gap:8px 14px;
-  font-family:'DM Sans',sans-serif;
-  font-size:14px;
-  font-weight:500;
-  color:var(--testo-soft);
-  letter-spacing:0.3px;
-  margin:0 auto 36px;
-  padding-bottom:30px;
-  border-bottom:1px solid var(--linea);
-  max-width:560px;
-}
+.sub{font-family:'Poppins',sans-serif;font-size:20px;line-height:1.5;color:var(--testo);margin:0 auto 12px;font-weight:400;max-width:600px}
+.sub strong{font-weight:700;color:var(--testo-scuro)}
+
+.meta{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:8px 14px;font-family:'Poppins',sans-serif;font-size:14px;font-weight:600;color:var(--testo-soft);letter-spacing:0.6px;margin:0 auto 16px;padding-bottom:14px;border-bottom:1px solid var(--linea);max-width:580px;text-transform:uppercase}
 .meta-item{display:inline-flex;align-items:center;gap:6px}
-.meta-item .ic{
-  width:6px;height:6px;
-  background:var(--rosso);
-  border-radius:50%;
-  display:inline-block;
-}
+.meta-item .ic{width:5px;height:5px;background:var(--cta);border-radius:50%;display:inline-block}
 .meta-sep{color:var(--linea);font-weight:400}
 
-/* Foto hero - bordi smussati grandi */
-.foto-hero{
-  width:100%;
-  aspect-ratio:16/10;
-  background:
-    linear-gradient(135deg, rgba(27,61,79,0.15) 0%, rgba(27,61,79,0.4) 100%),
-    linear-gradient(180deg, #5a8fa8 0%, #2c5d75 50%, #1b3d4f 100%);
-  border-radius:24px;
-  margin:0 auto 34px;
-  position:relative;
-  overflow:hidden;
-  box-shadow:0 12px 40px rgba(15,42,56,0.18), 0 2px 8px rgba(15,42,56,0.08);
-}
-.foto-hero::before{
-  content:"FOTO: gruppo di ragazzi 7-14 anni all'aperto sui prati di Tonezza · taglio orizzontale · niente dispositivi visibili";
-  position:absolute;
-  inset:0;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  padding:36px;
-  color:var(--sabbia);
-  font-family:'DM Sans',sans-serif;
-  font-size:13px;
-  font-weight:600;
-  letter-spacing:1px;
-  text-transform:uppercase;
-  background:rgba(15,42,56,0.5);
+.foto-hero{width:100%;max-width:620px;aspect-ratio:16/9;background:linear-gradient(135deg, rgba(15,20,25,0.15) 0%, rgba(15,20,25,0.4) 100%),linear-gradient(180deg, #8FB870 0%, #5C8A5B 50%, #2E5F2B 100%);border-radius:16px;margin:0 auto 24px;position:relative;overflow:hidden;box-shadow:0 8px 30px rgba(15,20,25,0.10),0 2px 6px rgba(15,20,25,0.04)}
+.foto-hero::before{content:"FOTO: gruppo di ragazzi 7-14 anni · 1920x1080";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:30px;color:white;font-family:'Poppins',sans-serif;font-size:12px;font-weight:600;letter-spacing:1px;text-transform:uppercase;background:rgba(15,20,25,0.45)}
+
+.cta-block{max-width:560px;margin:0 auto}
+.cta-btn{display:block;width:100%;background:var(--cta);color:white;font-family:'Poppins',sans-serif;font-size:20px;font-weight:700;letter-spacing:0.4px;padding:22px 30px;border:none;border-radius:100px;text-decoration:none;text-align:center;cursor:pointer;transition:all 0.2s ease;box-shadow:0 4px 14px rgba(230,57,70,0.28);line-height:1.3;text-transform:uppercase}
+.cta-btn:hover{background:var(--cta-hover);transform:translateY(-1px);box-shadow:0 8px 22px rgba(230,57,70,0.38)}
+.cta-btn .freccia{display:inline-block;margin-left:8px}
+.cta-nota{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:#FFF6E0;border:1.5px solid #E8A722;color:#8B5A1F;padding:10px 18px;border-radius:100px;font-family:'Poppins',sans-serif;font-size:13px;font-weight:700;letter-spacing:0.8px;text-transform:uppercase;margin:14px auto 0;box-shadow:0 3px 12px rgba(232,167,34,0.2);text-align:center}
+.cta-nota::before{content:"⏰";font-size:15px;line-height:1}
+.cta-nota strong{color:#C9303B;font-weight:800;letter-spacing:0.5px}
+.cta-block{text-align:center}
+
+.corpo{padding:52px 0 36px;position:relative}
+
+/* Alternanza sfondi sezioni */
+.corpo.band-bianco{background:#FFFFFF;padding:64px 0 56px;border-top:1px solid var(--linea);border-bottom:1px solid var(--linea)}
+.corpo.band-crema-scuro{background:#F1ECDE;padding:64px 0 56px}
+.corpo.band-verde-soft{background:linear-gradient(180deg, #F0F7EE 0%, #E8F0E5 100%);padding:64px 0 56px}
+
+/* Divisore decorativo cima section */
+.divisore-top{position:absolute;top:0;left:50%;transform:translateX(-50%);width:64px;height:5px;background:var(--cta);border-radius:0 0 4px 4px}
+
+/* Sotto-headline intermedie nel corpo */
+.sotto-h{font-family:'Poppins',sans-serif;font-weight:800;font-size:24px;line-height:1.28;color:var(--testo-scuro);letter-spacing:-0.018em;margin:38px 0 16px;position:relative;padding-top:18px;text-wrap:balance}
+.sotto-h::before{content:"";position:absolute;top:0;left:0;width:42px;height:3px;background:var(--cta);border-radius:2px}
+.sotto-h strong{color:var(--cta);font-weight:800}
+.corpo p{font-family:'Poppins',sans-serif;font-size:18px;line-height:1.6;color:var(--testo);margin-bottom:16px;font-weight:400}
+.corpo p.intro{font-size:28px;line-height:1.3;color:var(--testo-scuro);font-weight:700;margin-bottom:11px;letter-spacing:-0.015em;text-align:center}
+.corpo .virgolette{display:block;font-family:'Poppins',sans-serif;font-weight:600;font-style:italic;font-size:24px;color:var(--testo-scuro);padding:10px 0 10px 20px;border-left:3px solid var(--cta);margin:6px 0 24px;line-height:1.4;letter-spacing:-0.008em}
+.corpo .urlo{display:block;font-family:'Poppins',sans-serif;font-weight:800;font-size:23px;color:var(--cta-scuro);padding:0;border:none;margin:0 auto 12px;line-height:1.3;text-align:center;max-width:600px}
+.corpo .urlo:last-of-type{margin-bottom:25px}
+.domanda{font-family:'Poppins',sans-serif;font-weight:700;font-size:28px;line-height:1.25;color:var(--testo-scuro);margin:25px auto 5px;letter-spacing:-0.015em;text-align:center;max-width:680px}
+.domanda strong{color:var(--cta);font-weight:800}
+.risposta-no{font-family:'Poppins',sans-serif;font-weight:800;font-size:38px;line-height:1.1;color:var(--cta);letter-spacing:-0.02em;margin:8px auto 8px;text-align:center;max-width:680px}
+.chiusa{font-family:'Poppins',sans-serif;font-weight:500;font-style:italic;font-size:22px;color:var(--testo-soft);line-height:1.3;margin:5px auto 24px;letter-spacing:0;text-align:center;max-width:600px}
+
+.frase-chiave{font-family:'Poppins',sans-serif;font-weight:700;font-size:22px;line-height:1.35;color:var(--testo-scuro);text-align:center;margin:28px auto 14px;max-width:620px;letter-spacing:-0.01em}
+.frase-chiave strong{color:var(--brand)}
+.frase-chiave.pain strong{color:var(--cta)}
+
+.stat-list{margin:24px 0 28px}
+.stat-row{display:flex;align-items:flex-start;gap:14px;padding:18px 20px;margin-bottom:10px;background:white;border-left:3px solid var(--cta);border-radius:10px;box-shadow:0 4px 14px rgba(15,20,25,0.05)}
+.stat-row .ic{font-size:22px;flex-shrink:0;line-height:1.3}
+.stat-row .stat-text{font-size:16px;line-height:1.55;color:var(--testo);font-family:'Poppins',sans-serif;font-weight:400}
+.stat-row .stat-text strong{color:var(--testo-scuro);font-weight:700}
+.stat-row .stat-text .fonte{display:block;color:var(--testo-soft);font-size:13px;margin-top:4px;font-style:italic}
+
+/* Evidenziatore skim-reader (livello 1 di lettura) */
+.skim{background:linear-gradient(180deg, transparent 58%, #FFE89C 58%, #FFE89C 94%, transparent 94%);padding:0 3px;font-weight:600}
+
+/* Voce esterna (citazione minimizzatori) */
+.voce-esterna{display:block;padding-left:18px;border-left:2px solid var(--linea);margin:0 0 12px;font-family:'Poppins',sans-serif;font-size:17px;line-height:1.55;color:var(--testo)}
+.voce-esterna em{font-style:italic;color:var(--testo-scuro);font-weight:500}
+
+/* SEZIONI — header */
+.section-eyebrow{display:block;text-align:center;font-family:'Poppins',sans-serif;font-size:12px;font-weight:700;letter-spacing:2.2px;text-transform:uppercase;color:var(--cta);margin:0 auto 14px}
+.section-eyebrow::before,.section-eyebrow::after{content:"";display:inline-block;width:24px;height:1px;background:var(--cta);vertical-align:middle;margin:0 12px;opacity:0.5}
+.corpo h2{font-family:'Poppins',sans-serif;font-weight:800;font-size:34px;line-height:1.18;color:var(--testo-scuro);margin:0 auto 22px;letter-spacing:-0.022em;text-align:center;max-width:760px}
+.corpo h2 .tm{color:var(--brand)}
+.corpo h3{font-family:'Poppins',sans-serif;font-weight:700;font-size:22px;line-height:1.3;color:var(--brand);margin:36px auto 14px;letter-spacing:-0.01em;text-align:center}
+
+/* Lista numerata "3 punti metodo" */
+.punti-list{margin:26px 0 32px;display:grid;gap:16px}
+.punto-item{position:relative;padding:26px 28px 26px 96px;background:white;border-radius:16px;border:1px solid var(--linea);box-shadow:0 6px 22px rgba(15,20,25,0.06);overflow:hidden;min-height:130px}
+.punto-item::after{content:attr(data-num);position:absolute;right:-12px;bottom:-46px;font-family:'Poppins',sans-serif;font-weight:900;font-size:170px;line-height:1;color:var(--brand-soft);z-index:0;opacity:0.55;letter-spacing:-0.05em;pointer-events:none}
+.punto-num-cerchio{position:absolute;left:24px;top:26px;width:52px;height:52px;background:var(--brand);color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Poppins',sans-serif;font-size:22px;font-weight:800;box-shadow:0 6px 18px rgba(46,95,43,0.32);z-index:2}
+.punto-body{font-size:16px;line-height:1.6;color:var(--testo);font-family:'Poppins',sans-serif;position:relative;z-index:1}
+.punto-body strong.titolo{color:var(--testo-scuro);display:block;margin-bottom:8px;font-size:18px;font-weight:800;letter-spacing:-0.012em}
+.punto-body em{font-style:italic;color:var(--testo-soft)}
+@media(max-width:560px){.punto-item{padding:74px 22px 22px 22px}.punto-num-cerchio{top:22px;left:22px;width:46px;height:46px;font-size:20px}.punto-item::after{font-size:130px;bottom:-30px}}
+
+/* Check list — grid card */
+.check-list{list-style:none;margin:24px 0 28px;padding:0;display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.check-list li{display:flex;gap:14px;align-items:flex-start;padding:18px 20px;background:white;border-radius:12px;border:1px solid var(--linea);box-shadow:0 2px 10px rgba(15,20,25,0.04);font-size:15px;line-height:1.5;color:var(--testo);font-family:'Poppins',sans-serif;transition:transform 0.2s ease, box-shadow 0.2s ease}
+.check-list li:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(15,20,25,0.08)}
+.check-list .ic{flex-shrink:0;width:28px;height:28px;background:var(--brand-soft);color:var(--brand);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:800;line-height:1}
+.check-list strong{color:var(--testo-scuro);font-weight:700}
+@media(max-width:640px){.check-list{grid-template-columns:1fr}}
+
+/* Stacco visivo fra sezioni */
+.stacco{text-align:center;margin:40px 0 0;color:var(--linea);font-size:18px;letter-spacing:14px}
+
+/* TIMELINE 8 giorni */
+.timeline{position:relative;margin:32px 0 28px}
+.giorno{position:relative;padding:0 0 38px 72px;min-height:60px}
+.giorno:last-child{padding-bottom:8px}
+.giorno::before{content:"";position:absolute;left:23px;top:52px;bottom:0;width:2px;background:linear-gradient(180deg, var(--giorno-color, var(--brand)) 0%, rgba(0,0,0,0.08) 100%);opacity:0.55}
+.giorno:last-child::before{display:none}
+.giorno .pallino{position:absolute;left:0;top:0;width:48px;height:48px;border-radius:50%;background:var(--giorno-color, var(--brand));color:white;display:flex;align-items:center;justify-content:center;font-family:'Poppins',sans-serif;font-weight:800;font-size:19px;box-shadow:0 4px 16px rgba(15,20,25,0.18);z-index:2;border:3px solid white}
+.giorno-head{margin-bottom:14px;padding-top:8px}
+.giorno-eyebrow{display:none}
+.corpo .giorno-title{font-family:'Poppins',sans-serif;font-size:26px;font-weight:800;line-height:1.18;color:var(--giorno-color, var(--brand));letter-spacing:-0.02em;margin:0 0 4px;text-align:left}
+.corpo .giorno-sub{font-family:'Poppins',sans-serif;font-size:17px;font-style:italic;color:var(--testo-soft);font-weight:500;line-height:1.4;text-align:left;margin:0}
+.giorno-body{font-size:16px;line-height:1.6;color:var(--testo);font-family:'Poppins',sans-serif}
+.giorno-body p{margin-bottom:12px}
+.giorno-body p:last-child{margin-bottom:0}
+.giorno-body strong{color:var(--testo-scuro);font-weight:700}
+.giorno-body em{font-style:italic;color:var(--testo-soft)}
+
+/* CTA inline mid-page */
+.cta-mid{margin:24px auto 0;max-width:560px}
+
+/* TRE ELEMENTI UNICI */
+.elemento-unico{background:white;border-radius:18px;margin-bottom:20px;border:1px solid var(--linea);box-shadow:0 8px 26px rgba(15,20,25,0.07);position:relative;overflow:hidden}
+.elem-banda{background:var(--elem-color, var(--brand));padding:14px 30px;display:flex;align-items:center;gap:14px;position:relative;overflow:hidden}
+.elem-banda::after{content:"";position:absolute;right:-30px;top:-30px;width:120px;height:120px;background:rgba(255,255,255,0.08);border-radius:50%;pointer-events:none}
+.elem-banda .pill{background:white;color:var(--elem-color, var(--brand));font-family:'Poppins',sans-serif;font-size:11px;font-weight:800;letter-spacing:1.8px;text-transform:uppercase;padding:7px 14px;border-radius:100px;line-height:1;position:relative;z-index:1;box-shadow:0 2px 8px rgba(0,0,0,0.1)}
+.elem-banda .pill-name{color:white;font-family:'Poppins',sans-serif;font-size:13px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;line-height:1;position:relative;z-index:1;opacity:0.95}
+.elem-content{padding:28px 32px 30px}
+.corpo .elemento-unico h3.elem-title{font-family:'Poppins',sans-serif;font-size:26px;font-weight:800;color:var(--testo-scuro);line-height:1.18;letter-spacing:-0.02em;margin:0 0 8px;text-align:left}
+.corpo .elemento-unico .sub-elemento{font-family:'Poppins',sans-serif;font-size:17px;font-style:italic;color:var(--testo-soft);font-weight:500;margin:0 0 20px;line-height:1.4;text-align:left}
+@media(max-width:560px){.elem-banda{padding:12px 22px;gap:10px}.elem-content{padding:24px 22px 26px}.corpo .elemento-unico h3.elem-title{font-size:22px}.elem-banda .pill-name{font-size:11px;letter-spacing:1px}}
+.elemento-unico p{font-size:16px;line-height:1.6;color:var(--testo);margin-bottom:14px;font-family:'Poppins',sans-serif}
+.elemento-unico p:last-child{margin-bottom:0}
+.elemento-unico strong{color:var(--testo-scuro);font-weight:700}
+.elemento-unico em{font-style:italic;color:var(--testo-soft)}
+
+.warning-box{background:#FFF6DA;border-left:3px solid #E8A722;padding:14px 18px;border-radius:8px;margin:14px 0 18px;font-family:'Poppins',sans-serif;font-size:15px;font-weight:700;color:#8B5A1F;line-height:1.5}
+.warning-box::before{content:"⚠ ";font-weight:800;margin-right:4px}
+
+.elemento-bullet{list-style:none;padding:0;margin:14px 0 0}
+.elemento-bullet li{display:flex;gap:12px;align-items:flex-start;padding:10px 0;font-size:15px;line-height:1.55;color:var(--testo);font-family:'Poppins',sans-serif;border-bottom:1px solid var(--linea)}
+.elemento-bullet li:last-child{border-bottom:none}
+.elemento-bullet li::before{content:"→";color:var(--elem-color, var(--brand));font-weight:800;flex-shrink:0;font-size:16px;margin-top:1px}
+.elemento-bullet strong{color:var(--testo-scuro);font-weight:700}
+
+/* DATE CAMP */
+.date-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:24px 0 12px}
+.data-card{background:white;border-radius:14px;padding:20px 22px;border:1px solid var(--linea);box-shadow:0 4px 14px rgba(15,20,25,0.05);display:flex;align-items:center;gap:14px;transition:transform 0.2s, box-shadow 0.2s;font-family:'Poppins',sans-serif}
+.data-card:hover{transform:translateY(-3px);box-shadow:0 10px 26px rgba(15,20,25,0.08)}
+.data-card .turno-tag{flex-shrink:0;background:var(--brand-soft);color:var(--brand);font-weight:800;font-size:12px;padding:7px 11px;border-radius:100px;letter-spacing:0.8px;text-transform:uppercase;line-height:1}
+.data-card .periodo{font-size:17px;font-weight:700;color:var(--testo-scuro);line-height:1.3;letter-spacing:-0.01em}
+.data-card .nights{display:block;font-size:12px;font-weight:500;color:var(--testo-soft);margin-top:3px;letter-spacing:0.3px}
+@media(max-width:560px){.date-grid{grid-template-columns:1fr}}
+
+/* AMBIENTE TONEZZA */
+.ambiente-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:26px 0 28px}
+.ambiente-card{background:white;border-radius:14px;padding:24px 18px;border:1px solid var(--linea);box-shadow:0 4px 14px rgba(15,20,25,0.05);text-align:center;font-family:'Poppins',sans-serif}
+.ambiente-card .ic{font-size:32px;margin-bottom:12px;display:block;line-height:1}
+.ambiente-card .label{font-size:14px;font-weight:800;color:var(--testo-scuro);line-height:1.3;margin-bottom:6px;letter-spacing:-0.005em}
+.ambiente-card .meta{font-size:13px;color:var(--testo-soft);line-height:1.45;font-weight:500}
+@media(max-width:600px){.ambiente-grid{grid-template-columns:1fr}}
+
+/* MEDIA — Giornali */
+.media-row{background:white;border-radius:14px;padding:22px 26px;border:1px solid var(--linea);box-shadow:0 4px 14px rgba(15,20,25,0.05);margin:18px 0;font-family:'Poppins',sans-serif}
+.media-row .label{font-size:11px;font-weight:800;color:var(--cta);letter-spacing:1.6px;text-transform:uppercase;margin-bottom:14px}
+.media-row p{font-size:16px;line-height:1.55;color:var(--testo);margin-bottom:12px}
+.media-row .testate{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.media-row .testata{background:var(--bg);border-radius:8px;padding:9px 14px;font-size:13px;font-weight:700;color:var(--testo-scuro);border:1px solid var(--linea)}
+
+/* STAFF — check-list credenziali */
+.staff-claim{font-family:'Poppins',sans-serif;font-size:22px;font-weight:800;color:var(--testo-scuro);text-align:center;line-height:1.3;letter-spacing:-0.015em;margin:24px auto 18px;max-width:680px}
+.staff-claim strong{color:var(--cta)}
+
+.credential-list{list-style:none;margin:24px 0 18px;padding:0;display:grid;gap:12px}
+.credential-list li{display:flex;gap:14px;align-items:flex-start;padding:18px 22px;background:white;border-radius:12px;border:1px solid var(--linea);box-shadow:0 4px 14px rgba(15,20,25,0.05);font-family:'Poppins',sans-serif;font-size:16px;line-height:1.55;color:var(--testo)}
+.credential-list .ic{flex-shrink:0;width:32px;height:32px;background:var(--brand);color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:800;box-shadow:0 3px 10px rgba(46,95,43,0.25)}
+.credential-list strong{color:var(--testo-scuro);font-weight:700}
+
+/* TESTIMONIAL — stack verticale */
+.testimonial-grid{display:flex;flex-direction:column;gap:14px;margin:24px 0 28px}
+.testimonial{background:white;border-radius:14px;padding:26px 30px 22px;border:1px solid var(--linea);box-shadow:0 4px 14px rgba(15,20,25,0.05);font-family:'Poppins',sans-serif;position:relative}
+.testimonial::before{content:"\201C";position:absolute;top:10px;left:20px;font-family:Georgia, serif;font-size:64px;color:var(--brand);opacity:0.18;line-height:1;font-weight:700}
+.testimonial .quote{font-size:17px;line-height:1.6;color:var(--testo);font-style:italic;margin-bottom:16px;position:relative;z-index:1}
+.testimonial .author{display:flex;align-items:center;gap:12px;padding-top:14px;border-top:1px solid var(--linea)}
+.testimonial .author .avatar{flex-shrink:0;width:38px;height:38px;background:var(--brand-soft);color:var(--brand);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px}
+.testimonial .author .name{font-size:14px;font-weight:700;color:var(--testo-scuro);line-height:1.3}
+.testimonial .author .role{display:block;font-size:12px;color:var(--testo-soft);font-weight:500;margin-top:2px;letter-spacing:0.3px}
+
+/* STAT highlight 3 numeri big */
+.stat-highlight{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:28px 0 8px}
+.stat-big{background:white;border-radius:14px;padding:24px 18px;border:1px solid var(--linea);box-shadow:0 4px 14px rgba(15,20,25,0.05);text-align:center;font-family:'Poppins',sans-serif}
+.stat-big .num{font-size:38px;font-weight:900;color:var(--brand);line-height:1;letter-spacing:-0.03em;margin-bottom:6px;display:block}
+.stat-big .label{font-size:13px;font-weight:600;color:var(--testo);line-height:1.4}
+.stat-big .label strong{color:var(--testo-scuro);font-weight:700}
+@media(max-width:560px){.stat-highlight{grid-template-columns:1fr;gap:10px}.stat-big{padding:18px}.stat-big .num{font-size:32px}}
+
+/* PERCHÉ SCEGLIERCI — 5 card orizzontali stack */
+.perche-grid{display:grid;grid-template-columns:1fr;gap:12px;margin:30px 0 18px}
+.perche-card{background:white;border-radius:14px;padding:20px 24px;border:1px solid var(--linea);box-shadow:0 4px 14px rgba(15,20,25,0.05);font-family:'Poppins',sans-serif;display:flex;align-items:center;gap:18px;transition:transform 0.2s, box-shadow 0.2s}
+.perche-card:hover{transform:translateX(4px);box-shadow:0 8px 22px rgba(15,20,25,0.08)}
+.perche-card .ic{flex-shrink:0;width:54px;height:54px;background:var(--brand-soft);color:var(--brand);border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:26px;line-height:1}
+.perche-card .body{flex:1;min-width:0}
+.perche-card .label{font-size:17px;font-weight:800;color:var(--testo-scuro);line-height:1.25;margin-bottom:4px;letter-spacing:-0.01em}
+.perche-card .desc{font-size:14px;color:var(--testo);line-height:1.5;font-weight:500}
+.perche-card .desc strong{color:var(--testo-scuro);font-weight:700}
+@media(max-width:560px){.perche-card{padding:18px 20px;gap:14px}.perche-card .ic{width:46px;height:46px;font-size:22px}.perche-card .label{font-size:16px}}
+
+/* PRICING — Cosa include */
+.include-box{background:white;border-radius:14px;padding:26px 30px;border:1px solid var(--linea);box-shadow:0 4px 14px rgba(15,20,25,0.05);margin:24px 0;font-family:'Poppins',sans-serif}
+.include-box .label{font-size:11px;font-weight:800;color:var(--brand);letter-spacing:1.8px;text-transform:uppercase;margin-bottom:16px;text-align:center}
+.include-list{list-style:none;padding:0;margin:0;display:grid;gap:11px}
+.include-list li{display:flex;gap:12px;align-items:flex-start;font-size:15px;line-height:1.55;color:var(--testo);font-family:'Poppins',sans-serif}
+.include-list .ar{color:var(--brand);font-weight:800;flex-shrink:0;font-size:18px;line-height:1.5}
+.include-list strong{color:var(--testo-scuro);font-weight:700}
+
+/* BONUS section */
+.bonus-section{margin:34px 0 20px}
+.bonus-head{text-align:center;font-family:'Poppins',sans-serif;font-size:19px;font-weight:700;color:var(--testo-scuro);margin-bottom:18px;letter-spacing:-0.01em;line-height:1.4}
+.bonus-head strong{color:var(--cta)}
+.bonus-card{background:white;border-radius:14px;padding:22px 26px;margin-bottom:12px;border:1px solid var(--linea);box-shadow:0 4px 14px rgba(15,20,25,0.05);display:flex;gap:18px;align-items:flex-start;font-family:'Poppins',sans-serif;transition:transform 0.2s, box-shadow 0.2s}
+.bonus-card:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(15,20,25,0.08)}
+.bonus-card .bonus-ic{flex-shrink:0;width:48px;height:48px;background:linear-gradient(135deg, #5FB880 0%, #2E5F2B 100%);color:white;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:22px;box-shadow:0 4px 14px rgba(46,95,43,0.28)}
+.bonus-card.extra .bonus-ic{background:linear-gradient(135deg, #FFD23F 0%, #E8A722 100%);box-shadow:0 4px 14px rgba(232,167,34,0.3)}
+.bonus-card .bonus-body{flex:1;min-width:0}
+.bonus-card .bonus-title{font-size:17px;font-weight:800;color:var(--testo-scuro);line-height:1.3;margin-bottom:6px;letter-spacing:-0.01em}
+.bonus-card .bonus-valore{display:inline-block;font-size:11px;font-weight:800;color:var(--cta);background:#FCE6E8;padding:5px 12px;border-radius:100px;margin-bottom:10px;letter-spacing:0.8px;text-transform:uppercase}
+.bonus-card.extra .bonus-valore{color:#8B5A1F;background:#FFF6E0}
+.bonus-card p{font-size:14px;color:var(--testo);line-height:1.5;margin:0;font-weight:500}
+.bonus-card strong{color:var(--testo-scuro);font-weight:700}
+
+/* PRICING — Direct response shouty (Offerta Speciale) */
+.pricing-card{background:white;border-radius:20px;padding:46px 30px 34px;margin:40px 0 18px;font-family:'Poppins',sans-serif;text-align:center;position:relative;border:1px solid var(--linea);box-shadow:0 14px 40px rgba(15,20,25,0.1);overflow:visible}
+
+/* Medaglia "Offerta di Lancio" oro */
+.medaglia-offer{position:absolute;top:-22px;right:24px;width:118px;height:118px;background:radial-gradient(circle at 32% 28%, #FFE88A 0%, #FFD23F 28%, #E8A722 65%, #B07F12 100%);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-direction:column;color:#3D2A05;font-family:'Poppins',sans-serif;font-weight:900;font-size:13px;letter-spacing:1.4px;text-transform:uppercase;line-height:1.15;text-align:center;box-shadow:0 10px 24px rgba(176,127,18,0.4), inset 0 -3px 10px rgba(125,80,0,0.35), inset 0 4px 8px rgba(255,255,255,0.6);border:3px solid #B07F12;transform:rotate(7deg);z-index:5}
+.medaglia-offer::before{content:"";position:absolute;inset:6px;border-radius:50%;border:1.5px dashed rgba(125,80,0,0.4)}
+.medaglia-offer span{display:block;position:relative;z-index:1}
+.medaglia-offer .l1{font-size:13px}
+.medaglia-offer .l2{font-size:12px;margin-top:2px}
+
+/* Prezzo vecchio barrato rosso */
+.prezzo-old{font-family:'Poppins',sans-serif;font-size:74px;font-weight:900;color:#E63946;line-height:1;letter-spacing:-0.04em;display:inline-block;position:relative;margin-bottom:24px}
+.prezzo-old::after{content:"";position:absolute;left:-12px;right:-12px;top:48%;height:7px;background:#E63946;border-radius:4px;transform:translateY(-50%) rotate(-4deg);box-shadow:0 2px 4px rgba(230,57,70,0.3)}
+.prezzo-old .e{font-size:42px;vertical-align:top;line-height:1.6;margin-left:2px}
+
+/* Label "Per te, a" */
+.prezzo-label{font-family:'Poppins',sans-serif;font-size:24px;font-weight:700;color:var(--testo-scuro);margin-bottom:6px;letter-spacing:-0.01em;line-height:1.3}
+
+/* Prezzo nuovo gigante verde */
+.prezzo-new{font-family:'Poppins',sans-serif;font-size:128px;font-weight:900;color:var(--brand);line-height:0.95;letter-spacing:-0.05em;display:inline-block;margin-bottom:4px;text-shadow:0 2px 0 rgba(46,95,43,0.08)}
+.prezzo-new .e{font-size:78px;vertical-align:top;line-height:1.35;margin-left:2px;font-weight:900}
+
+/* "Tutto compreso!" highlight */
+.prezzo-incluso{font-family:'Poppins',sans-serif;font-size:32px;font-weight:900;color:var(--brand);letter-spacing:-0.01em;text-transform:uppercase;line-height:1.1;margin-bottom:24px;text-shadow:0 2px 0 rgba(46,95,43,0.08)}
+
+/* Dettagli pacchetto */
+.pricing-detail{font-family:'Poppins',sans-serif;font-size:14px;color:var(--testo-soft);font-weight:500;line-height:1.55;font-style:italic;max-width:480px;margin:0 auto 4px}
+.pricing-detail strong{color:var(--testo-scuro);font-weight:700;font-style:normal}
+
+/* Risparmio strip */
+.risparmio-wrap{margin-top:26px;padding-top:22px;border-top:1.5px dashed rgba(15,20,25,0.15)}
+.risparmio{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg, #E63946 0%, #C9303B 100%);color:white;font-family:'Poppins',sans-serif;font-weight:900;font-size:16px;padding:14px 26px;border-radius:100px;letter-spacing:0.8px;text-transform:uppercase;box-shadow:0 6px 18px rgba(230,57,70,0.35);line-height:1}
+.risparmio::before{content:"⚡";font-size:18px;line-height:1}
+
+@media(max-width:560px){
+  .pricing-card{padding:42px 22px 28px}
+  .medaglia-offer{width:96px;height:96px;font-size:11px;top:-16px;right:12px}
+  .medaglia-offer .l1{font-size:11px}
+  .medaglia-offer .l2{font-size:10px}
+  .prezzo-old{font-size:56px}
+  .prezzo-old .e{font-size:32px}
+  .prezzo-new{font-size:96px}
+  .prezzo-new .e{font-size:60px}
+  .prezzo-incluso{font-size:26px}
+  .prezzo-label{font-size:20px}
 }
 
-/* CTA - rounded pill con gradient caldo acceso */
-.cta-block{
-  max-width:540px;
-  margin:0 auto;
-}
-.cta-btn{
-  display:block;
-  width:100%;
-  background:linear-gradient(135deg, var(--arancio-caldo) 0%, var(--rosso-acceso) 50%, var(--rosso) 100%);
-  background-size:200% 200%;
-  background-position:0% 50%;
-  color:white;
-  font-family:'DM Sans',sans-serif;
-  font-size:clamp(15px,1.7vw,17px);
-  font-weight:700;
-  letter-spacing:0.4px;
-  padding:22px 28px;
-  border:none;
-  border-radius:100px;
-  text-decoration:none;
-  text-align:center;
-  cursor:pointer;
-  transition:all 0.35s ease;
-  box-shadow:
-    0 1px 0 rgba(255,255,255,0.25) inset,
-    0 -2px 0 rgba(0,0,0,0.12) inset,
-    0 10px 24px rgba(201,48,30,0.32),
-    0 4px 10px rgba(201,48,30,0.2);
-  line-height:1.3;
-  position:relative;
-  overflow:hidden;
-  text-transform:uppercase;
-}
-.cta-btn::before{
-  content:"";
-  position:absolute;
-  top:0;left:-100%;
-  width:100%;height:100%;
-  background:linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.25) 50%, transparent 100%);
-  transition:left 0.6s ease;
-}
-.cta-btn:hover{
-  background-position:100% 50%;
-  transform:translateY(-2px);
-  box-shadow:
-    0 1px 0 rgba(255,255,255,0.3) inset,
-    0 -2px 0 rgba(0,0,0,0.12) inset,
-    0 14px 32px rgba(201,48,30,0.4),
-    0 6px 14px rgba(201,48,30,0.25);
-}
-.cta-btn:hover::before{left:100%}
-.cta-btn:active{transform:translateY(0)}
-.cta-btn .freccia{display:inline-block;margin-left:8px;transition:transform 0.25s}
-.cta-btn:hover .freccia{transform:translateX(5px)}
+/* URGENZA Banner — Scadenza forte */
+.urgency-banner{background:linear-gradient(135deg, #FFF6E0 0%, #FBE3D2 100%);border:2px solid #E8A722;border-radius:14px;padding:18px 24px;margin:18px 0 22px;font-family:'Poppins',sans-serif;text-align:center;display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap}
+.urgency-banner .ic{font-size:24px;line-height:1}
+.urgency-banner .txt{font-size:15px;font-weight:800;color:#8B5A1F;letter-spacing:0.5px}
+.urgency-banner .txt strong{color:#C9303B;font-weight:900;text-transform:uppercase}
 
-.cta-nota{
-  font-family:'DM Sans',sans-serif;
-  font-size:14px;
-  color:var(--testo-soft);
-  text-align:center;
-  margin-top:16px;
-  font-weight:500;
-}
-.cta-nota strong{color:var(--rosso);font-weight:600}
+/* GARANZIA — nuova struttura split */
+.garanzia-box{background:white;border-radius:16px;padding:30px 34px;margin:32px 0 8px;font-family:'Poppins',sans-serif;border:1px solid var(--linea);box-shadow:0 6px 22px rgba(15,20,25,0.06);position:relative;overflow:hidden}
+.garanzia-box::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg, var(--brand) 0%, #5FB880 50%, var(--brand) 100%)}
+.garanzia-eyebrow{display:inline-block;font-size:11px;font-weight:800;color:var(--brand);letter-spacing:2px;text-transform:uppercase;background:var(--brand-soft);padding:6px 13px;border-radius:100px;margin-bottom:12px;line-height:1}
+.corpo .garanzia-box h3.gar-title{font-size:26px;font-weight:800;color:var(--testo-scuro);line-height:1.2;letter-spacing:-0.02em;margin:0 0 8px;text-align:left}
+.garanzia-tagline{font-size:15px;color:var(--testo-soft);font-style:italic;margin-bottom:22px;line-height:1.5}
+.garanzia-split{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:8px 0 20px}
+.gar-card{background:var(--bg);border-radius:12px;padding:22px 22px;border:1px solid var(--linea);position:relative}
+.gar-card.positive{background:#F0F7EE;border-color:#C5DDC1}
+.gar-card.warning{background:#FDF2EB;border-color:#F0CCB0}
+.gar-card .gar-tempo{display:flex;align-items:center;gap:10px;font-size:11px;font-weight:800;letter-spacing:1.4px;text-transform:uppercase;margin-bottom:10px;line-height:1}
+.gar-card.positive .gar-tempo{color:var(--brand)}
+.gar-card.warning .gar-tempo{color:#B25522}
+.gar-card .gar-tempo .num{flex-shrink:0;width:28px;height:28px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:12px;font-weight:900;color:white;letter-spacing:0;background:var(--brand)}
+.gar-card.warning .gar-tempo .num{background:#D9531E}
+.gar-card .gar-action{font-size:15px;font-weight:800;color:var(--testo-scuro);line-height:1.3;margin-bottom:8px;letter-spacing:-0.01em}
+.gar-card.positive .gar-action{color:var(--brand)}
+.gar-card.warning .gar-action{color:#B25522}
+.gar-card .gar-body{font-size:13px;line-height:1.55;color:var(--testo)}
+.gar-card .gar-body strong{color:var(--testo-scuro);font-weight:700}
+.garanzia-foot{font-size:14px;color:var(--testo);line-height:1.6;padding-top:18px;border-top:1px solid var(--linea);text-align:center}
+.garanzia-foot strong{color:var(--testo-scuro);font-weight:700}
+@media(max-width:600px){.garanzia-split{grid-template-columns:1fr}.garanzia-box{padding:26px 22px}}
 
-/* ====== CORPO EMOZIONALE (sinistra per leggibilità copy lungo) ====== */
-.corpo{
-  padding:72px 0 40px;
-  background:var(--sabbia);
-}
+/* PULLMAN — Grid città */
+.pullman-intro{text-align:center;font-size:17px;line-height:1.6;color:var(--testo);margin:24px auto 8px;max-width:680px;font-family:'Poppins',sans-serif}
+.pullman-intro strong{color:var(--testo-scuro);font-weight:700}
+.pullman-claim{text-align:center;font-size:18px;font-weight:700;color:var(--testo-scuro);margin:22px auto 16px;max-width:640px;font-family:'Poppins',sans-serif;line-height:1.4}
+.pullman-claim strong{color:var(--cta)}
+.pullman-grid{display:flex;flex-direction:column;gap:14px;margin:26px 0 18px;max-width:620px;margin-left:auto;margin-right:auto}
+.bus-ticket{background:white;border-radius:12px;padding:18px 26px;border:1px solid var(--linea);box-shadow:0 4px 14px rgba(15,20,25,0.06);position:relative;font-family:'Poppins',sans-serif;display:flex;align-items:center;gap:0;transition:transform 0.2s, box-shadow 0.2s}
+.bus-ticket:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(15,20,25,0.09)}
+.bus-ticket::before,.bus-ticket::after{content:"";position:absolute;top:50%;transform:translateY(-50%);width:20px;height:20px;background:var(--ticket-bg, var(--bg));border-radius:50%;border:1px solid var(--linea);z-index:1}
+.bus-ticket::before{left:-10px}
+.bus-ticket::after{right:-10px}
+.bus-ticket .ticket-left{flex-shrink:0;width:80px;text-align:center;padding-right:22px;border-right:2px dashed var(--linea);position:relative}
+.bus-ticket .ticket-label{display:block;font-size:9px;font-weight:800;color:var(--brand);letter-spacing:1.4px;text-transform:uppercase;margin-bottom:6px;line-height:1}
+.bus-ticket .ticket-ic{font-size:30px;line-height:1}
+.bus-ticket .ticket-center{flex:1;min-width:0;padding:0 22px}
+.bus-ticket .ticket-citta{font-size:16px;font-weight:800;color:var(--testo-scuro);line-height:1.3;letter-spacing:-0.01em;margin-bottom:6px}
+.bus-ticket .ticket-tag{display:inline-block;font-size:10px;font-weight:800;color:var(--brand);background:var(--brand-soft);padding:4px 10px;border-radius:100px;letter-spacing:0.8px;text-transform:uppercase;line-height:1}
+.bus-ticket .ticket-right{flex-shrink:0;text-align:right;padding-left:18px;border-left:2px dashed var(--linea)}
+.bus-ticket .ticket-prezzo{font-size:30px;font-weight:900;color:var(--brand);letter-spacing:-0.025em;line-height:1;display:block}
+.bus-ticket .ticket-prezzo-meta{display:block;font-size:10px;color:var(--testo-soft);font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-top:5px}
+@media(max-width:560px){.bus-ticket{padding:16px 22px}.bus-ticket .ticket-left{width:60px;padding-right:14px}.bus-ticket .ticket-center{padding:0 14px}.bus-ticket .ticket-right{padding-left:14px}.bus-ticket .ticket-ic{font-size:24px}.bus-ticket .ticket-citta{font-size:14px}.bus-ticket .ticket-prezzo{font-size:24px}.bus-ticket .ticket-label{font-size:8px}}
+.pullman-save{text-align:center;background:var(--brand-soft);border-radius:12px;padding:16px 22px;margin:18px auto 14px;max-width:640px;font-family:'Poppins',sans-serif;font-size:15px;color:var(--testo);line-height:1.55;border:1px solid #C5DDC1}
+.pullman-save strong{color:var(--brand);font-weight:800}
+.pullman-note{text-align:center;font-size:13px;color:var(--testo-soft);font-style:italic;max-width:640px;margin:0 auto;font-family:'Poppins',sans-serif;line-height:1.5}
+@media(max-width:560px){.pullman-grid{grid-template-columns:1fr}}
 
-.corpo p{
-  font-family:'DM Sans',sans-serif;
-  font-size:19px;
-  line-height:1.65;
-  color:var(--inchiostro);
-  margin-bottom:22px;
-}
+/* FAQ — Accordion */
+.faq-list{margin:30px 0 18px;display:grid;gap:12px}
+.faq-item{background:white;border-radius:12px;border:1px solid var(--linea);overflow:hidden;box-shadow:0 3px 12px rgba(15,20,25,0.04);font-family:'Poppins',sans-serif;transition:box-shadow 0.2s}
+.faq-item:hover{box-shadow:0 6px 18px rgba(15,20,25,0.08)}
+.faq-item[open]{box-shadow:0 8px 24px rgba(15,20,25,0.09);border-color:#C5DDC1}
+.faq-item summary{padding:20px 24px;cursor:pointer;font-size:16px;font-weight:700;color:var(--testo-scuro);line-height:1.4;letter-spacing:-0.01em;display:flex;align-items:flex-start;gap:14px;list-style:none;position:relative;user-select:none}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:"+";margin-left:auto;font-size:24px;font-weight:300;color:var(--brand);transition:transform 0.25s;flex-shrink:0;line-height:1}
+.faq-item[open] summary::after{transform:rotate(45deg)}
+.faq-item summary .q-mark{flex-shrink:0;color:var(--cta);font-weight:900;font-size:18px;line-height:1.3}
+.faq-item .answer{padding:0 24px 22px;font-size:15px;line-height:1.65;color:var(--testo);border-top:1px solid var(--linea);padding-top:18px;margin-top:0}
+.faq-item .answer p{margin-bottom:12px}
+.faq-item .answer p:last-child{margin-bottom:0}
+.faq-item .answer strong{color:var(--testo-scuro);font-weight:700}
+.faq-item .answer em{font-style:italic;color:var(--testo-soft)}
 
-.corpo p.intro{
-  font-family:'Fraunces',serif;
-  font-size:clamp(22px,2.9vw,27px);
-  line-height:1.4;
-  color:var(--petrolio-scuro);
-  font-weight:600;
-  margin-bottom:38px;
-  letter-spacing:-0.01em;
-  text-align:center;
-}
+/* FORM contatto */
+.form-section{background:white;border-radius:18px;padding:36px 38px;margin:24px 0 18px;border:2px solid var(--brand);box-shadow:0 8px 28px rgba(46,95,43,0.12);font-family:'Poppins',sans-serif}
+.form-section .form-title{font-size:22px;font-weight:800;color:var(--testo-scuro);text-align:center;margin-bottom:6px;line-height:1.3;letter-spacing:-0.015em}
+.form-section .form-sub{font-size:14px;color:var(--testo-soft);text-align:center;margin-bottom:24px;line-height:1.5;font-style:italic}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
+.form-field{display:flex;flex-direction:column;gap:6px}
+.form-field.full{grid-column:1 / -1}
+.form-field label{font-size:12px;font-weight:700;color:var(--testo-scuro);letter-spacing:0.5px;text-transform:uppercase}
+.form-field label .req{color:var(--cta)}
+.form-field input,.form-field select{font-family:'Poppins',sans-serif;font-size:15px;color:var(--testo-scuro);padding:13px 16px;border:1.5px solid var(--linea);border-radius:10px;background:var(--bg);transition:border-color 0.2s, background 0.2s;font-weight:500}
+.form-field input:focus,.form-field select:focus{outline:none;border-color:var(--brand);background:white}
+.form-field input::placeholder{color:#B0B0B0;font-style:italic}
+.form-consent{display:flex;align-items:flex-start;gap:10px;margin:20px 0 20px;font-size:13px;line-height:1.55;color:var(--testo);font-family:'Poppins',sans-serif}
+.form-consent input{flex-shrink:0;margin-top:3px;width:18px;height:18px;accent-color:var(--brand)}
+.form-consent label{cursor:pointer}
+.form-consent .req{color:var(--cta);font-weight:800}
+@media(max-width:560px){.form-grid{grid-template-columns:1fr}.form-section{padding:28px 24px}}
 
-.corpo .scena{
-  color:var(--testo);
-  font-size:19px;
-}
+/* STEP list closing */
+.step-list{counter-reset:step;list-style:none;padding:0;margin:24px 0;display:grid;gap:12px}
+.step-list li{counter-increment:step;background:white;border-radius:12px;padding:18px 22px 18px 64px;border:1px solid var(--linea);box-shadow:0 3px 12px rgba(15,20,25,0.04);font-family:'Poppins',sans-serif;font-size:15px;line-height:1.5;color:var(--testo);position:relative}
+.step-list li::before{content:counter(step);position:absolute;left:18px;top:50%;transform:translateY(-50%);width:32px;height:32px;background:var(--brand);color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:14px;box-shadow:0 3px 10px rgba(46,95,43,0.25)}
+.step-list strong{color:var(--testo-scuro);font-weight:700}
 
-/* Quote del genitore */
-.corpo .virgolette{
-  display:block;
-  font-family:'Fraunces',serif;
-  font-style:italic;
-  font-weight:600;
-  font-size:clamp(22px,2.8vw,26px);
-  color:var(--petrolio);
-  padding:0 0 0 24px;
-  border-left:3px solid var(--rosso);
-  margin:6px 0 28px;
-  line-height:1.4;
-}
+/* P.S. section */
+.ps-section{font-family:'Poppins',sans-serif;margin:24px 0 18px;text-align:left}
+.ps-mark{display:inline-block;font-family:Georgia, serif;font-size:54px;font-weight:900;color:var(--cta);line-height:1;letter-spacing:-0.04em;margin-bottom:14px;line-height:1}
+.ps-section p{font-size:17px;line-height:1.7;color:var(--testo);margin-bottom:18px}
+.ps-section p:last-child{margin-bottom:0}
+.ps-section strong{color:var(--testo-scuro);font-weight:700}
+.ps-section .scadenza-hl{background:#FFF6E0;color:#8B5A1F;font-weight:800;padding:2px 8px;border-radius:4px}
+.ps-section .risparmio-hl{color:var(--cta);font-weight:800}
 
-/* Urla del bambino - MAIUSCOLO come da copy originale */
-.corpo .urlo{
-  display:block;
-  font-family:'Fraunces',serif;
-  font-weight:800;
-  font-size:clamp(20px,2.7vw,25px);
-  color:var(--rosso-scuro);
-  letter-spacing:0.005em;
-  padding:0 0 0 24px;
-  border-left:3px solid var(--petrolio);
-  margin:0 0 16px;
-  line-height:1.28;
-}
-.corpo .urlo:last-of-type{margin-bottom:30px}
+/* CTA finale big */
+.cta-finale{margin:36px 0 8px;text-align:center}
+.cta-finale-title{font-family:'Poppins',sans-serif;font-size:22px;font-weight:800;color:var(--testo-scuro);margin-bottom:18px;letter-spacing:-0.015em;line-height:1.3}
 
-/* Stacco editoriale */
-.corpo .stacco{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  gap:14px;
-  margin:52px 0;
-  color:var(--petrolio);
-}
-.corpo .stacco::before,
-.corpo .stacco::after{
-  content:"";
-  flex:0 0 60px;
-  height:1px;
-  background:var(--linea);
-}
-.corpo .stacco-simbolo{
-  font-family:'Fraunces',serif;
-  font-size:22px;
-  font-style:italic;
-  font-weight:400;
-  color:var(--petrolio-medio);
-  letter-spacing:6px;
+/* Foto placeholder generico */
+.foto-placeholder{width:100%;aspect-ratio:16/9;border-radius:14px;background:linear-gradient(135deg,#7A8190 0%,#3F4750 100%);position:relative;overflow:hidden;margin:18px 0;box-shadow:0 6px 20px rgba(15,20,25,0.12)}
+.foto-placeholder::before{content:attr(data-label);position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;color:white;font-family:'Poppins',sans-serif;font-size:12px;font-weight:600;letter-spacing:1px;text-transform:uppercase;background:rgba(15,20,25,0.45);line-height:1.5}
+
+@media(max-width:560px){
+  .giorno{padding-left:60px;padding-bottom:32px}
+  .giorno::before{left:19px;top:46px}
+  .giorno .pallino{width:42px;height:42px;font-size:17px;border-width:2px}
+  .giorno-title{font-size:20px}
+  .giorno-sub{font-size:16px}
 }
 
-/* Domanda di chiusura sezione */
-.domanda{
-  font-family:'Fraunces',serif;
-  font-weight:600;
-  font-size:clamp(24px,3.4vw,30px);
-  color:var(--petrolio-scuro);
-  line-height:1.25;
-  margin:42px 0 16px;
-  letter-spacing:-0.015em;
-  text-align:center;
-}
+@media(max-width:640px){body{font-size:16px}.cta-btn{padding:20px 24px}.foto-hero{border-radius:12px}}
 
-.risposta-no{
-  font-family:'Fraunces',serif;
-  font-weight:800;
-  font-size:clamp(36px,5.8vw,52px);
-  background:linear-gradient(135deg, var(--rosso-acceso) 0%, var(--rosso) 100%);
-  -webkit-background-clip:text;
-  background-clip:text;
-  -webkit-text-fill-color:transparent;
-  line-height:1.05;
-  letter-spacing:-0.025em;
-  margin:14px 0 22px;
-  text-align:center;
-}
-
-.chiusa{
-  font-family:'Fraunces',serif;
-  font-weight:600;
-  font-size:clamp(22px,2.9vw,27px);
-  color:var(--petrolio-scuro);
-  line-height:1.3;
-  margin-bottom:32px;
-  letter-spacing:-0.012em;
-  text-align:center;
-}
-
-/* Responsive */
-@media(max-width:640px){
-  body{font-size:16px}
-  .hero{padding:40px 0 30px}
-  .corpo{padding:48px 0 30px}
-  .corpo p{font-size:17px}
-  .cta-btn{padding:20px 24px}
-  .foto-hero{border-radius:18px}
-  .corpo .stacco::before,
-  .corpo .stacco::after{flex-basis:36px}
-}
 </style>
 </head>
 <body>
 
-<section class="hero">
+<section class="hero" id="hero-section">
   <div class="wrap">
-    <span class="eyebrow">TI PIACEREBBE LIBERARE TUO FIGLIO DALLE "CATENE DIGITALI" DI SMARTPHONE, TABLET E PLAYSTATION QUESTA ESTATE?</span>
+    <span class="trust-badge tw-block" data-tw-name="Trust badge">
+      <span class="dot"></span>
+      DAL 2012
+      <span class="sep"></span>
+      14 ANNI DI ESPERIENZA
+    </span>
 
-    <h1>ComeUnaVolta#Camp Estate 2026: il <span class="highlight">METODO DIGITAL-DETOX™</span> dove i bambini riscoprono il piacere delle avventure all'aria aperta e delle amicizie reali.</h1>
+    <span class="eyebrow tw-block" data-tw-name="Eyebrow">TI PIACEREBBE LIBERARE TUO FIGLIO DALLE "CATENE DIGITALI" DI SMARTPHONE, TABLET E PLAYSTATION QUESTA ESTATE?</span>
 
-    <p class="sub">A <strong>Tonezza del Cimone (VI)</strong>, primo "Borgo del Respiro" certificato del Veneto.</p>
+    <h1 class="tw-block" data-tw-name="H1 · Headline">ComeUnaVolta#Camp Estate 2026: il <span class="highlight">METODO DIGITAL-DETOX™</span> dove i bambini riscoprono il piacere delle avventure all'aria aperta e delle amicizie reali.</h1>
 
-    <div class="meta">
+    <div class="foto-hero tw-block" data-tw-name="Foto hero"></div>
+
+    <p class="sub tw-block" data-tw-name="Sub-headline">A <strong>Tonezza del Cimone (VI)</strong>, primo "Borgo del Respiro" certificato del Veneto.</p>
+
+    <div class="meta tw-block" data-tw-name="Meta riga">
       <span class="meta-item"><span class="ic"></span> Hotel Bucaneve</span>
       <span class="meta-sep">·</span>
       <span class="meta-item"><span class="ic"></span> 7-14 anni</span>
@@ -369,44 +463,966 @@ h1 .highlight{
       <span class="meta-item"><span class="ic"></span> Luglio-Agosto 2026</span>
     </div>
 
-    <div class="foto-hero"></div>
-
     <div class="cta-block">
-      <a href="#prenota" class="cta-btn">OK, VOGLIO PRENOTARE IL POSTO PER MIO FIGLIO! <span class="freccia">→</span></a>
-      <p class="cta-nota">Offerta valida fino al <strong>31 maggio</strong>.</p>
+      <a href="#prenota" class="cta-btn tw-block" data-tw-name="CTA button">OK, VOGLIO PRENOTARE IL POSTO PER MIO FIGLIO! <span class="freccia">→</span></a>
+      <p class="cta-nota tw-block" data-tw-name="CTA nota">Offerta valida fino al <strong>31 maggio</strong>.</p>
     </div>
   </div>
 </section>
 
-<section class="corpo">
+<section class="corpo" id="corpo-section">
   <div class="wrap-narrow">
-    <p class="intro">Caro genitore che stai leggendo questa pagina…<br>Te lo ritrovi davanti ogni pomeriggio. Ed è una stretta al cuore.</p>
+    <p class="intro tw-block" data-tw-name="Intro">Caro genitore che stai leggendo questa pagina…<br>Te lo ritrovi davanti ogni pomeriggio. Ed è una stretta al cuore.</p>
 
-    <p class="scena">Tuo figlio, rannicchiato sul divano, il viso illuminato dalla luce bluastra dello smartphone.</p>
-    <p>Non si muove.</p>
-    <p>Non parla.</p>
-    <p>Le dita scorrono meccanicamente sullo schermo, lo sguardo fisso e vuoto.</p>
-    <p>Passano le ore. E lui non se ne accorge nemmeno.</p>
+    <p class="tw-block" data-tw-name="Body paragrafo">Tuo figlio, rannicchiato sul divano, il viso illuminato dalla luce bluastra dello smartphone.</p>
+    <p class="tw-block" data-tw-name="Body paragrafo">Non si muove.</p>
+    <p class="tw-block" data-tw-name="Body paragrafo">Non parla.</p>
+    <p class="tw-block" data-tw-name="Body paragrafo">Le dita scorrono meccanicamente sullo schermo, lo sguardo fisso e vuoto.</p>
+    <p class="tw-block" data-tw-name="Body paragrafo">Passano le ore. E lui non se ne accorge nemmeno.</p>
 
-    <span class="virgolette">«Amore, basta telefono per oggi.»</span>
+    <span class="virgolette tw-block" data-tw-name="Quote genitore">«Amore, basta telefono per oggi.»</span>
 
-    <p>È come se premessi un interruttore. Il viso assente si trasforma in una maschera di rabbia e frustrazione. Le lacrime spuntano, la voce si alza:</p>
+    <p class="tw-block" data-tw-name="Body paragrafo">È come se premessi un interruttore. Il viso assente si trasforma in una maschera di rabbia e frustrazione. Le lacrime spuntano, la voce si alza:</p>
 
-    <span class="urlo">«ANCORA CINQUE MINUTI!»</span>
-    <span class="urlo">«NON È GIUSTO, HO APPENA INIZIATO!»</span>
-    <span class="urlo">«TUTTI I MIEI COMPAGNI POSSONO USARLO QUANTO VOGLIONO!»</span>
+    <span class="urlo tw-block" data-tw-name="Urlo bambino">«ANCORA CINQUE MINUTI!»</span>
+    <span class="urlo tw-block" data-tw-name="Urlo bambino">«NON È GIUSTO, HO APPENA INIZIATO!»</span>
+    <span class="urlo tw-block" data-tw-name="Urlo bambino">«TUTTI I MIEI COMPAGNI POSSONO USARLO QUANTO VOGLIONO!»</span>
 
-    <p>E mentre lotti questa battaglia quotidiana, il tempo passa inesorabile.</p>
+    <p class="tw-block" data-tw-name="Body paragrafo">E mentre lotti questa battaglia quotidiana, il tempo passa inesorabile.</p>
 
-    <p>L'infanzia di tuo figlio sta scivolando via, giorno dopo giorno. E i ricordi che sta costruendo non sono di avventure nel parco o di risate con gli amici. Sono ricordi di video, notifiche e like.</p>
+    <p class="tw-block" data-tw-name="Body paragrafo">L'infanzia di tuo figlio sta scivolando via, giorno dopo giorno. E i ricordi che sta costruendo non sono di avventure nel parco o di risate con gli amici. Sono ricordi di video, notifiche e like.</p>
 
-    <div class="stacco">
-      <span class="stacco-simbolo">✦ ✦ ✦</span>
+    <p class="domanda tw-block" data-tw-name="Domanda">È <strong>NORMALE</strong> tutto questo? Sei <strong>TU</strong> che stai sbagliando qualcosa?</p>
+    <p class="risposta-no tw-block" data-tw-name="Risposta NO">NO. NON È COLPA TUA.</p>
+    <p class="chiusa tw-block" data-tw-name="Chiusa">È una battaglia persa in partenza.</p>
+
+    <h3 class="sotto-h tw-block" data-tw-name="Sotto-H — Industria">A casa, da sola, contro un'industria <strong>progettata per non lasciarti vincere</strong>.</h3>
+
+    <p class="tw-block" data-tw-name="Body — Impossibile cambiare pattern">È <span class="skim">praticamente impossibile cambiare il pattern</span>.</p>
+
+    <p class="tw-block" data-tw-name="Body — Giganti MILIARDI">I giganti tecnologici hanno investito <strong>MILIARDI</strong> studiando come rendere i loro prodotti irresistibili.</p>
+
+    <p class="tw-block" data-tw-name="Body — Squadre psicologi">Squadre di <strong>psicologi, neuroscienziati e ingegneri</strong> lavorano con un unico obiettivo: <span class="skim">catturare l'attenzione dei nostri figli</span>.</p>
+
+    <h3 class="sotto-h tw-block" data-tw-name="Sotto-H — Gli altri minimizzano">E intanto, intorno a te, gli altri <strong>minimizzano</strong>.</h3>
+
+    <span class="voce-esterna tw-block" data-tw-name="Voce — Amica">Forse una tua amica ti dice che <em>«ai bambini di oggi succede a tutti, è normale»</em>.</span>
+
+    <span class="voce-esterna tw-block" data-tw-name="Voce — Maestre">Forse a scuola le maestre <strong>alzano le spalle</strong>, perché in classe è uguale per tutti.</span>
+
+    <span class="voce-esterna tw-block" data-tw-name="Voce — A casa">Forse a casa qualcuno ti dice che <em>«esageri»</em>, che ai suoi tempi i bambini sapevano stare composti.</span>
+
+    <span class="voce-esterna tw-block" data-tw-name="Voce — Social">Forse sui social vedi pubblicate altre mamme con i figli a cavallo o sul campo da tennis, e ti chiedi <strong>cosa ti sta sfuggendo</strong>.</span>
+
+    <p class="frase-chiave pain tw-block" data-tw-name="Frase chiave — Non ti sta sfuggendo">Non ti sta sfuggendo niente. Quello che vedi tu è reale. <strong>È che gli altri lo vedono dopo.</strong></p>
+
+    <h3 class="sotto-h tw-block" data-tw-name="Sotto-H — Ragione biologica">C'è anche una ragione <strong>biologica</strong> che pochi raccontano.</h3>
+
+    <p class="tw-block" data-tw-name="Body — Corteccia prefrontale">La <strong>corteccia prefrontale</strong> del cervello (la parte che gestisce il <em>«no, non ora»</em>) completa la sua maturazione <span class="skim">intorno ai 25 anni</span>.</p>
+
+    <p class="tw-block" data-tw-name="Body — Autostrada metafora">Chiedere a un dodicenne di autoregolarsi su un dispositivo che ha in tasca equivale a chiedergli di <span class="skim">guidare in autostrada con sei anni di anticipo</span>.</p>
+
+    <p class="tw-block" data-tw-name="Body — Cervello non costruito">Anche se lui vuole farlo, <strong>il cervello non è ancora costruito per riuscirci</strong>.</p>
+
+    <h3 class="sotto-h tw-block" data-tw-name="Sotto-H — Numeri parlano">E i numeri di oggi <strong>parlano chiaro</strong>.</h3>
+
+    <div class="stat-list">
+      <div class="stat-row tw-block" data-tw-name="Stat — Urgenze neuropsichiatria">
+        <span class="ic">📊</span>
+        <div class="stat-text"><strong>+500% urgenze in neuropsichiatria infantile in 10 anni</strong>, da 237 a 1.415 casi annui.<span class="fonte">Dati Bambino Gesù di Roma, IRCCS</span></div>
+      </div>
+      <div class="stat-row tw-block" data-tw-name="Stat — Censis genitori">
+        <span class="ic">📊</span>
+        <div class="stat-text"><strong>Il 66,7% dei genitori italiani vorrebbe il divieto di smartphone in classe.</strong> Il 90,4% degli stessi genitori lo dà ai figli <strong>entro i 12 anni</strong>.<span class="fonte">Censis 2026</span></div>
+      </div>
+      <div class="stat-row tw-block" data-tw-name="Stat — Bicocca esame">
+        <span class="ic">📊</span>
+        <div class="stat-text">I bambini che aprono il primo profilo social <strong>prima della 5ª elementare</strong> perdono in media <strong>0,9 punti all'esame di terza media</strong>.<span class="fonte">Università Bicocca, Marco Gui — INVALSI longitudinale N=6.609</span></div>
+      </div>
+      <div class="stat-row tw-block" data-tw-name="Stat — Australia">
+        <span class="ic">📊</span>
+        <div class="stat-text"><strong>L'Australia, a dicembre 2024, è diventata la prima nazione al mondo a vietare i social agli under-16.</strong></div>
+      </div>
     </div>
 
-    <p class="domanda">È <strong>NORMALE</strong> tutto questo? Sei <strong>TU</strong> che stai sbagliando qualcosa?</p>
-    <p class="risposta-no">NO. NON È COLPA TUA.</p>
-    <p class="chiusa">È una battaglia persa in partenza.</p>
+    <p class="frase-chiave tw-block" data-tw-name="Frase chiave — Non sei sola">Non sei sola. <strong>Sei la maggioranza che ha visto il problema per prima.</strong></p>
+
+    <p class="tw-block" data-tw-name="Body — Industria 24 ore">Ma a casa, da sola, contro un'industria che lavora 24 ore al giorno, è <strong>strutturalmente difficile cambiare il pattern</strong>.</p>
+  </div>
+</section>
+
+<section class="corpo band-bianco" id="soluzione-section">
+  <span class="divisore-top"></span>
+  <div class="wrap-narrow">
+    <span class="section-eyebrow tw-block" data-tw-name="Eyebrow — La Soluzione">La Soluzione</span>
+    <h2 class="tw-block" data-tw-name="H2 — Metodo Digital-Detox">Il <span class="tm">Metodo Digital-Detox™</span> in 7 fasi.</h2>
+
+    <p class="tw-block" data-tw-name="Body — A differenza altri camp">A differenza di qualsiasi altro camp estivo in Italia, <strong>ComeUnaVolta#Camp</strong> ha sviluppato in <strong>14 anni di esperienza (dal 2012 a oggi)</strong> un percorso strutturato per "disintossicare" i bambini dalla tecnologia.</p>
+
+    <p class="tw-block" data-tw-name="Body — Tre punti concreti">La logica del Metodo poggia su <strong>tre punti molto concreti</strong>:</p>
+
+    <div class="punti-list">
+      <div class="punto-item tw-block" data-tw-name="Punto 1 — Non autoregolazione" data-num="1">
+        <div class="punto-num-cerchio">1</div>
+        <div class="punto-body">
+          <strong class="titolo">Tuo figlio non deve esercitare autoregolazione.</strong>
+          Tutti gli schermi che ha portato da casa (smartphone, tablet, console portatili) sono <strong>custoditi dallo staff</strong>. PlayStation, computer e televisione sono rimasti a casa. Gli viene <strong>tolta l'opzione di cedere</strong>, prima ancora di chiedergli di resistere.
+        </div>
+      </div>
+      <div class="punto-item tw-block" data-tw-name="Punto 2 — Non resiste da solo" data-num="2">
+        <div class="punto-num-cerchio">2</div>
+        <div class="punto-body">
+          <strong class="titolo">Tuo figlio non resiste da solo.</strong>
+          È uno tra <strong>trenta coetanei</strong> nelle stesse condizioni. Il cervello prepuberale è strutturato per <strong>imitare il gruppo</strong> molto più di quanto sia strutturato per resistere agli impulsi.
+        </div>
+      </div>
+      <div class="punto-item tw-block" data-tw-name="Punto 3 — Otto giorni" data-num="3">
+        <div class="punto-num-cerchio">3</div>
+        <div class="punto-body">
+          <strong class="titolo">Lo schermo è inaccessibile per otto giorni di fila.</strong>
+          Non un'ora al giorno, non un weekend. <strong>Otto giorni consecutivi.</strong> La letteratura scientifica documenta che basta una settimana di astinenza per misurare benefici reali sul benessere (Allcott, <em>American Economic Review</em> 2020). A <strong>due settimane</strong>, uno studio randomizzato controllato pubblicato su <strong>JAMA Network Open 2024</strong> ha misurato miglioramenti significativi nel comportamento sociale, in particolare nelle <strong>relazioni fra pari</strong>.
+        </div>
+      </div>
+    </div>
+
+    <p class="tw-block" data-tw-name="Body — Otto giorni finestra">Otto giorni di Camp cadono dentro la finestra fra una settimana e due, dentro l'intervallo in cui i benefici dell'astinenza dagli schermi diventano <strong>scientificamente misurabili</strong>.</p>
+
+    <h3 class="tw-block" data-tw-name="H3 — Perché funziona">Perché il nostro Metodo funziona davvero.</h3>
+
+    <p class="tw-block" data-tw-name="Body — Metodo studiato per">Il Metodo Digital-Detox™ è studiato per:</p>
+
+    <ul class="check-list tw-block" data-tw-name="Check list — 4 benefici">
+      <li><span class="ic">✓</span><span><strong>Riattivare gradualmente i circuiti cerebrali del piacere naturale</strong> nei bambini</span></li>
+      <li><span class="ic">✓</span><span><strong>Risvegliare i sensi sopiti dalla sovrastimolazione digitale</strong></span></li>
+      <li><span class="ic">✓</span><span><strong>Ricostruire l'autostima</strong> basata su competenze reali, non sui "like"</span></li>
+      <li><span class="ic">✓</span><span><strong>Insegnare strategie per gestire la tecnologia</strong> al rientro a casa</span></li>
+    </ul>
+
+    <p class="tw-block" data-tw-name="Body — Ogni giorno fase">Ogni giorno rappresenta una fase importante nel processo di liberazione dalla dipendenza digitale.</p>
+
+  </div>
+</section>
+
+<section class="corpo band-crema-scuro" id="programma-section">
+  <span class="divisore-top"></span>
+  <div class="wrap-narrow">
+
+    <h2 class="tw-block" data-tw-name="H2 — Andiamo nel dettaglio">Andiamo nel dettaglio. <span class="tm">Cosa succede a tuo figlio</span>, giorno per giorno, dal lunedì al lunedì successivo.</h2>
+
+    <div class="timeline">
+
+      <div class="giorno" style="--giorno-color:#5FB880">
+        <div class="pallino">1</div>
+        <div class="giorno-head tw-block" data-tw-name="Giorno 1 — Header">
+          <span class="giorno-eyebrow">🟢 Giorno 1</span>
+          <h3 class="giorno-title">"Lo Stacco".</h3>
+          <p class="giorno-sub">Il respiro che mancava.</p>
+        </div>
+        <div class="giorno-body">
+          <p class="tw-block" data-tw-name="G1 — Cerimonia consegna">Si inizia con la <strong>cerimonia di consegna dei dispositivi</strong>. Smartphone, tablet, console portatili: tutto quello che ha portato da casa viene consegnato al gruppo. Un rituale che il ragazzo fa davanti agli altri trenta che stanno facendo lo stesso. Separarsi dagli schermi in un gruppo che si separa dagli schermi <strong>cambia il senso del gesto</strong>, rispetto al farlo da soli a casa.</p>
+          <p class="tw-block" data-tw-name="G1 — Cassaforte e chiamata">I dispositivi vengono custoditi in <strong>cassaforte</strong> dallo staff per tutto il giorno. <strong>L'unica eccezione è la chiamata serale a casa</strong>: ogni sera, intorno alle 18:30, lo staff consegna a ciascun ragazzo lo smartphone (per chi l'ha portato) per 10-15 minuti col solo scopo di chiamare i genitori e raccontare la giornata. Molti bambini fra i 7 e gli 11 anni non hanno ancora uno smartphone personale: usano quello dell'animatore, senza problemi. Il dispositivo serve a fare la chiamata, davanti agli animatori, niente Instagram, niente WhatsApp, niente TikTok, niente giochi. Finita la chiamata, il dispositivo torna in cassaforte.</p>
+          <p class="tw-block" data-tw-name="G1 — Cineforum">Durante il primo giorno, i bambini cominciano a respirare un'aria nuova. La sera si chiude con <strong>cineforum sotto le stelle</strong>.</p>
+        </div>
+      </div>
+
+      <div class="giorno" style="--giorno-color:#F2B705">
+        <div class="pallino">2</div>
+        <div class="giorno-head tw-block" data-tw-name="Giorno 2 — Header">
+          <span class="giorno-eyebrow">🟡 Giorno 2</span>
+          <h3 class="giorno-title">"La Disintossicazione".</h3>
+          <p class="giorno-sub">Il silenzio ritrovato.</p>
+        </div>
+        <div class="giorno-body">
+          <p class="tw-block" data-tw-name="G2 — Più impegnativo">Il giorno 2 è il più impegnativo, e lo sappiamo. La letteratura su 6.666 famiglie italiane (Di.Te./Lavenia 2025) misura che il <strong>57,7% dei bambini si arrabbia quando gli viene tolto il dispositivo, il 21,8% piange</strong>. È astinenza, e va attraversata.</p>
+          <p class="tw-block" data-tw-name="G2 — Attività corpo">Il nostro staff è formato per riempire la giornata con attività che richiedono corpo e attenzione: <strong>escursione al Bosco dei Giganti</strong> con pranzo al sacco, multisport sui campi sportivi dell'Hotel, giochi tradizionali in gruppo. La sera: giochi da tavolo, torneo di ping-pong e calcio balilla.</p>
+          <p class="tw-block" data-tw-name="G2 — Corpo torna a muoversi">È il momento in cui il corpo torna a muoversi liberamente dopo tanta immobilità davanti agli schermi.</p>
+        </div>
+      </div>
+
+      <div class="giorno" style="--giorno-color:#E08735">
+        <div class="pallino">3</div>
+        <div class="giorno-head tw-block" data-tw-name="Giorno 3 — Header">
+          <span class="giorno-eyebrow">🟠 Giorno 3</span>
+          <h3 class="giorno-title">"Il Risveglio".</h3>
+          <p class="giorno-sub">Toccare, sentire, vivere.</p>
+        </div>
+        <div class="giorno-body">
+          <p class="tw-block" data-tw-name="G3 — 72 ore neuroscienze"><strong>A 72 ore dalla consegna</strong>, le neuroscienze documentano i primi cambiamenti nei circuiti cerebrali del piacere (quelli che ogni volta si accendono al suono di una notifica).</p>
+          <p class="tw-block" data-tw-name="G3 — Si vede dai ragazzi">Si vede dai ragazzi: dormono meglio la notte fra il giorno 2 e il giorno 3, mangiano con più appetito, parlano di più a tavola.</p>
+          <p class="tw-block" data-tw-name="G3 — Programma malga karaoke">Programma di giornata: <strong>escursione in Malga con degustazione di prodotti tipici</strong>, formaggi, latte appena munto, vista sull'altopiano. La sera, <strong>karaoke</strong> tra risate e musica.</p>
+          <p class="tw-block" data-tw-name="G3 — Risveglio sensi">Inizia il risveglio dei sensi.</p>
+        </div>
+      </div>
+
+      <div class="giorno" style="--giorno-color:#4A90E2">
+        <div class="pallino">4</div>
+        <div class="giorno-head tw-block" data-tw-name="Giorno 4 — Header">
+          <span class="giorno-eyebrow">🔵 Giorno 4</span>
+          <h3 class="giorno-title">"La Connessione Vera".</h3>
+          <p class="giorno-sub">Volti senza filtro.</p>
+        </div>
+        <div class="giorno-body">
+          <p class="tw-block" data-tw-name="G4 — Grande Guerra">Mattina dedicata a <strong>multisport e ai sentieri della Grande Guerra</strong>, con visita all'<strong>Ossario del Monte Cimone</strong>: un'esperienza che connette i ragazzi con la storia e con valori profondi.</p>
+          <p class="tw-block" data-tw-name="G4 — Prià Beach falò">Pomeriggio al <strong>Prià Beach</strong>, un lago alpino. Sera: <strong>falò sotto le stelle con anguriata</strong>.</p>
+          <p class="tw-block" data-tw-name="G4 — Amicizie vere">È qui che nascono le amicizie vere, basate su esperienze vissute insieme. I bambini re-imparano a guardare negli occhi gli altri e a capire come si sentono davvero.</p>
+        </div>
+      </div>
+
+      <div class="giorno" style="--giorno-color:#C9303B">
+        <div class="pallino">5</div>
+        <div class="giorno-head tw-block" data-tw-name="Giorno 5 — Header">
+          <span class="giorno-eyebrow">🔴 Giorno 5</span>
+          <h3 class="giorno-title">"La Tensione".</h3>
+          <p class="giorno-sub">Il richiamo dello schermo.</p>
+        </div>
+        <div class="giorno-body">
+          <p class="tw-block" data-tw-name="G5 — Giorno più difficile">Spesso il giorno più difficile per chi è abituato al telefono.</p>
+          <p class="tw-block" data-tw-name="G5 — Sfide positive">Le attività della giornata trasformano la "voglia di telefono" in sfide positive: <strong>battesimo della sella</strong> (giro a cavallo strutturato), <strong>percorso Excalibur</strong> (rievocazione fantasy con prove fisiche), <strong>orienteering in notturna</strong> con bussola e cartina.</p>
+          <p class="tw-block" data-tw-name="G5 — Microsuccessi">Ogni attività produce un microsuccesso individuale che il ragazzo riconosce come suo: la paura di sedersi sulla sella superata, il percorso con la lanterna nel buio completato, la spada estratta dalla roccia.</p>
+        </div>
+      </div>
+
+      <div class="giorno" style="--giorno-color:#9B59B6">
+        <div class="pallino">6</div>
+        <div class="giorno-head tw-block" data-tw-name="Giorno 6 — Header">
+          <span class="giorno-eyebrow">🟣 Giorno 6</span>
+          <h3 class="giorno-title">"La Rinascita".</h3>
+          <p class="giorno-sub">Il gruppo che ormai è una squadra.</p>
+        </div>
+        <div class="giorno-body">
+          <p class="tw-block" data-tw-name="G6 — Bosco Meraviglie">I bambini esplorano il <strong>Bosco delle Meraviglie</strong>, visitano il mercato di Tonezza, pranzano nella <strong>Valle dei Ciliegi</strong>.</p>
+          <p class="tw-block" data-tw-name="G6 — Giochi Senza Frontiere">Pomeriggio dedicato ai <strong>Giochi Senza Frontiere di Tonezza</strong>: sfide a squadre, staffette, gare di tiro alla fune, corsa con i sacchi. Il senso della giornata è celebrare il gruppo che ormai si è formato.</p>
+          <p class="tw-block" data-tw-name="G6 — Discoteca">Sera: <strong>discoteca</strong> con musica e balli di gruppo.</p>
+        </div>
+      </div>
+
+      <div class="giorno" style="--giorno-color:#7A8190">
+        <div class="pallino">7</div>
+        <div class="giorno-head tw-block" data-tw-name="Giorno 7 — Header">
+          <span class="giorno-eyebrow">⚪ Giorno 7</span>
+          <h3 class="giorno-title">"Il Rientro".</h3>
+          <p class="giorno-sub">Il mondo là fuori ti aspetta, ma tu ora sei diverso.</p>
+        </div>
+        <div class="giorno-body">
+          <p class="tw-block" data-tw-name="G7 — Giro cavallo">Mattina: <strong>giro a cavallo nella natura</strong>, pazienza e connessione con un altro essere vivente.</p>
+          <p class="tw-block" data-tw-name="G7 — Tiro arco multisport">Pomeriggio: <strong>tiro con l'arco, multisport, giochi tradizionali</strong> che consolidano le abilità apprese durante la settimana.</p>
+          <p class="tw-block" data-tw-name="G7 — Breakdance">Sera: breakdance o hip-hop.</p>
+          <p class="tw-block" data-tw-name="G7 — Restituzione e Impegno">Prima di partire, i bambini partecipano a una <strong>cerimonia di restituzione dei dispositivi</strong> e firmano un <strong>Impegno Scritto</strong> personale: un foglio breve in cui ciascuno decide tre cose che vuole gestire in modo diverso una volta tornato a casa. Sono regole che il ragazzo si dà da solo, davanti al suo gruppo, dopo otto giorni in cui ha visto che si può stare bene altrimenti.</p>
+        </div>
+      </div>
+
+      <div class="giorno" style="--giorno-color:#1F2630">
+        <div class="pallino">8</div>
+        <div class="giorno-head tw-block" data-tw-name="Giorno 8 — Header">
+          <span class="giorno-eyebrow">⚫ Giorno 8</span>
+          <h3 class="giorno-title">"Arrivederci".</h3>
+        </div>
+        <div class="giorno-body">
+          <p class="tw-block" data-tw-name="G8 — Cerimonia finale">Mattina: cerimonia finale dei ricordi con lo staff e il gruppo, dopo otto giorni che tuo figlio si porta a casa <strong>nelle gambe, nello zaino e nel Diario</strong>. Poi partenza in pullman verso le città di rientro.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="cta-block cta-mid">
+      <a href="#prenota" class="cta-btn tw-block" data-tw-name="CTA — Mid programma">OK, VOGLIO PRENOTARE IL POSTO PER MIO FIGLIO! <span class="freccia">→</span></a>
+      <p class="cta-nota tw-block" data-tw-name="CTA nota mid">Offerta valida fino al <strong>31 maggio</strong>.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ TRE ELEMENTI UNICI ============ -->
+<section class="corpo" id="elementi-section" style="background:var(--bg)">
+  <div class="wrap-narrow">
+
+    <h2 class="tw-block" data-tw-name="H2 — Tre Elementi Unici">Tre elementi unici per i nostri <span class="tm">Camp estivi</span>.</h2>
+
+    <div class="elementi-list" style="margin-top:32px">
+
+      <div class="elemento-unico tw-block" data-tw-name="Elemento 1 — Diario di Bordo" style="--elem-color:#B8722E">
+        <div class="elem-banda">
+          <span class="pill">Elemento 1</span>
+          <span class="pill-name">Diario di Bordo</span>
+        </div>
+        <div class="elem-content">
+          <h3 class="elem-title">Diario di Bordo.</h3>
+          <p class="sub-elemento">Il quaderno che riapre la conversazione a casa.</p>
+          <p>Immagina tuo figlio nel salotto di casa, una <strong>domenica pomeriggio di settembre</strong>. Sul tavolo c'è il Diario di Bordo aperto sulla pagina del Giorno 5. Lui ti indica la firma in fondo, quella di quando ha completato il percorso Excalibur e <strong>ha estratto la spada dalla roccia</strong>. Gli occhi gli si illuminano. Ti racconta della notte con la lanterna durante l'orienteering, di quel suo nuovo amico di Bergamo, della discoteca del Giorno 6.</p>
+          <p>Per la prima volta dopo mesi <strong>vi parlate per più di cinque minuti</strong>, senza che lui chieda di riavere il telefono. Per la prima volta dopo mesi, <strong>gli occhi non sono spenti</strong>.</p>
+          <p>Il Diario di Bordo è il quaderno che tuo figlio <strong>compila lui stesso ogni giorno</strong> durante il Camp: cosa ha fatto, cosa l'ha colpito, le foto stampate dallo staff incollate accanto agli appunti, le dediche dei compagni di gruppo e degli animatori a fine settimana. È un quaderno suo, scritto a mano sua, che si porta a casa al rientro. E diventa il <strong>ponte di comunicazione</strong> fra te e tuo figlio nelle settimane successive, quando i racconti scivolerebbero altrimenti in <em>«è andato bene»</em>.</p>
+        </div>
+      </div>
+
+      <div class="elemento-unico tw-block" data-tw-name="Elemento 2 — Giochi Senza Frontiere" style="--elem-color:#D9531E">
+        <div class="elem-banda">
+          <span class="pill">Elemento 2</span>
+          <span class="pill-name">Giochi Senza Frontiere</span>
+        </div>
+        <div class="elem-content">
+          <h3 class="elem-title">I Giochi Senza Frontiere di Tonezza.</h3>
+          <p class="sub-elemento">Si impara vincendo e perdendo.</p>
+          <p>Staffette mozzafiato, gare di <strong>tiro alla fune</strong>, sfide di abilità come la corsa con i sacchi e l'orienteering.</p>
+          <p>Ogni partecipante riceverà un <strong>attestato di partecipazione</strong> e premi speciali per valorizzare risultati, spirito sportivo e supporto verso i compagni.</p>
+        </div>
+      </div>
+
+      <div class="elemento-unico tw-block" data-tw-name="Elemento 3 — Inglese Sicurezza Digitale" style="--elem-color:#2E5F2B">
+        <div class="elem-banda">
+          <span class="pill">Elemento 3</span>
+          <span class="pill-name">Inglese per la Sicurezza Digitale</span>
+        </div>
+        <div class="elem-content">
+          <h3 class="elem-title">Inglese per la sicurezza digitale.</h3>
+          <p class="sub-elemento">Protezione nel mondo online.</p>
+          <div class="warning-box tw-block" data-tw-name="Warning — Non corso grammatica">ATTENZIONE: non è un noioso corso di grammatica.</div>
+          <p>Tuo figlio imparerà a:</p>
+          <ul class="elemento-bullet">
+            <li><span><strong>Riconoscere parole di pericolo</strong> nei giochi online e nei social</span></li>
+            <li><span><strong>Identificare tentativi di cyberbullismo</strong> nascosti in espressioni inglesi apparentemente innocue</span></li>
+            <li><span><strong>Respingere e bloccare minacce</strong> con le giuste parole e azioni in lingua inglese</span></li>
+          </ul>
+          <p style="margin-top:16px">Niente lezioni frontali. <strong>Attività dinamiche integrate nella giornata.</strong></p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ DATE CAMP 2026 ============ -->
+<section class="corpo band-bianco" id="date-section">
+  <span class="divisore-top"></span>
+  <div class="wrap-narrow">
+
+    <h2 class="tw-block" data-tw-name="H2 — Date Camp 2026">📅 Le date dei <span class="tm">Camp Estivi 2026</span>.</h2>
+    <p class="tw-block" data-tw-name="Body — 8 giorni 7 notti" style="text-align:center;color:var(--testo-soft);font-size:17px;margin-top:-8px">8 giorni e 7 notti nella stessa location dell'<strong style="color:var(--brand)">Hotel Bucaneve</strong>.</p>
+
+    <div class="date-grid">
+      <div class="data-card tw-block" data-tw-name="Data — Turno 1">
+        <span class="turno-tag">Turno 1</span>
+        <div>
+          <div class="periodo">26 luglio → 2 agosto</div>
+          <span class="nights">8 giorni · 7 notti</span>
+        </div>
+      </div>
+      <div class="data-card tw-block" data-tw-name="Data — Turno 2">
+        <span class="turno-tag">Turno 2</span>
+        <div>
+          <div class="periodo">2 → 9 agosto</div>
+          <span class="nights">8 giorni · 7 notti</span>
+        </div>
+      </div>
+      <div class="data-card tw-block" data-tw-name="Data — Turno 3">
+        <span class="turno-tag">Turno 3</span>
+        <div>
+          <div class="periodo">9 → 16 agosto</div>
+          <span class="nights">8 giorni · 7 notti</span>
+        </div>
+      </div>
+      <div class="data-card tw-block" data-tw-name="Data — Turno 4">
+        <span class="turno-tag">Turno 4</span>
+        <div>
+          <div class="periodo">16 → 23 agosto</div>
+          <span class="nights">8 giorni · 7 notti</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ DOVE SI SVOLGE ============ -->
+<section class="corpo band-verde-soft" id="dove-section">
+  <div class="wrap-narrow">
+
+    <h2 class="tw-block" data-tw-name="H2 — Dove si svolge">Dove si svolge il Camp e <span class="tm">da chi è organizzato</span>?</h2>
+
+    <p class="tw-block" data-tw-name="Body — Tonezza Bucaneve" style="text-align:center;font-size:18px;max-width:640px;margin:0 auto 16px">A <strong>Tonezza del Cimone (Vicenza)</strong>, organizzato dall'<strong>Hotel Bucaneve</strong> con il suo staff di animatori esperti.</p>
+
+    <div class="ambiente-grid">
+      <div class="ambiente-card tw-block" data-tw-name="Ambiente — Aria">
+        <span class="ic">🌲</span>
+        <div class="label">Aria di qualità superiore</div>
+        <div class="meta">Certificata per la sua purezza</div>
+      </div>
+      <div class="ambiente-card tw-block" data-tw-name="Ambiente — Natura">
+        <span class="ic">🌳</span>
+        <div class="label">Natura incontaminata</div>
+        <div class="meta">3.000 ettari di verde con scarsa urbanizzazione</div>
+      </div>
+      <div class="ambiente-card tw-block" data-tw-name="Ambiente — Microclima">
+        <span class="ic">⛰️</span>
+        <div class="label">Microclima ideale</div>
+        <div class="meta">901 metri sul livello del mare</div>
+      </div>
+    </div>
+
+    <p class="tw-block" data-tw-name="Body — 14 anni Camp" style="text-align:center;font-size:18px;margin:8px auto 8px;max-width:640px">Organizziamo Camp per ragazzi <strong>dal 2012, in 14 estati consecutive</strong>.</p>
+
+    <div class="media-row tw-block" data-tw-name="Media — Giornali">
+      <div class="label">Citati dai principali quotidiani</div>
+      <p>Siamo stati citati in articoli di importanti quotidiani come l'<strong>Osservatorio sul Merito del Corriere della Sera</strong>, il <strong>Mattino di Padova</strong> e il <strong>Giornale di Vicenza</strong>, che hanno apprezzato la qualità del nostro lavoro e la professionalità del nostro staff.</p>
+      <div class="foto-placeholder tw-block" data-tw-name="Foto — Screenshot giornali" data-label="SCREENSHOT GIORNALI · Inserire qui i ritagli/screenshot dei 3 articoli (Corriere della Sera — Osservatorio sul Merito, Mattino di Padova, Giornale di Vicenza). 3 immagini affiancate, testata visibile in alto, titolo articolo leggibile." style="margin:18px 0 0"></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ IL NOSTRO STAFF ============ -->
+<section class="corpo band-bianco" id="staff-section">
+  <span class="divisore-top"></span>
+  <div class="wrap-narrow">
+
+    <h2 class="tw-block" data-tw-name="H2 — Il nostro staff">Il nostro <span class="tm">staff</span>.</h2>
+
+    <p class="staff-claim tw-block" data-tw-name="Staff claim — Mai minorenni">Nei nostri Camp non abbiamo MAI impiegato animatori minorenni. <strong>Mai uno, dal 2012 a oggi.</strong></p>
+
+    <p class="tw-block" data-tw-name="Body — Una scelta che dovrebbe essere norma" style="text-align:center;max-width:680px;margin:0 auto 8px">Una scelta che dovrebbe essere la norma, e purtroppo non lo è. La maggior parte delle strutture che organizzano camp estivi sceglie animatori minorenni o impreparati a gestire un gruppo di bambini con personalità diverse. <strong>Per noi è inaccettabile.</strong></p>
+
+    <p class="tw-block" data-tw-name="Body — Team composto da" style="text-align:center;font-weight:700;color:var(--testo-scuro);margin:28px auto 8px;font-size:18px">Il nostro team è composto da:</p>
+
+    <ul class="credential-list">
+      <li class="tw-block" data-tw-name="Credenziale 1 — Maggiorenni"><span class="ic">✓</span><span><strong>Solo animatori maggiorenni</strong>, ognuno con almeno una stagione completa di Camp alle spalle prima di assumere la responsabilità di un gruppo</span></li>
+      <li class="tw-block" data-tw-name="Credenziale 2 — UEFA B"><span class="ic">✓</span><span><strong>Responsabile con patentino UEFA B internazionale di calcio</strong>, che ha gestito una scuola calcio per bambini e ha esperienze in Cina, Oman, Italia e Portogallo</span></li>
+      <li class="tw-block" data-tw-name="Credenziale 3 — CAI"><span class="ic">✓</span><span><strong>Istruttori CAI certificati</strong> per l'arrampicata sportiva</span></li>
+      <li class="tw-block" data-tw-name="Credenziale 4 — Selezione"><span class="ic">✓</span><span><strong>Selezione rigorosa</strong>: ogni membro dello staff completa un periodo di formazione interna prima di iniziare</span></li>
+      <li class="tw-block" data-tw-name="Credenziale 5 — Reperibilità"><span class="ic">✓</span><span><strong>Reperibilità 24 ore su 24</strong> durante tutto il turno</span></li>
+    </ul>
+
+  </div>
+</section>
+
+<!-- ============ COMUNICAZIONE GENITORI + TESTIMONIAL ============ -->
+<section class="corpo band-crema-scuro" id="comunicazione-section">
+  <div class="wrap-narrow">
+
+    <h2 class="tw-block" data-tw-name="H2 — Comunicazione genitori">Comunicazione costante <span class="tm">con i genitori</span>.</h2>
+
+    <p class="tw-block" data-tw-name="Body — Gruppo WhatsApp" style="text-align:center;max-width:680px;margin:18px auto 12px;font-size:18px">Per la tua tranquillità, creiamo un <strong>Gruppo WhatsApp dedicato</strong> dove pubblichiamo OGNI giorno foto e video dei ragazzi.</p>
+
+    <p class="tw-block" data-tw-name="Body — Tuo figlio disconnesso" style="text-align:center;max-width:680px;margin:0 auto 22px">Tuo figlio è disconnesso, e tu vedi dove sta e con chi, in tempo reale. <strong>Hai più informazioni di quante ne avresti se fosse a casa con te.</strong></p>
+
+    <div class="foto-placeholder tw-block" data-tw-name="Foto — Screenshot WhatsApp" data-label="SCREENSHOT WHATSAPP · Inserire qui screenshot del gruppo WhatsApp anonimizzato di un turno passato (nomi/numeri oscurati, foto attività visibili)." style="max-width:480px;margin:0 auto 36px;aspect-ratio:3/4"></div>
+
+    <h3 class="tw-block" data-tw-name="H3 — Cosa dicono i genitori" style="text-align:center;font-size:24px;font-weight:800;color:var(--testo-scuro);margin:8px auto 8px;letter-spacing:-0.015em">Cosa dicono i genitori.</h3>
+
+    <div class="testimonial-grid">
+
+      <div class="testimonial featured tw-block" data-tw-name="Testimonial — Cristina Motca">
+        <div class="quote">«Lo staff super attento, i genitori sempre aggiornati con ogni attività svolta in giornata, foto con i nostri figli. <strong>E da provare per credere.</strong>»</div>
+        <div class="author">
+          <span class="avatar">CM</span>
+          <div>
+            <div class="name">Cristina Motca</div>
+            <span class="role">Mamma</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial tw-block" data-tw-name="Testimonial — Roberta Laurenti">
+        <div class="quote">«Mio figlio ha finito oggi la settimana ma gli è piaciuto talmente tanto che ieri sera ci ha pregato di <strong>prolungare il soggiorno per altri 7 giorni</strong>. I ragazzi sono super seguiti, ogni giorno video e filmati per i genitori grazie al gruppo WhatsApp.»</div>
+        <div class="author">
+          <span class="avatar">RL</span>
+          <div>
+            <div class="name">Roberta Laurenti</div>
+            <span class="role">Mamma</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial tw-block" data-tw-name="Testimonial — Fabiana Aresti">
+        <div class="quote">«Mamma <strong>super apprensiva</strong> ma non ho avuto dubbi a mandarlo, grazie a chi mi ha consigliato e grazie a tutto lo staff.»</div>
+        <div class="author">
+          <span class="avatar">FA</span>
+          <div>
+            <div class="name">Fabiana Aresti</div>
+            <span class="role">Mamma</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial tw-block" data-tw-name="Testimonial — Giovanni Z">
+        <div class="quote">«Hanno frequentato sia l'estivo sia l'invernale. Tutto il giorno all'aria aperta senza dispositivi elettronici. Per la prima volta hanno fatto <strong>giochi collettivi</strong> che ora non si fanno più in nessun contesto sociale e purtroppo nemmeno a scuola.»</div>
+        <div class="author">
+          <span class="avatar">GZ</span>
+          <div>
+            <div class="name">Giovanni Z.</div>
+            <span class="role">Papà · Padova</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial tw-block" data-tw-name="Testimonial — Stefania Cacciapuoti">
+        <div class="quote">«I nostri novenni sono appena tornati a casa, <strong>sfiniti, sporchi e felici</strong>. Un'esperienza per loro indimenticabile, fatta di camminate, risate, giochi e vita.»</div>
+        <div class="author">
+          <span class="avatar">SC</span>
+          <div>
+            <div class="name">Stefania Cacciapuoti</div>
+            <span class="role">Mamma</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="stat-highlight">
+      <div class="stat-big tw-block" data-tw-name="Stat-big — 79 recensioni">
+        <span class="num">79/79</span>
+        <div class="label"><strong>Recensioni a 5 stelle</strong><br>sulla pagina Facebook del Camp</div>
+      </div>
+      <div class="stat-big tw-block" data-tw-name="Stat-big — 98% completa">
+        <span class="num">98%</span>
+        <div class="label"><strong>Dei bambini</strong><br>completa il turno</div>
+      </div>
+      <div class="stat-big tw-block" data-tw-name="Stat-big — 34% torna">
+        <span class="num">34%</span>
+        <div class="label"><strong>Delle famiglie</strong><br>rimanda il figlio l'anno successivo</div>
+      </div>
+    </div>
+
+    <div class="cta-block cta-mid" style="margin-top:36px">
+      <a href="#prenota" class="cta-btn tw-block" data-tw-name="CTA — Mid comunicazione">OK, VOGLIO PRENOTARE IL POSTO PER MIO FIGLIO! <span class="freccia">→</span></a>
+      <p class="cta-nota tw-block" data-tw-name="CTA nota — comunicazione">Offerta valida fino al <strong>31 maggio</strong></p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ PERCHÉ SCEGLIERCI ============ -->
+<section class="corpo" id="perche-section" style="background:var(--bg)">
+  <div class="wrap-narrow">
+
+    <h2 class="tw-block" data-tw-name="H2 — Perché sceglierci">⭐ Perché scegliere il <span class="tm">nostro Camp</span>.</h2>
+
+    <div class="perche-grid">
+      <div class="perche-card tw-block" data-tw-name="Perché 1 — Esperienza">
+        <span class="ic">🏨</span>
+        <div class="body">
+          <div class="label">Esperienza e professionalità</div>
+          <div class="desc"><strong>Hotel Bucaneve</strong>: 40 anni di storia, 14 anni di camp per ragazzi (dal 2012), staff di animatori professionisti.</div>
+        </div>
+      </div>
+      <div class="perche-card tw-block" data-tw-name="Perché 2 — Supervisione 24h">
+        <span class="ic">👀</span>
+        <div class="body">
+          <div class="label">Supervisione 24 ore su 24</div>
+          <div class="desc">Animatori specializzati che seguono ogni bambino per garantire <strong>sicurezza e divertimento</strong>.</div>
+        </div>
+      </div>
+      <div class="perche-card tw-block" data-tw-name="Perché 3 — Metodo Detox">
+        <span class="ic">📱</span>
+        <div class="body">
+          <div class="label">Metodo Detox esclusivo</div>
+          <div class="desc">Un approccio unico che immerge i ragazzi in esperienze reali, <strong>dentro la finestra di astinenza</strong> che la letteratura scientifica documenta come efficace (Allcott AER 2020, Schmidt-Persson JAMA 2024).</div>
+        </div>
+      </div>
+      <div class="perche-card tw-block" data-tw-name="Perché 4 — Strutture sportive">
+        <span class="ic">🏐</span>
+        <div class="body">
+          <div class="label">Accesso gratuito alle strutture sportive</div>
+          <div class="desc">Volley, basket, pallamano, breakdance e molto altro a disposizione dei ragazzi.</div>
+        </div>
+      </div>
+      <div class="perche-card tw-block" data-tw-name="Perché 5 — Comfort cucina">
+        <span class="ic">🍽️</span>
+        <div class="body">
+          <div class="label">Comfort e buona cucina</div>
+          <div class="desc"><strong>Camere accoglienti</strong> e piatti genuini che soddisfano anche i palati più esigenti.</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ PRICING + BONUS + GARANZIA ============ -->
+<section class="corpo band-bianco" id="pricing-section">
+  <span class="divisore-top"></span>
+  <div class="wrap-narrow">
+
+    <h2 class="tw-block" data-tw-name="H2 — Quanto vale">Quanto vale questa estate <span class="tm">per tuo figlio</span>?</h2>
+
+    <div class="include-box tw-block" data-tw-name="Include box — Cosa comprende">
+      <div class="label">Il pacchetto Camp Estate 2026 comprende</div>
+      <ul class="include-list">
+        <li><span class="ar">➡</span><span><strong>8 giorni e 7 notti in pensione completa</strong> all'Hotel Bucaneve</span></li>
+        <li><span class="ar">➡</span><span>Il percorso <strong>Digital-Detox™ in 7 fasi</strong></span></li>
+        <li><span class="ar">➡</span><span><strong>Arrampicata sportiva, equitazione, escursioni e Giochi Senza Frontiere di Tonezza</strong></span></li>
+        <li><span class="ar">➡</span><span>Escursioni guidate, passeggiate nella natura, giochi di una volta</span></li>
+        <li><span class="ar">➡</span><span>Serate indimenticabili sotto le stelle con <strong>falò, karaoke e discoteca</strong></span></li>
+        <li><span class="ar">➡</span><span><strong>Assicurazione completa e assistenza medica</strong></span></li>
+      </ul>
+    </div>
+
+    <div class="bonus-section">
+      <p class="bonus-head tw-block" data-tw-name="Bonus head">E insieme al pacchetto base, hai diritto a <strong>3 BONUS</strong> e ai vantaggi extra famiglia:</p>
+
+      <div class="bonus-card tw-block" data-tw-name="Bonus 1 — Arrampicata CAI">
+        <span class="bonus-ic">🎁</span>
+        <div class="bonus-body">
+          <div class="bonus-title">BONUS 1: Arrampicata sportiva con istruttore CAI certificato</div>
+          <span class="bonus-valore">Valore commerciale: 140€</span>
+          <p>Un'attività che, presa a parte con un istruttore CAI certificato, ha un costo di mercato di circa <strong>140€</strong>. <strong>Te la regaliamo noi</strong>: è un nostro bonus al Camp Estate 2026.</p>
+        </div>
+      </div>
+
+      <div class="bonus-card tw-block" data-tw-name="Bonus 2 — Fratello">
+        <span class="bonus-ic">🎁</span>
+        <div class="bonus-body">
+          <div class="bonus-title">BONUS 2: 60€ in meno per ogni fratello/sorella iscritto al Camp</div>
+          <p><strong>Valore: fino a –60€ per ogni figlio in più che porti.</strong></p>
+        </div>
+      </div>
+
+      <div class="bonus-card tw-block" data-tw-name="Bonus 3 — Amico">
+        <span class="bonus-ic">🎁</span>
+        <div class="bonus-body">
+          <div class="bonus-title">BONUS 3: 60€ in meno a te per ogni amico che porti al Camp per la prima volta</div>
+          <p><strong>Valore: fino a –60€ per ogni amico che porti.</strong></p>
+        </div>
+      </div>
+
+      <div class="bonus-card extra tw-block" data-tw-name="Vantaggi extra famiglia">
+        <span class="bonus-ic">✨</span>
+        <div class="bonus-body">
+          <div class="bonus-title">Vantaggi extra famiglia</div>
+          <p><strong>60€ in meno per ogni settimana aggiuntiva</strong> se iscrivi tuo figlio a due turni consecutivi.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="pricing-card tw-block" data-tw-name="Pricing card — Prezzo finale">
+      <div class="medaglia-offer">
+        <span class="l1">Offerta</span>
+        <span class="l2">di Lancio</span>
+      </div>
+
+      <div class="prezzo-old">1.240<span class="e">€</span></div>
+
+      <div class="prezzo-label">Per te, a</div>
+      <div class="prezzo-new">645<span class="e">€</span></div>
+      <div class="prezzo-incluso">Tutto compreso!</div>
+
+      <p class="pricing-detail">7 notti, 8 giorni. <strong>Pensione completa + tutte le attività + 3 BONUS.</strong></p>
+
+      <div class="risparmio-wrap">
+        <span class="risparmio">Stai risparmiando 595€</span>
+      </div>
+    </div>
+
+    <div class="urgency-banner tw-block" data-tw-name="Urgency — Scadenza 31 maggio">
+      <span class="ic">⏰</span>
+      <span class="txt">L'offerta di lancio scade il <strong>31 maggio a mezzanotte</strong></span>
+    </div>
+
+    <p class="tw-block" data-tw-name="Body — Dal 1 giugno aumenta" style="text-align:center;font-size:15px;color:var(--testo-soft);margin:0 auto 22px;max-width:560px;font-style:italic">Dal <strong style="color:var(--testo-scuro)">1° giugno</strong> il prezzo del Camp aumenta. <strong style="color:var(--testo-scuro)">Questa offerta di lancio non sarà più disponibile.</strong></p>
+
+    <div class="cta-block cta-mid">
+      <a href="#prenota" class="cta-btn tw-block" data-tw-name="CTA — Prenota chiamata staff">PRENOTA ORA LA CHIAMATA CON LO STAFF! <span class="freccia">→</span></a>
+      <p class="cta-nota tw-block" data-tw-name="CTA nota — Pricing">Offerta valida fino al <strong>31 maggio</strong></p>
+    </div>
+
+    <div class="garanzia-box tw-block" data-tw-name="Garanzia Salvaquota">
+      <h3 class="gar-title">Garanzia Salvaquota.</h3>
+
+      <div class="garanzia-split">
+        <div class="gar-card positive tw-block" data-tw-name="Garanzia — Rimborso 100%">
+          <div class="gar-tempo"><span class="num">≥7</span> Fino a 7 giorni prima</div>
+          <div class="gar-action">Cancellazione completa con rimborso del 100% della caparra versata</div>
+          <div class="gar-body">Senza domande e senza penali.</div>
+        </div>
+        <div class="gar-card warning tw-block" data-tw-name="Garanzia — Non rimborsabile">
+          <div class="gar-tempo"><span class="num">&lt;7</span> Meno di 7 giorni prima</div>
+          <div class="gar-action">La caparra non sarà rimborsabile</div>
+          <div class="gar-body">A ridosso dell'evento abbiamo già confermato <strong>staff, attività e servizi</strong>.</div>
+        </div>
+      </div>
+
+      <p class="garanzia-foot">Con questa garanzia vogliamo offrirti <strong>flessibilità e la certezza di poter gestire serenamente la tua prenotazione</strong>, sapendo esattamente cosa aspettarti in ogni situazione.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ SERVIZIO PULLMAN ============ -->
+<section class="corpo" id="pullman-section" style="background:var(--bg)">
+  <div class="wrap-narrow">
+
+    <h2 class="tw-block" data-tw-name="H2 — Pullman">🚌 Servizio Pullman, <span class="tm">andata e ritorno compresi</span>.</h2>
+
+    <p class="pullman-intro tw-block" data-tw-name="Pullman — Intro 4 viaggi">Accompagnare tuo figlio a Tonezza significa fare <strong>quattro viaggi</strong>: andata, ritorno tuo all'arrivo, andata al ritiro, ritorno con lui. Per chi parte da Milano, Bologna o Roma sono <strong>ore di guida e centinaia di chilometri</strong>.</p>
+
+    <p class="pullman-claim tw-block" data-tw-name="Pullman — Claim">Per questo abbiamo organizzato il <strong>servizio Pullman A/R</strong> dalle principali città del Nord e dal Centro Italia. Tu lasci tuo figlio in un punto convenuto della tua città, lo riprendi nello stesso posto otto giorni dopo.</p>
+
+    <p style="text-align:center;font-size:12px;font-weight:800;color:var(--brand);letter-spacing:1.8px;text-transform:uppercase;margin:24px auto 4px">Costi 2026 (andata e ritorno compresi)</p>
+
+    <div class="pullman-grid">
+      <div class="bus-ticket">
+        <div class="ticket-left"><span class="ticket-label">Tratta</span><span class="ticket-ic">🚌</span></div>
+        <div class="ticket-center"><div class="ticket-citta">Padova e Vicenza</div><span class="ticket-tag">Andata + Ritorno</span></div>
+        <div class="ticket-right"><span class="ticket-prezzo">45€</span><span class="ticket-prezzo-meta">A/R</span></div>
+      </div>
+      <div class="bus-ticket">
+        <div class="ticket-left"><span class="ticket-label">Tratta</span><span class="ticket-ic">🚌</span></div>
+        <div class="ticket-center"><div class="ticket-citta">Venezia, Verona e Treviso</div><span class="ticket-tag">Andata + Ritorno</span></div>
+        <div class="ticket-right"><span class="ticket-prezzo">60€</span><span class="ticket-prezzo-meta">A/R</span></div>
+      </div>
+      <div class="bus-ticket">
+        <div class="ticket-left"><span class="ticket-label">Tratta</span><span class="ticket-ic">🚌</span></div>
+        <div class="ticket-center"><div class="ticket-citta">Brescia, Bergamo e Bologna</div><span class="ticket-tag">Andata + Ritorno</span></div>
+        <div class="ticket-right"><span class="ticket-prezzo">75€</span><span class="ticket-prezzo-meta">A/R</span></div>
+      </div>
+      <div class="bus-ticket">
+        <div class="ticket-left"><span class="ticket-label">Tratta</span><span class="ticket-ic">🚌</span></div>
+        <div class="ticket-center"><div class="ticket-citta">Milano</div><span class="ticket-tag">Andata + Ritorno</span></div>
+        <div class="ticket-right"><span class="ticket-prezzo">85€</span><span class="ticket-prezzo-meta">A/R</span></div>
+      </div>
+      <div class="bus-ticket">
+        <div class="ticket-left"><span class="ticket-label">Tratta</span><span class="ticket-ic">🚌</span></div>
+        <div class="ticket-center"><div class="ticket-citta">Roma</div><span class="ticket-tag">Andata + Ritorno</span></div>
+        <div class="ticket-right"><span class="ticket-prezzo">135€</span><span class="ticket-prezzo-meta">A/R</span></div>
+      </div>
+    </div>
+
+    <div class="pullman-save tw-block" data-tw-name="Pullman — Risparmio">Rispetto a un viaggio in auto, parliamo di un risparmio che va dai <strong>120€ ai 350€</strong> in carburante, autostrade e tempo.</div>
+
+    <p class="pullman-note tw-block" data-tw-name="Pullman — Note orari">Orari precisi e punti esatti di partenza/arrivo vengono comunicati con l'email di iscrizione, dopo la chiamata con lo staff.</p>
+
+  </div>
+</section>
+
+<!-- ============ FAQ DOMANDE GENITORI ============ -->
+<section class="corpo band-crema-scuro" id="faq-genitori-section">
+  <div class="wrap-narrow">
+
+    <h2 class="tw-block" data-tw-name="H2 — Domande genitori">Domande che <span class="tm">altri genitori</span> hanno fatto.</h2>
+
+    <div class="faq-list">
+
+      <details class="faq-item tw-block" data-tw-name="FAQ — Sentire figlio">
+        <summary><span class="q-mark">?</span><span>Mio figlio potrà sentirmi durante il Camp? Come funziona col telefono?</span></summary>
+        <div class="answer">
+          <p>A Tonezza del Cimone c'è copertura cellulare normale. Se tuo figlio ha portato uno smartphone, viene custodito in cassaforte. Se non ne ha uno (capita spesso fra i 7 e gli 11 anni), va benissimo lo stesso: ogni sera userà il telefono dell'animatore.</p>
+          <p><strong>Intorno alle 18:30, lo staff dà a ciascun ragazzo 10-15 minuti per chiamare casa</strong>, davanti agli animatori. Quei 10-15 minuti servono a fare la chiamata, non sono "tempo libero col cellulare in mano": niente Instagram, niente WhatsApp, niente TikTok, niente giochi. Finita la chiamata, il dispositivo torna in cassaforte.</p>
+          <p>Tu, intanto, hai il gruppo WhatsApp staff→famiglie con foto e video quotidiani di tutte le attività, e lo staff è reperibile <strong>24 ore su 24</strong> per urgenze.</p>
+        </div>
+      </details>
+
+      <details class="faq-item tw-block" data-tw-name="FAQ — Otto giorni troppo pochi">
+        <summary><span class="q-mark">?</span><span>Ma otto giorni non sono troppo pochi per cambiare qualcosa di vero?</span></summary>
+        <div class="answer">
+          <p>Otto giorni cadono dentro la finestra in cui la letteratura scientifica documenta benefici misurabili dell'astinenza: la ricerca di Tromholt (Università di Copenaghen) ha mostrato <strong>+0,37 punti di soddisfazione di vita</strong> dopo una sola settimana di disattivazione di Facebook (p&lt;0,001).</p>
+          <p>Lo studio randomizzato controllato pubblicato su <strong>JAMA Network Open nel 2024</strong> (Schmidt-Persson, Università del Sud della Danimarca, condotto su bambini) ha misurato miglioramenti significativi nel comportamento sociale dopo due settimane di sostanziale riduzione dell'uso di smartphone.</p>
+          <p>Otto giorni del Camp sono dentro questa finestra. Quello che continua dopo dipende da quello che fate a casa nei mesi successivi, e per quello esistono il <strong>Diario di Bordo</strong> e l'<strong>Impegno Scritto</strong> del giorno 7.</p>
+        </div>
+      </details>
+
+      <details class="faq-item tw-block" data-tw-name="FAQ — Si rifiuta di partire">
+        <summary><span class="q-mark">?</span><span>E se mio figlio si rifiuta di partire? Lui non vuole andare via per otto giorni.</span></summary>
+        <div class="answer">
+          <p>È prevedibile, e succede ogni anno a una buona parte delle famiglie che poi prenotano. Il pattern documentato in oltre quindici recensioni pubbliche è: primo giorno difficile (a volte pianti al telefono), <strong>dal giorno 2 in poi la posizione si inverte</strong>.</p>
+          <p>Babab Alloon racconta: <em>«Alla sera mi telefonava velocemente perché aveva fretta di tornare con i compagni di avventura.»</em> Roberta Laurenti scrive che suo figlio l'ha <em>«pregata di prolungare il soggiorno.»</em></p>
+          <p>Per il colloquio con tuo figlio, lo staff ti accompagna nella chiamata precedente alla partenza, e contatta il ragazzo (se vuoi) prima della partenza per capire da lui stesso come si sente.</p>
+        </div>
+      </details>
+
+      <details class="faq-item tw-block" data-tw-name="FAQ — Differenze altri camp">
+        <summary><span class="q-mark">?</span><span>Mio figlio ha già fatto camp di calcio e oratori, in che cosa si differenzia da questo?</span></summary>
+        <div class="answer">
+          <p>Nei camp di calcio, tennis, inglese, scout e oratorio il telefono di norma resta accessibile al ragazzo, in tasca, nello zaino o in dormitorio. Quei camp hanno obiettivi diversi (sportivo, linguistico, religioso).</p>
+          <p><strong>Camp ComeUnaVolta è progettato dal 2012 specificamente per il digital detox residenziale</strong>: la consegna del dispositivo al giorno 1 è la condizione iniziale, e il resto del programma è costruito attorno a questa condizione.</p>
+        </div>
+      </details>
+
+      <details class="faq-item tw-block" data-tw-name="FAQ — Prima volta dormire fuori">
+        <summary><span class="q-mark">?</span><span>Mio figlio non ha mai dormito fuori casa più di una notte. Come gestite la prima volta?</span></summary>
+        <div class="answer">
+          <p>Una buona percentuale delle famiglie del Camp è alla prima esperienza residenziale del figlio. Il dato che ricorre nelle recensioni di queste famiglie è la coppia <strong>"primo giorno difficile + non voleva tornare a casa"</strong>.</p>
+          <p>Il gruppo WhatsApp staff→famiglie ti dà informazioni costanti su come sta tuo figlio, in tempo reale. Lo staff è <strong>reperibile 24 ore su 24</strong>, ogni giorno del Camp. E ogni sera tuo figlio ti chiama dal telefono dello staff o dal proprio, davanti all'animatore, per raccontarti la giornata.</p>
+        </div>
+      </details>
+
+      <details class="faq-item tw-block" data-tw-name="FAQ — Allergie alimentazione">
+        <summary><span class="q-mark">?</span><span>Mio figlio ha allergie, intolleranze o segue un'alimentazione particolare. Riuscite a gestirlo?</span></summary>
+        <div class="answer">
+          <p>Sì. La cucina dell'Hotel Bucaneve gestisce ogni regime alimentare segnalato in fase di iscrizione: <strong>allergie, intolleranze</strong> (glutine, lattosio, frutta secca), alimentazione vegetariana, vegana, oppure motivi religiosi.</p>
+          <p>Lo staff Camp riceve la scheda di ogni ragazzo prima della partenza, e i pasti vengono preparati di conseguenza.</p>
+        </div>
+      </details>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ CLOSING + FORM CONTATTO ============ -->
+<section class="corpo band-bianco" id="closing-section">
+  <span class="divisore-top"></span>
+  <div class="wrap-narrow">
+
+    <h2 class="tw-block" data-tw-name="H2 — È arrivato il momento">✅ È arrivato <span class="tm">il momento di agire</span>.</h2>
+
+    <p class="tw-block" data-tw-name="Body — Se sei arrivata fin qui" style="font-size:17px;line-height:1.65;max-width:680px;margin:20px auto 14px;text-align:center">Se sei arrivata fino a qui, probabilmente hai già riconosciuto la <strong>sfida che stai affrontando con tuo figlio e la tecnologia</strong>.</p>
+
+    <p class="tw-block" data-tw-name="Body — Ogni giorno opportunità" style="font-size:17px;line-height:1.65;max-width:680px;margin:0 auto 14px;text-align:center">Ogni giorno che passa è un'opportunità persa per aiutarlo a ritrovare il piacere delle <strong>esperienze reali, delle amicizie autentiche, dell'avventura</strong>.</p>
+
+    <p class="tw-block" data-tw-name="Body — Esperienza che può cambiare" style="font-size:17px;line-height:1.65;max-width:680px;margin:0 auto 14px;text-align:center">ComeUnaVolta#Camp è un'esperienza che può cambiare il rapporto di tuo figlio con la tecnologia <strong>per l'estate 2026 e oltre</strong>.</p>
+
+    <p class="tw-block" data-tw-name="Body — Tra sei mesi sarà ottobre" style="font-size:18px;line-height:1.6;max-width:680px;margin:18px auto 14px;text-align:center;font-weight:700;color:var(--testo-scuro)">Tra sei mesi sarà ottobre. Tuo figlio avrà <span style="color:var(--cta)">sei mesi in più di schermo</span>, oppure <span style="color:var(--brand)">una settimana in meno e quei sei mesi spesi diversamente</span>.</p>
+
+    <p class="tw-block" data-tw-name="Body — Ti invitiamo a bloccare" style="font-size:16px;line-height:1.6;max-width:680px;margin:18px auto 24px;text-align:center;color:var(--testo)">Ti invitiamo a <strong>bloccare il tuo posto per l'estate 2026</strong>, senza alcun impegno immediato, per garantire a tuo figlio la priorità su questa offerta.</p>
+
+    <h3 class="tw-block" data-tw-name="H3 — Ecco come fare" style="text-align:center;font-size:22px;font-weight:800;color:var(--testo-scuro);margin:28px auto 12px;letter-spacing:-0.015em">Ecco come fare:</h3>
+
+    <ol class="step-list">
+      <li class="tw-block" data-tw-name="Step 1 — Compila">Compila il modulo qui sotto con <strong>nome, cognome, email e cellulare</strong></li>
+      <li class="tw-block" data-tw-name="Step 2 — Clicca">Clicca sul pulsante che trovi dopo il modulo</li>
+      <li class="tw-block" data-tw-name="Step 3 — Chiamata">Riceverai la nostra chiamata <strong>al più presto</strong></li>
+    </ol>
+
+    <p class="tw-block" data-tw-name="Body — Non iscrivi automaticamente" style="font-size:15px;line-height:1.6;max-width:680px;margin:22px auto 10px;text-align:center;color:var(--testo);font-style:italic">Compilando il modulo <strong style="font-style:normal">non iscrivi automaticamente tuo figlio</strong>, ma semplicemente blocchi l'offerta a tuo nome. Dopo la nostra chiamata, potrai decidere con calma se procedere con l'iscrizione effettiva.</p>
+
+    <div class="form-section tw-block" data-tw-name="Form di contatto" id="prenota">
+      <div class="form-title">Prenota la tua chiamata con lo staff</div>
+      <p class="form-sub">Riceverai la chiamata entro 24 ore. Senza impegno.</p>
+
+      <form onsubmit="event.preventDefault();alert('Form di test — sarà collegato al CRM al go-live')">
+        <div class="form-grid">
+          <div class="form-field">
+            <label>Nome <span class="req">*</span></label>
+            <input type="text" required placeholder="Maria">
+          </div>
+          <div class="form-field">
+            <label>Cognome <span class="req">*</span></label>
+            <input type="text" required placeholder="Rossi">
+          </div>
+          <div class="form-field full">
+            <label>Email <span class="req">*</span></label>
+            <input type="email" required placeholder="tua@email.it">
+          </div>
+          <div class="form-field full">
+            <label>Numero cellulare <span class="req">*</span></label>
+            <input type="tel" required placeholder="+39 333 1234567">
+          </div>
+          <div class="form-field full">
+            <label>Seleziona la data di interesse <span class="req">*</span></label>
+            <select required>
+              <option value="">— Scegli un turno —</option>
+              <option>Turno 1: 26/7 → 2/8</option>
+              <option>Turno 2: 2 → 9/8</option>
+              <option>Turno 3: 9 → 16/8</option>
+              <option>Turno 4: 16 → 23/8</option>
+              <option>Non ho ancora deciso</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-consent">
+          <input type="checkbox" id="consent" required>
+          <label for="consent"><span class="req">*</span> Acconsento al trattamento dei miei dati personali ai sensi dell'articolo 13 del Regolamento (UE) 2016/679 e al trattamento dei dati per comunicazioni commerciali e informative sui Prodotti e Servizi di ComeUnaVolta#Camp.</label>
+        </div>
+
+        <div class="cta-block">
+          <button type="submit" class="cta-btn tw-block" data-tw-name="CTA — Prenota chiamata form">PRENOTA LA CHIAMATA! <span class="freccia">→</span></button>
+          <p class="cta-nota tw-block" data-tw-name="CTA nota — Form">Offerta valida fino al <strong>31 maggio</strong></p>
+        </div>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ P.S. ============ -->
+<section class="corpo" id="ps-section" style="background:var(--bg)">
+  <div class="wrap-narrow">
+
+    <div class="ps-section tw-block" data-tw-name="P.S.">
+      <span class="ps-mark">P.S.</span>
+      <p>Se sei arrivata fino a qui, vuol dire che il problema del telefono in mano a tuo figlio <strong>non ti lascia in pace</strong>. È giusto che sia così: lo vedi tu prima degli altri, e quello che vedi è reale.</p>
+      <p>Hai tempo fino al <span class="scadenza-hl">31 maggio a mezzanotte</span> per bloccare il posto di tuo figlio al Camp Estate 2026 con l'<strong>offerta di lancio a 645€</strong> invece dei 1.240€ di valore complessivo del pacchetto. <span class="risparmio-hl">Stai risparmiando 595€</span> se prenoti entro la scadenza. Dal 1° giugno il prezzo aumenta.</p>
+      <p>Compili il modulo, ti richiamiamo <strong>entro 24 ore</strong>, la chiamata non ti vincola a niente. Decidi tu dopo, con calma, se prenotare.</p>
+      <p style="font-style:italic;color:var(--testo-soft)">E nel mentre, qualunque dubbio operativo ti resti, le risposte sono qui sotto.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ INFO PRATICHE FAQ ============ -->
+<section class="corpo band-crema-scuro" id="info-pratiche-section">
+  <div class="wrap-narrow">
+
+    <h2 class="tw-block" data-tw-name="H2 — Info pratiche">📋 Informazioni <span class="tm">pratiche</span>.</h2>
+
+    <div class="faq-list">
+
+      <details class="faq-item tw-block" data-tw-name="FAQ — Quando sentire figlio">
+        <summary><span class="q-mark">?</span><span>Quando posso sentire mia/o figlia/o al telefono?</span></summary>
+        <div class="answer">
+          <p>Ogni sera, intorno alle <strong>18:30</strong>, diamo a ogni ragazzo 10-15 minuti per chiamare casa. Per urgenze siamo sempre reperibili al cellulare di gruppo dello staff, <strong>24 ore su 24</strong>.</p>
+        </div>
+      </details>
+
+      <details class="faq-item tw-block" data-tw-name="FAQ — Quanti in camera">
+        <summary><span class="q-mark">?</span><span>In quanti dormono in camera? Come vengono divisi?</span></summary>
+        <div class="answer">
+          <p>I ragazzi vengono divisi per <strong>fascia d'età</strong> e per <strong>sesso</strong>, in camere da 3-4 posti letto.</p>
+        </div>
+      </details>
+
+      <details class="faq-item tw-block" data-tw-name="FAQ — Quanti animatori">
+        <summary><span class="q-mark">?</span><span>Quanti animatori ci sono per ogni gruppo?</span></summary>
+        <div class="answer">
+          <p>Ogni animatore segue <strong>15-16 ragazzi</strong>. Non andiamo oltre questa soglia per garantire che ognuno venga seguito nel migliore dei modi.</p>
+        </div>
+      </details>
+
+      <details class="faq-item tw-block" data-tw-name="FAQ — Si ammala durante">
+        <summary><span class="q-mark">?</span><span>Cosa succede se un ragazzo si ammala durante il Camp?</span></summary>
+        <div class="answer">
+          <p>Non prendiamo nessuna iniziativa senza aver <strong>prima parlato con i genitori</strong>. Lo staff resta in contatto telefonico costante con la famiglia per ogni evento medico.</p>
+        </div>
+      </details>
+
+      <details class="faq-item tw-block" data-tw-name="FAQ — Si ammala prima">
+        <summary><span class="q-mark">?</span><span>Cosa succede se mio figlio si ammala il giorno prima del Camp?</span></summary>
+        <div class="answer">
+          <p>La quota viene accantonata e potrai sfruttarla per gli <strong>altri camp estivi e invernali</strong>, per un soggiorno con la famiglia all'Hotel o per altri eventi della struttura. In ogni caso ci accordiamo con te per la migliore soluzione.</p>
+        </div>
+      </details>
+
+      <details class="faq-item tw-block" data-tw-name="FAQ — Certificato medico">
+        <summary><span class="q-mark">?</span><span>Devo portare un certificato medico?</span></summary>
+        <div class="answer">
+          <p>Va bene un <strong>certificato medico sportivo</strong>, oppure un'autocertificazione del genitore che attesta la buona salute del figlio.</p>
+        </div>
+      </details>
+
+      <details class="faq-item tw-block" data-tw-name="FAQ — Disciplina">
+        <summary><span class="q-mark">?</span><span>Come viene gestita la disciplina durante il Camp?</span></summary>
+        <div class="answer">
+          <p>Ci sono regole base che vanno rispettate. Per ogni situazione particolare avvisiamo prima la famiglia per confrontarci. <strong>Educazione e rispetto vengono prima di tutto</strong>.</p>
+        </div>
+      </details>
+
+      <details class="faq-item tw-block" data-tw-name="FAQ — Nostalgia">
+        <summary><span class="q-mark">?</span><span>Cosa succede se mio figlio ha nostalgia e vuole tornare a casa durante il Camp?</span></summary>
+        <div class="answer">
+          <p>Per nostra esperienza, solo <strong>1-2 bambini su 100</strong> chiedono di tornare a casa durante i nostri Camp. Anche noi siamo genitori: sappiamo che se trasmettiamo ai bambini le nostre paure, la possibilità che vogliano tornare aumenta. <strong>Ai bambini interessa giocare, divertirsi e condividere le emozioni con i loro nuovi amici.</strong></p>
+        </div>
+      </details>
+
+    </div>
+
+    <div class="cta-finale">
+      <div class="cta-finale-title">Sei pronta a regalargli un'estate diversa?</div>
+      <div class="cta-block">
+        <a href="#prenota" class="cta-btn tw-block" data-tw-name="CTA — Finale">PRENOTA LA CHIAMATA CON LO STAFF! <span class="freccia">→</span></a>
+        <p class="cta-nota tw-block" data-tw-name="CTA nota — Finale">Offerta valida fino al <strong>31 maggio</strong></p>
+      </div>
+    </div>
+
   </div>
 </section>
 
