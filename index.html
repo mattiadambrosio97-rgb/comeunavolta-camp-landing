@@ -53,8 +53,20 @@ h1 .highlight{color:var(--brand);white-space:nowrap}
 .meta-item .ic{width:5px;height:5px;background:var(--cta);border-radius:50%;display:inline-block}
 .meta-sep{color:var(--linea);font-weight:400}
 
-.foto-hero{width:100%;max-width:620px;aspect-ratio:16/9;background:linear-gradient(135deg, rgba(15,20,25,0.15) 0%, rgba(15,20,25,0.4) 100%),linear-gradient(180deg, #8FB870 0%, #5C8A5B 50%, #2E5F2B 100%);border-radius:16px;margin:0 auto 24px;position:relative;overflow:hidden;box-shadow:0 8px 30px rgba(15,20,25,0.10),0 2px 6px rgba(15,20,25,0.04)}
-.foto-hero::before{content:"FOTO: gruppo di ragazzi 7-14 anni · 1920x1080";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:30px;color:white;font-family:'Poppins',sans-serif;font-size:12px;font-weight:600;letter-spacing:1px;text-transform:uppercase;background:rgba(15,20,25,0.45)}
+.foto-hero{width:100%;max-width:620px;aspect-ratio:16/9;border-radius:16px;margin:0 auto 24px;display:block;object-fit:cover;box-shadow:0 8px 30px rgba(15,20,25,0.10),0 2px 6px rgba(15,20,25,0.04)}
+.logo-hero{display:block;max-width:140px;height:auto;margin:0 auto 18px}
+.banner-metodo{width:100%;max-width:560px;height:auto;border-radius:14px;margin:0 auto 28px;display:block;box-shadow:0 4px 14px rgba(15,20,25,0.08)}
+.foto-aerea{width:100%;max-width:680px;aspect-ratio:16/9;border-radius:14px;margin:8px auto 22px;display:block;object-fit:cover;box-shadow:0 6px 20px rgba(15,20,25,0.10)}
+.giorno-foto{width:100%;max-width:500px;aspect-ratio:4/3;border-radius:12px;object-fit:cover;margin:14px 0 6px;display:block;box-shadow:0 4px 14px rgba(15,20,25,0.08)}
+.foto-whatsapp{width:100%;max-width:380px;height:auto;border-radius:14px;display:block;margin:0 auto 36px;box-shadow:0 6px 20px rgba(15,20,25,0.12)}
+.media-articoli-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:18px 0 0}
+.media-articoli-grid img{width:100%;height:auto;border-radius:10px;display:block;box-shadow:0 3px 12px rgba(15,20,25,0.08);border:1px solid var(--linea);background:white}
+@media(max-width:560px){.media-articoli-grid{grid-template-columns:1fr}}
+.recensioni-fb-header{text-align:center;font-family:'Poppins',sans-serif;font-size:12px;font-weight:800;color:var(--testo-soft);margin:36px auto 6px;letter-spacing:1.6px;text-transform:uppercase}
+.recensioni-fb-sub{text-align:center;font-family:'Poppins',sans-serif;font-size:15px;color:var(--testo);margin:0 auto 22px;font-style:italic;max-width:560px;line-height:1.5}
+.recensioni-fb-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:0 auto 20px}
+.recensioni-fb-grid img{width:100%;height:auto;border-radius:10px;display:block;box-shadow:0 3px 12px rgba(15,20,25,0.06);background:white;border:1px solid var(--linea)}
+@media(max-width:560px){.recensioni-fb-grid{grid-template-columns:1fr;gap:12px}}
 
 .cta-block{max-width:560px;margin:0 auto}
 .cta-btn{display:block;width:100%;background:var(--cta);color:white;font-family:'Poppins',sans-serif;letter-spacing:0.4px;padding:20px 28px;border:none;border-radius:24px;text-decoration:none;text-align:center;cursor:pointer;transition:all 0.2s ease;box-shadow:0 4px 14px rgba(230,57,70,0.28);line-height:1.3;text-transform:none}
@@ -457,6 +469,8 @@ h1 .highlight{color:var(--brand);white-space:nowrap}
 
 <section class="hero" id="hero-section">
   <div class="wrap">
+    <img src="img/grafica-logo-camp-estate-2026-balle-fieno.jpg" alt="ComeUnaVolta Camp Estate 2026" class="logo-hero tw-block" data-tw-name="Logo Camp 2026">
+
     <span class="trust-badge tw-block" data-tw-name="Trust badge">
       <span class="dot"></span>
       DAL 2012
@@ -468,7 +482,9 @@ h1 .highlight{color:var(--brand);white-space:nowrap}
 
     <h1 class="tw-block" data-tw-name="H1 · Headline">ComeUnaVolta#Camp Estate 2026: il <span class="highlight">METODO DIGITAL-DETOX™</span> dove i bambini riscoprono il piacere delle avventure all'aria aperta e delle amicizie reali.</h1>
 
-    <div class="foto-hero tw-block" data-tw-name="Foto hero"></div>
+    <img src="img/foto-gruppo-camp-cartello-excalibur.jpg" alt="Gruppo di bambini al Camp ComeUnaVolta con cartello Excalibur" class="foto-hero tw-block" data-tw-name="Foto hero" loading="eager">
+
+    <p class="foto-credit tw-block" data-tw-name="Foto credit" style="text-align:center;font-size:12px;color:var(--testo-soft);font-style:italic;margin:-12px auto 18px;letter-spacing:0.2px">Foto reali da un'edizione passata del Camp.</p>
 
     <p class="sub tw-block" data-tw-name="Sub-headline">A <strong>Tonezza del Cimone (VI)</strong>, primo "Borgo del Respiro" certificato del Veneto.</p>
 
@@ -574,6 +590,8 @@ h1 .highlight{color:var(--brand);white-space:nowrap}
     <span class="section-eyebrow tw-block" data-tw-name="Eyebrow — La Soluzione">La Soluzione</span>
     <h2 class="tw-block" data-tw-name="H2 — Metodo Digital-Detox">Il <span class="tm">Metodo Digital-Detox™</span> in 7 fasi.</h2>
 
+    <img src="img/grafica-banner-metodo-digital-detox.png" alt="Banner Metodo Digital-Detox" class="banner-metodo tw-block" data-tw-name="Banner Metodo" loading="lazy">
+
     <p class="tw-block" data-tw-name="Body — A differenza altri camp">A differenza di qualsiasi altro camp estivo in Italia, <strong>ComeUnaVolta#Camp</strong> ha sviluppato in <strong>14 anni di esperienza (dal 2012 a oggi)</strong> un percorso strutturato per "disintossicare" i bambini dalla tecnologia.</p>
 
     <p class="tw-block" data-tw-name="Body — Tre punti concreti">La logica del Metodo poggia su <strong>tre punti molto concreti</strong>:</p>
@@ -653,6 +671,7 @@ h1 .highlight{color:var(--brand);white-space:nowrap}
           <p class="tw-block" data-tw-name="G2 — Più impegnativo">Il giorno 2 è il più impegnativo, e lo sappiamo. La letteratura su 6.666 famiglie italiane (Di.Te./Lavenia 2025) misura che il <strong>57,7% dei bambini si arrabbia quando gli viene tolto il dispositivo, il 21,8% piange</strong>. È astinenza, e va attraversata.</p>
           <p class="tw-block" data-tw-name="G2 — Attività corpo">Il nostro staff è formato per riempire la giornata con attività che richiedono corpo e attenzione: <strong>escursione al Bosco dei Giganti</strong> con pranzo al sacco, multisport sui campi sportivi dell'Hotel, giochi tradizionali in gruppo. La sera: giochi da tavolo, torneo di ping-pong e calcio balilla.</p>
           <p class="tw-block" data-tw-name="G2 — Corpo torna a muoversi">È il momento in cui il corpo torna a muoversi liberamente dopo tanta immobilità davanti agli schermi.</p>
+          <img src="img/foto-bambini-pranzo-prato-camp-estate.jpg" alt="Bambini del Camp che pranzano sul prato durante un'escursione" class="giorno-foto tw-block" data-tw-name="Foto G2 — Pranzo prato" loading="lazy">
         </div>
       </div>
 
@@ -696,6 +715,7 @@ h1 .highlight{color:var(--brand);white-space:nowrap}
           <p class="tw-block" data-tw-name="G5 — Giorno più difficile">Spesso il giorno più difficile per chi è abituato al telefono.</p>
           <p class="tw-block" data-tw-name="G5 — Sfide positive">Le attività della giornata trasformano la "voglia di telefono" in sfide positive: <strong>battesimo della sella</strong> (giro a cavallo strutturato), <strong>percorso Excalibur</strong> (rievocazione fantasy con prove fisiche), <strong>orienteering in notturna</strong> con bussola e cartina.</p>
           <p class="tw-block" data-tw-name="G5 — Microsuccessi">Ogni attività produce un microsuccesso individuale che il ragazzo riconosce come suo: la paura di sedersi sulla sella superata, il percorso con la lanterna nel buio completato, la spada estratta dalla roccia.</p>
+          <img src="img/foto-gruppo-bambini-arrampicata-roccia-istruttore.jpg" alt="Bambini del Camp durante il percorso di arrampicata con istruttore" class="giorno-foto tw-block" data-tw-name="Foto G5 — Arrampicata Excalibur" loading="lazy">
         </div>
       </div>
 
@@ -725,6 +745,7 @@ h1 .highlight{color:var(--brand);white-space:nowrap}
           <p class="tw-block" data-tw-name="G7 — Tiro arco multisport">Pomeriggio: <strong>tiro con l'arco, multisport, giochi tradizionali</strong> che consolidano le abilità apprese durante la settimana.</p>
           <p class="tw-block" data-tw-name="G7 — Breakdance">Sera: breakdance o hip-hop.</p>
           <p class="tw-block" data-tw-name="G7 — Restituzione e Impegno">Prima di partire, i bambini partecipano a una <strong>cerimonia di restituzione dei dispositivi</strong> e firmano un <strong>Impegno Scritto</strong> personale: un foglio breve in cui ciascuno decide tre cose che vuole gestire in modo diverso una volta tornato a casa. Sono regole che il ragazzo si dà da solo, davanti al suo gruppo, dopo otto giorni in cui ha visto che si può stare bene altrimenti.</p>
+          <img src="img/foto-bambini-equitazione-pony.jpg" alt="Bambini del Camp durante il giro a cavallo nella natura" class="giorno-foto tw-block" data-tw-name="Foto G7 — Equitazione" loading="lazy">
         </div>
       </div>
 
@@ -858,6 +879,8 @@ h1 .highlight{color:var(--brand);white-space:nowrap}
 
     <p class="tw-block" data-tw-name="Body — Tonezza Bucaneve" style="text-align:center;font-size:18px;max-width:640px;margin:0 auto 16px">A <strong>Tonezza del Cimone (Vicenza)</strong>, organizzato dall'<strong>Hotel Bucaneve</strong> con il suo staff di animatori esperti.</p>
 
+    <img src="img/foto-aerea-hotel-bucaneve-drone.jpg" alt="Vista aerea Hotel Bucaneve a Tonezza del Cimone" class="foto-aerea tw-block" data-tw-name="Foto aerea Hotel Bucaneve" loading="lazy">
+
     <div class="ambiente-grid">
       <div class="ambiente-card tw-block" data-tw-name="Ambiente — Aria">
         <span class="ic">🌲</span>
@@ -881,7 +904,10 @@ h1 .highlight{color:var(--brand);white-space:nowrap}
     <div class="media-row tw-block" data-tw-name="Media — Giornali">
       <div class="label">Citati dai principali quotidiani</div>
       <p>Siamo stati citati in articoli di importanti quotidiani come l'<strong>Osservatorio sul Merito del Corriere della Sera</strong>, il <strong>Mattino di Padova</strong> e il <strong>Giornale di Vicenza</strong>, che hanno apprezzato la qualità del nostro lavoro e la professionalità del nostro staff.</p>
-      <div class="foto-placeholder tw-block" data-tw-name="Foto — Screenshot giornali" data-label="SCREENSHOT GIORNALI · Inserire qui i ritagli/screenshot dei 3 articoli (Corriere della Sera — Osservatorio sul Merito, Mattino di Padova, Giornale di Vicenza). 3 immagini affiancate, testata visibile in alto, titolo articolo leggibile." style="margin:18px 0 0"></div>
+      <div class="media-articoli-grid tw-block" data-tw-name="Media — Screenshot giornali">
+        <img src="img/articolo-stampa-osservatorio-merito-camp-no-device.jpg" alt="Articolo Osservatorio sul Merito del Corriere della Sera" loading="lazy">
+        <img src="img/articolo-stampa-giornale-vicenza-detox-smartphone.webp" alt="Articolo Giornale di Vicenza sul Camp digital-detox" loading="lazy">
+      </div>
     </div>
 
   </div>
@@ -921,7 +947,7 @@ h1 .highlight{color:var(--brand);white-space:nowrap}
 
     <p class="tw-block" data-tw-name="Body — Tuo figlio disconnesso" style="text-align:center;max-width:680px;margin:0 auto 22px">Tuo figlio è disconnesso, e tu vedi dove sta e con chi, in tempo reale. <strong>Hai più informazioni di quante ne avresti se fosse a casa con te.</strong></p>
 
-    <div class="foto-placeholder tw-block" data-tw-name="Foto — Screenshot WhatsApp" data-label="SCREENSHOT WHATSAPP · Inserire qui screenshot del gruppo WhatsApp anonimizzato di un turno passato (nomi/numeri oscurati, foto attività visibili)." style="max-width:480px;margin:0 auto 36px;aspect-ratio:3/4"></div>
+    <img src="img/screenshot-whatsapp-mamme-ringraziamenti.jpg" alt="Screenshot del gruppo WhatsApp dei genitori con ringraziamenti" class="foto-whatsapp tw-block" data-tw-name="Foto — Screenshot WhatsApp" loading="lazy">
 
     <h3 class="tw-block" data-tw-name="H3 — Cosa dicono i genitori" style="text-align:center;font-size:24px;font-weight:800;color:var(--testo-scuro);margin:8px auto 8px;letter-spacing:-0.015em">Cosa dicono i genitori.</h3>
 
@@ -982,6 +1008,23 @@ h1 .highlight{color:var(--brand);white-space:nowrap}
         </div>
       </div>
 
+    </div>
+
+    <div class="recensioni-fb-header tw-block" data-tw-name="Recensioni FB — Header">Altre recensioni dalla pagina Facebook</div>
+    <p class="recensioni-fb-sub tw-block" data-tw-name="Recensioni FB — Sub">Screenshot reali dei commenti lasciati da genitori dopo l'esperienza del Camp.</p>
+
+    <div class="recensioni-fb-grid tw-block" data-tw-name="Recensioni FB — Grid">
+      <img src="img/recensione-facebook-camilla-falcucci.png" alt="Recensione Facebook di Camilla Falcucci" loading="lazy">
+      <img src="img/recensione-facebook-rosy-greggio.png" alt="Recensione Facebook di Rosy Greggio" loading="lazy">
+      <img src="img/recensione-facebook-francesca-zilio.png" alt="Recensione Facebook di Francesca Zilio" loading="lazy">
+      <img src="img/recensione-facebook-claudia-girlanda.png" alt="Recensione Facebook di Claudia Girlanda" loading="lazy">
+      <img src="img/recensione-facebook-maricla-grendene.png" alt="Recensione Facebook di Maricla Grendene" loading="lazy">
+      <img src="img/recensione-facebook-sara-friso.png" alt="Recensione Facebook di Sara Friso" loading="lazy">
+      <img src="img/recensione-facebook-karin-cavicchio.png" alt="Recensione Facebook di Karin Cavicchio" loading="lazy">
+      <img src="img/recensione-facebook-sabrina-gavin.png" alt="Recensione Facebook di Sabrina Gavin" loading="lazy">
+      <img src="img/recensione-facebook-miriam-dal-pra.png" alt="Recensione Facebook di Miriam Dal Pra" loading="lazy">
+      <img src="img/recensione-facebook-cinzia-fracasso.png" alt="Recensione Facebook di Cinzia Fracasso" loading="lazy">
+      <img src="img/recensione-facebook-stefania-cacciapuoti.png" alt="Recensione Facebook di Stefania Cacciapuoti" loading="lazy">
     </div>
 
     <div class="stat-highlight">
