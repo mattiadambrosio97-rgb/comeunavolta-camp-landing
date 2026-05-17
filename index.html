@@ -1346,47 +1346,92 @@ h1 .highlight{color:var(--brand);white-space:nowrap}
       <div class="form-title">Prenota la tua chiamata con lo staff</div>
       <p class="form-sub">Riceverai la chiamata entro 24 ore. Senza impegno.</p>
 
-      <form onsubmit="event.preventDefault();alert('Form di test — sarà collegato al CRM al go-live')">
+      <div id="webformErrors" style="color:#c00;font-size:14px;margin-bottom:12px"></div>
+
+      <!-- Keap tracking + reCAPTCHA scripts -->
+      <script src="https://ups203.infusionsoft.app/app/webTracking/getTrackingCode?b=1.70.0.925905-hf-202604061512" type="text/javascript"></script>
+      <script src="https://ups203.infusionsoft.app/app/webform/overwriteRefererJs?b=1.70.0.925905-hf-202604061512" type="text/javascript"></script>
+      <script src="https://ups203.infusionsoft.com/resources/external/recaptcha/production/recaptcha.js?b=1.70.0.925905-hf-202604061512" type="text/javascript"></script>
+      <script async defer src="https://ups203.infusionsoft.com/resources/external/recaptcha/production/enterpriseRecaptcha.js?b=1.70.0.925905-hf-202604061512" type="text/javascript"></script>
+
+      <form accept-charset="UTF-8" action="https://ups203.infusionsoft.app/app/form/process/cdc41d6344738b886a9acf10eedc5864" class="infusion-form" id="inf_form_cdc41d6344738b886a9acf10eedc5864" method="POST" name="Form Camp estate 26" onsubmit="submitWebForm()">
+
+        <input name="inf_form_xid" type="hidden" value="cdc41d6344738b886a9acf10eedc5864">
+        <input name="inf_form_name" type="hidden" value="Form Camp estate 26">
+        <input name="infusionsoft_version" type="hidden" value="1.70.0.925905">
+
         <div class="form-grid">
           <div class="form-field">
-            <label>Nome <span class="req">*</span></label>
-            <input type="text" required placeholder="Maria">
+            <label for="inf_field_FirstName">Nome <span class="req">*</span></label>
+            <input type="text" id="inf_field_FirstName" name="inf_field_FirstName" required placeholder="Maria" autocomplete="given-name">
           </div>
           <div class="form-field">
-            <label>Cognome <span class="req">*</span></label>
-            <input type="text" required placeholder="Rossi">
+            <label for="inf_field_LastName">Cognome <span class="req">*</span></label>
+            <input type="text" id="inf_field_LastName" name="inf_field_LastName" required placeholder="Rossi" autocomplete="family-name">
           </div>
           <div class="form-field full">
-            <label>Email <span class="req">*</span></label>
-            <input type="email" required placeholder="tua@email.it">
+            <label for="inf_field_Email">Email <span class="req">*</span></label>
+            <input type="email" id="inf_field_Email" name="inf_field_Email" required placeholder="tua@email.it" autocomplete="email">
           </div>
           <div class="form-field full">
-            <label>Numero cellulare <span class="req">*</span></label>
-            <input type="tel" required placeholder="+39 333 1234567">
+            <label for="inf_custom_NumeroCellulare">Numero cellulare <span class="req">*</span></label>
+            <input type="tel" id="inf_custom_NumeroCellulare" name="inf_custom_NumeroCellulare" required placeholder="+39 333 1234567" autocomplete="tel">
           </div>
           <div class="form-field full">
-            <label>Seleziona la data di interesse <span class="req">*</span></label>
-            <select required>
-              <option value="">— Scegli un turno —</option>
-              <option>26 Luglio - 2 Agosto</option>
-              <option>2 Agosto - 9 Agosto</option>
-              <option>9 Agosto - 16 Agosto</option>
-              <option>16 Agosto - 23 Agosto</option>
-              <option>Non ho ancora deciso</option>
+            <label for="inf_custom_DateinteressatiCampEstate2026">Seleziona la data di interesse <span class="req">*</span></label>
+            <select id="inf_custom_DateinteressatiCampEstate2026" name="inf_custom_DateinteressatiCampEstate2026" required>
+              <option value="" disabled selected>— Scegli un turno —</option>
+              <option value="26 Luglio - 2 Agosto">26 Luglio - 2 Agosto 2026</option>
+              <option value="2 - 9 Agosto">2 - 9 Agosto 2026</option>
+              <option value="9 - 16 Agosto">9 - 16 Agosto 2026</option>
+              <option value="16 - 23 Agosto">16 - 23 Agosto 2026</option>
             </select>
           </div>
         </div>
 
         <div class="form-consent">
-          <input type="checkbox" id="consent" required>
-          <label for="consent"><span class="req">*</span> Acconsento al trattamento dei miei dati personali ai sensi dell'articolo 13 del Regolamento (UE) 2016/679 e al trattamento dei dati per comunicazioni commerciali e informative sui Prodotti e Servizi di ComeUnaVolta#Camp.</label>
+          <input type="checkbox" id="inf_option_GDPREventieServizi" name="inf_option_GDPREventieServizi" value="311" required>
+          <label for="inf_option_GDPREventieServizi"><span class="req">*</span> Acconsento al trattamento dei miei dati personali ai sensi dell'articolo 13 del Regolamento (UE) 2016/679 e al trattamento dei dati per comunicazioni commerciali e informative sui Prodotti e Servizi di ComeUnaVolta#Camp.</label>
         </div>
 
         <div class="cta-block">
-          <button type="submit" class="cta-btn tw-block" data-tw-name="CTA — Prenota chiamata form"><span class="cta-main">PRENOTA LA CHIAMATA GRATUITA CON LO STAFF <span class="freccia">→</span></span><span class="cta-sub">ti spieghiamo tutto e decidi con calma</span></button>
+          <button type="submit" class="cta-btn infusion-recaptcha tw-block" id="recaptcha_cdc41d6344738b886a9acf10eedc5864" data-tw-name="CTA — Prenota chiamata form"><span class="cta-main">PRENOTA LA CHIAMATA GRATUITA CON LO STAFF <span class="freccia">→</span></span><span class="cta-sub">ti spieghiamo tutto e decidi con calma</span></button>
           <p class="cta-nota tw-block" data-tw-name="CTA nota — Form">Offerta valida fino al <strong>31 maggio</strong></p>
         </div>
+
+        <input type="text" name="inf-sbt" style="display:none !important;" tabindex="-1" autocomplete="off">
       </form>
+
+      <script type="text/javascript">
+      function submitWebForm() {
+        var form = document.getElementById('inf_form_cdc41d6344738b886a9acf10eedc5864');
+        if (!form) return;
+        var addHidden = function(name, value){
+          var inp = document.createElement('input');
+          inp.setAttribute('type', 'hidden');
+          inp.setAttribute('name', name);
+          inp.setAttribute('value', value);
+          form.appendChild(inp);
+        };
+        addHidden('screenResolution', screen.width + 'x' + screen.height);
+        var pluginString = '';
+        if (navigator.plugins) {
+          for (var i = 0; i < navigator.plugins.length; i++) {
+            pluginString += navigator.plugins[i].name + ',';
+          }
+          pluginString = pluginString.replace(/,$/, '');
+        }
+        addHidden('pluginList', pluginString);
+        addHidden('javaEnabled', navigator.javaEnabled ? navigator.javaEnabled() : false);
+        var btn = document.getElementById('recaptcha_cdc41d6344738b886a9acf10eedc5864');
+        if (btn) { btn.disabled = true; var main = btn.querySelector('.cta-main'); if (main) main.textContent = 'INVIO IN CORSO…'; }
+      }
+      </script>
+
+      <script type="text/javascript" src="https://ups203.infusionsoft.app/app/webTracking/getTrackingCode"></script>
+      <script type="text/javascript" src="https://ups203.infusionsoft.com/app/timezone/timezoneInputJs?xid=cdc41d6344738b886a9acf10eedc5864"></script>
+      <script type="text/javascript" src="https://ups203.infusionsoft.com/js/jquery/jquery-3.3.1.js"></script>
+      <script type="text/javascript" src="https://ups203.infusionsoft.com/js/infusionsoft.js"></script>
     </div>
 
   </div>
