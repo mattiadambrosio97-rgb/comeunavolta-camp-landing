@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Grazie per la prenotazione — ComeUnaVolta#Camp Estate 2026</title>
+<meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FCFAF5;
+  --testo-scuro:#0F1419;
+  --testo:#2A2F35;
+  --testo-soft:#6B7280;
+  --linea:#E5E1D6;
+  --brand:#2E5F2B;
+  --brand-soft:#E8F0E5;
+  --cta:#E63946;
+  --cta-hover:#C9303B;
+  --cta-scuro:#A3242E;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:auto}
+body{
+  font-family:'Poppins',system-ui,sans-serif;
+  background:var(--bg);
+  color:var(--testo);
+  line-height:1.6;
+  font-size:18px;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+.wrap-narrow{max-width:760px;margin:0 auto;padding:0 24px}
+
+.hero{padding:22px 0 32px;text-align:center;background:linear-gradient(180deg, #F1ECDE 0%, #EDE6D2 100%);border-bottom:1px solid var(--linea);position:relative}
+.hero::after{content:"";position:absolute;bottom:-1px;left:50%;transform:translateX(-50%);width:84px;height:5px;background:var(--cta);border-radius:4px 4px 0 0}
+
+.trust-badge{display:inline-flex;align-items:center;gap:10px;font-family:'Poppins',sans-serif;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:1.4px;color:var(--brand);background:var(--brand-soft);padding:8px 14px;border-radius:100px;margin:0 auto 21px;line-height:1}
+.trust-badge .dot{width:6px;height:6px;background:var(--brand);border-radius:50%;display:inline-block}
+.trust-badge .sep{width:1px;height:11px;background:var(--brand);opacity:0.3;display:inline-block}
+
+.eyebrow{display:block;font-family:'Poppins',sans-serif;font-size:15px;font-weight:700;text-transform:uppercase;letter-spacing:1.4px;color:var(--cta);margin:0 auto 17px;line-height:1.45;max-width:680px}
+
+h1{font-family:'Poppins',sans-serif;font-weight:800;font-size:clamp(24px, 6vw, 29px);line-height:1.18;letter-spacing:-0.02em;color:var(--testo-scuro);margin:0 auto 20px;max-width:960px;text-wrap:balance}
+h1 .highlight{color:var(--brand);white-space:nowrap}
+
+.sub{font-family:'Poppins',sans-serif;font-size:20px;line-height:1.5;color:var(--testo);margin:0 auto 12px;font-weight:400;max-width:600px}
+.sub strong{font-weight:700;color:var(--testo-scuro)}
+
+.meta{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:8px 14px;font-family:'Poppins',sans-serif;font-size:14px;font-weight:600;color:var(--testo-soft);letter-spacing:0.6px;margin:0 auto 16px;padding-bottom:14px;border-bottom:1px solid var(--linea);max-width:580px;text-transform:uppercase}
+.meta-item{display:inline-flex;align-items:center;gap:6px}
+.meta-item .ic{width:5px;height:5px;background:var(--cta);border-radius:50%;display:inline-block}
+.meta-sep{color:var(--linea);font-weight:400}
+
+.foto-hero{width:100%;max-width:620px;aspect-ratio:16/9;border-radius:16px;margin:0 auto 24px;display:block;object-fit:cover;box-shadow:0 8px 30px rgba(15,20,25,0.10),0 2px 6px rgba(15,20,25,0.04)}
+.logo-hero{display:block;max-width:140px;height:auto;margin:0 auto 18px}
+.banner-metodo{width:100%;max-width:560px;height:auto;border-radius:14px;margin:0 auto 28px;display:block;box-shadow:0 4px 14px rgba(15,20,25,0.08)}
+.foto-aerea{width:100%;max-width:680px;aspect-ratio:16/9;border-radius:14px;margin:8px auto 22px;display:block;object-fit:cover;box-shadow:0 6px 20px rgba(15,20,25,0.10)}
+.giorno-foto{width:100%;max-width:500px;aspect-ratio:4/3;border-radius:12px;object-fit:cover;margin:14px 0 6px;display:block;box-shadow:0 4px 14px rgba(15,20,25,0.08)}
+.foto-whatsapp{width:100%;max-width:380px;height:auto;border-radius:14px;display:block;margin:0 auto 36px;box-shadow:0 6px 20px rgba(15,20,25,0.12)}
+.media-articoli-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:18px 0 0}
+.media-articoli-grid img{width:100%;height:auto;border-radius:10px;display:block;box-shadow:0 3px 12px rgba(15,20,25,0.08);border:1px solid var(--linea);background:white}
+@media(max-width:560px){.media-articoli-grid{grid-template-columns:1fr}}
+.recensioni-fb-header{text-align:center;font-family:'Poppins',sans-serif;font-size:12px;font-weight:800;color:var(--testo-soft);margin:36px auto 6px;letter-spacing:1.6px;text-transform:uppercase}
+.recensioni-fb-sub{text-align:center;font-family:'Poppins',sans-serif;font-size:15px;color:var(--testo);margin:0 auto 22px;font-style:italic;max-width:560px;line-height:1.5}
+.recensioni-fb-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:0 auto 20px}
+.recensioni-fb-grid img{width:100%;height:auto;border-radius:10px;display:block;box-shadow:0 3px 12px rgba(15,20,25,0.06);background:white;border:1px solid var(--linea)}
+@media(max-width:560px){.recensioni-fb-grid{grid-template-columns:1fr;gap:12px}}
+
+.cta-block{max-width:560px;margin:0 auto}
+.cta-btn{display:block;width:100%;background:var(--cta);color:white;font-family:'Poppins',sans-serif;letter-spacing:0.4px;padding:20px 28px;border:none;border-radius:24px;text-decoration:none;text-align:center;cursor:pointer;transition:all 0.2s ease;box-shadow:0 4px 14px rgba(230,57,70,0.28);line-height:1.3;text-transform:none}
+.cta-btn:hover{background:var(--cta-hover);transform:translateY(-1px);box-shadow:0 8px 22px rgba(230,57,70,0.38)}
+.cta-btn .cta-main{display:block;font-size:clamp(17px, 4.4vw, 20px);font-weight:800;text-transform:uppercase;letter-spacing:0.5px;line-height:1.25}
+.cta-btn .cta-sub{display:block;font-size:clamp(12px, 3.2vw, 14px);font-weight:500;letter-spacing:0.2px;margin-top:8px;opacity:0.96;line-height:1.35;font-style:italic}
+.cta-btn .freccia{display:inline-block;margin-left:8px}
+.sticky-cta{display:none}
+@media(max-width:768px){
+  .sticky-cta{position:fixed;bottom:calc(10px + env(safe-area-inset-bottom, 0px));left:10px;right:10px;background:var(--cta);color:white;font-family:'Poppins',sans-serif;font-weight:800;font-size:14px;padding:15px 18px;border-radius:100px;text-decoration:none;text-align:center;text-transform:uppercase;letter-spacing:0.4px;box-shadow:0 6px 24px rgba(230,57,70,0.5);z-index:9999;display:flex;align-items:center;justify-content:center;gap:8px;line-height:1.2;transform:translateZ(0);-webkit-transform:translateZ(0);will-change:transform}
+  body{padding-bottom:calc(80px + env(safe-area-inset-bottom, 0px))}
+}
+.cta-nota{display:block;background:none;border:none;box-shadow:none;color:var(--testo-soft);padding:0;font-family:'Poppins',sans-serif;font-size:13px;font-weight:500;letter-spacing:0.2px;text-transform:none;margin:14px auto 0;text-align:center;line-height:1.45}
+.cta-nota::before{content:"⏰ ";font-size:14px;line-height:1;margin-right:2px}
+.cta-nota strong{color:#C9303B;font-weight:800;letter-spacing:0}
+.cta-block{text-align:center}
+
+.corpo{padding:52px 0 36px;position:relative}
+
+/* Alternanza sfondi sezioni */
+.corpo.band-bianco{background:#FFFFFF;padding:64px 0 56px;border-top:1px solid var(--linea);border-bottom:1px solid var(--linea)}
+.corpo.band-crema-scuro{background:#F1ECDE;padding:64px 0 56px}
+.corpo.band-verde-soft{background:linear-gradient(180deg, #F0F7EE 0%, #E8F0E5 100%);padding:64px 0 56px}
+
+/* Divisore decorativo cima section */
+.divisore-top{position:absolute;top:0;left:50%;transform:translateX(-50%);width:64px;height:5px;background:var(--cta);border-radius:0 0 4px 4px}
+
+/* Sotto-headline intermedie nel corpo */
+.sotto-h{font-family:'Poppins',sans-serif;font-weight:800;font-size:clamp(21px, 4.8vw, 24px);line-height:1.28;color:var(--testo-scuro);letter-spacing:-0.018em;margin:38px 0 16px;position:relative;padding-top:18px;text-wrap:balance}
+.sotto-h::before{content:"";position:absolute;top:0;left:0;width:42px;height:3px;background:var(--cta);border-radius:2px}
+.sotto-h strong{color:var(--cta);font-weight:800}
+.corpo h3.sotto-h{color:var(--testo-scuro);text-align:left}
+.corpo h3.sotto-h strong{color:var(--cta)}
+.corpo p{font-family:'Poppins',sans-serif;font-size:18px;line-height:1.6;color:var(--testo);margin-bottom:16px;font-weight:400}
+.corpo p.intro{font-size:clamp(22px, 5.5vw, 28px);line-height:1.3;color:var(--testo-scuro);font-weight:700;margin-bottom:11px;letter-spacing:-0.015em;text-align:center}
+.corpo .virgolette{display:block;font-family:'Poppins',sans-serif;font-weight:600;font-style:italic;font-size:clamp(20px, 4.8vw, 24px);color:var(--testo-scuro);padding:10px 0 10px 20px;border-left:3px solid var(--cta);margin:6px 0 24px;line-height:1.4;letter-spacing:-0.008em}
+.corpo .urlo{display:block;font-family:'Poppins',sans-serif;font-weight:800;font-size:clamp(20px, 4.6vw, 23px);color:var(--cta-scuro);padding:0;border:none;margin:0 auto 12px;line-height:1.3;text-align:center;max-width:600px}
+.corpo .urlo:last-of-type{margin-bottom:25px}
+.domanda{font-family:'Poppins',sans-serif;font-weight:700;font-size:clamp(24px, 5.5vw, 28px);line-height:1.25;color:var(--testo-scuro);margin:25px auto 5px;letter-spacing:-0.015em;text-align:center;max-width:680px}
+.domanda strong{color:var(--cta);font-weight:800}
+.risposta-no{font-family:'Poppins',sans-serif;font-weight:800;font-size:clamp(28px, 7.5vw, 38px);line-height:1.1;color:var(--cta);letter-spacing:-0.02em;margin:8px auto 8px;text-align:center;max-width:680px}
+.chiusa{font-family:'Poppins',sans-serif;font-weight:500;font-style:italic;font-size:clamp(19px, 4.4vw, 22px);color:var(--testo-soft);line-height:1.3;margin:5px auto 24px;letter-spacing:0;text-align:center;max-width:600px}
+
+.frase-chiave{font-family:'Poppins',sans-serif;font-weight:700;font-size:clamp(19px, 4.4vw, 22px);line-height:1.35;color:var(--testo-scuro);text-align:center;margin:28px auto 14px;max-width:620px;letter-spacing:-0.01em}
+.frase-chiave strong{color:var(--brand)}
+.frase-chiave.pain strong{color:var(--cta)}
+
+.stat-list{margin:24px 0 28px}
+.stat-row{display:flex;align-items:flex-start;gap:14px;padding:18px 20px;margin-bottom:10px;background:white;border-left:3px solid var(--cta);border-radius:10px;box-shadow:0 4px 14px rgba(15,20,25,0.05)}
+.stat-row .ic{font-size:22px;flex-shrink:0;line-height:1.3}
+.stat-row .stat-text{font-size:16px;line-height:1.55;color:var(--testo);font-family:'Poppins',sans-serif;font-weight:400}
+.stat-row .stat-text strong{color:var(--testo-scuro);font-weight:700}
+.stat-row .stat-text .fonte{display:block;color:var(--testo-soft);font-size:13px;margin-top:4px;font-style:italic}
+
+/* Evidenziatore skim-reader (livello 1 di lettura) */
+.skim{background:linear-gradient(180deg, transparent 58%, #FFE89C 58%, #FFE89C 94%, transparent 94%);padding:0 3px;font-weight:600}
+
+/* Voce esterna (citazione minimizzatori) */
+.voce-esterna{display:block;padding-left:18px;border-left:2px solid var(--linea);margin:0 0 12px;font-family:'Poppins',sans-serif;font-size:17px;line-height:1.55;color:var(--testo)}
+.voce-esterna em{font-style:italic;color:var(--testo-scuro);font-weight:500}
+
+/* SEZIONI — header */
+.section-eyebrow{display:block;text-align:center;font-family:'Poppins',sans-serif;font-size:12px;font-weight:700;letter-spacing:2.2px;text-transform:uppercase;color:var(--cta);margin:0 auto 14px}
+.section-eyebrow::before,.section-eyebrow::after{content:"";display:inline-block;width:24px;height:1px;background:var(--cta);vertical-align:middle;margin:0 12px;opacity:0.5}
+.corpo h2{font-family:'Poppins',sans-serif;font-weight:800;font-size:clamp(26px, 6.5vw, 34px);line-height:1.18;color:var(--testo-scuro);margin:0 auto 22px;letter-spacing:-0.022em;text-align:center;max-width:760px}
+.corpo h2 .tm{color:var(--brand)}
+.corpo h3{font-family:'Poppins',sans-serif;font-weight:700;font-size:22px;line-height:1.3;color:var(--brand);margin:36px auto 14px;letter-spacing:-0.01em;text-align:center}
+
+/* Lista numerata "3 punti metodo" */
+.punti-list{margin:26px 0 32px;display:grid;gap:16px}
+.punto-item{position:relative;padding:26px 28px 26px 96px;background:white;border-radius:16px;border:1px solid var(--linea);box-shadow:0 6px 22px rgba(15,20,25,0.06);overflow:hidden;min-height:130px}
+.punto-item::after{content:attr(data-num);position:absolute;right:-12px;bottom:-46px;font-family:'Poppins',sans-serif;font-weight:900;font-size:170px;line-height:1;color:var(--brand-soft);z-index:0;opacity:0.55;letter-spacing:-0.05em;pointer-events:none}
+.punto-num-cerchio{position:absolute;left:24px;top:26px;width:52px;height:52px;background:var(--brand);color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Poppins',sans-serif;font-size:22px;font-weight:800;box-shadow:0 6px 18px rgba(46,95,43,0.32);z-index:2}
+.punto-body{font-size:16px;line-height:1.6;color:var(--testo);font-family:'Poppins',sans-serif;position:relative;z-index:1}
+.punto-body strong.titolo{color:var(--testo-scuro);display:block;margin-bottom:8px;font-size:18px;font-weight:800;letter-spacing:-0.012em}
+.punto-body em{font-style:italic;color:var(--testo-soft)}
+@media(max-width:560px){.punto-item{padding:74px 22px 22px 22px}.punto-num-cerchio{top:22px;left:22px;width:46px;height:46px;font-size:20px}.punto-item::after{font-size:130px;bottom:-30px}}
+
+/* Check list — grid card */
+.check-list{list-style:none;margin:24px 0 28px;padding:0;display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.check-list li{display:flex;gap:14px;align-items:flex-start;padding:18px 20px;background:white;border-radius:12px;border:1px solid var(--linea);box-shadow:0 2px 10px rgba(15,20,25,0.04);font-size:15px;line-height:1.5;color:var(--testo);font-family:'Poppins',sans-serif;transition:transform 0.2s ease, box-shadow 0.2s ease}
+.check-list li:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(15,20,25,0.08)}
+.check-list .ic{flex-shrink:0;width:28px;height:28px;background:var(--brand-soft);color:var(--brand);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:800;line-height:1}
+.check-list strong{color:var(--testo-scuro);font-weight:700}
+@media(max-width:640px){.check-list{grid-template-columns:1fr}}
+
+/* Stacco visivo fra sezioni */
+.stacco{text-align:center;margin:40px 0 0;color:var(--linea);font-size:18px;letter-spacing:14px}
+
+/* TIMELINE 8 giorni */
+.timeline{position:relative;margin:32px 0 28px}
+.giorno{position:relative;padding:0 0 38px 72px;min-height:60px}
+.giorno:last-child{padding-bottom:8px}
+.giorno::before{content:"";position:absolute;left:23px;top:52px;bottom:0;width:2px;background:linear-gradient(180deg, var(--giorno-color, var(--brand)) 0%, rgba(0,0,0,0.08) 100%);opacity:0.55}
+.giorno:last-child::before{display:none}
+.giorno .pallino{position:absolute;left:0;top:0;width:48px;height:48px;border-radius:50%;background:var(--giorno-color, var(--brand));color:white;display:flex;align-items:center;justify-content:center;font-family:'Poppins',sans-serif;font-weight:800;font-size:19px;box-shadow:0 4px 16px rgba(15,20,25,0.18);z-index:2;border:3px solid white}
+.giorno-head{margin-bottom:14px;padding-top:8px}
+.giorno-eyebrow{display:none}
+.corpo .giorno-title{font-family:'Poppins',sans-serif;font-size:26px;font-weight:800;line-height:1.18;color:var(--giorno-color, var(--brand));letter-spacing:-0.02em;margin:0 0 4px;text-align:left}
+.corpo .giorno-sub{font-family:'Poppins',sans-serif;font-size:17px;font-style:italic;color:var(--testo-soft);font-weight:500;line-height:1.4;text-align:left;margin:0}
+.giorno-body{font-size:16px;line-height:1.6;color:var(--testo);font-family:'Poppins',sans-serif}
+.giorno-body p{margin-bottom:12px}
+.giorno-body p:last-child{margin-bottom:0}
+.giorno-body strong{color:var(--testo-scuro);font-weight:700}
+.giorno-body em{font-style:italic;color:var(--testo-soft)}
+
+/* CTA inline mid-page */
+.cta-mid{margin:24px auto 0;max-width:560px}
+
+/* TRE ELEMENTI UNICI */
+.elemento-unico{background:white;border-radius:18px;margin-bottom:20px;border:1px solid var(--linea);box-shadow:0 8px 26px rgba(15,20,25,0.07);position:relative;overflow:hidden}
+.elem-banda{background:var(--elem-color, var(--brand));padding:14px 30px;display:flex;align-items:center;gap:10px 14px;flex-wrap:wrap;position:relative;overflow:hidden}
+.elem-banda::after{content:"";position:absolute;right:-30px;top:-30px;width:120px;height:120px;background:rgba(255,255,255,0.08);border-radius:50%;pointer-events:none}
+.elem-banda .pill{background:white;color:var(--elem-color, var(--brand));font-family:'Poppins',sans-serif;font-size:11px;font-weight:800;letter-spacing:1.8px;text-transform:uppercase;padding:7px 14px;border-radius:100px;line-height:1;position:relative;z-index:1;box-shadow:0 2px 8px rgba(0,0,0,0.1)}
+.elem-banda .pill-name{color:white;font-family:'Poppins',sans-serif;font-size:13px;font-weight:700;letter-spacing:1.4px;text-transform:uppercase;line-height:1;position:relative;z-index:1;opacity:0.95}
+.elem-content{padding:28px 32px 30px}
+.corpo .elemento-unico h3.elem-title{font-family:'Poppins',sans-serif;font-size:26px;font-weight:800;color:var(--testo-scuro);line-height:1.18;letter-spacing:-0.02em;margin:0 0 8px;text-align:left}
+.corpo .elemento-unico .sub-elemento{font-family:'Poppins',sans-serif;font-size:17px;font-style:italic;color:var(--testo-soft);font-weight:500;margin:0 0 20px;line-height:1.4;text-align:left}
+@media(max-width:560px){.elem-banda{padding:12px 22px;gap:10px}.elem-content{padding:24px 22px 26px}.corpo .elemento-unico h3.elem-title{font-size:22px}.elem-banda .pill-name{font-size:11px;letter-spacing:1px}}
+.elemento-unico p{font-size:16px;line-height:1.6;color:var(--testo);margin-bottom:14px;font-family:'Poppins',sans-serif}
+.elemento-unico p:last-child{margin-bottom:0}
+.elemento-unico strong{color:var(--testo-scuro);font-weight:700}
+.elemento-unico em{font-style:italic;color:var(--testo-soft)}
+
+.warning-box{background:#FFF6DA;border-left:3px solid #E8A722;padding:14px 18px;border-radius:8px;margin:14px 0 18px;font-family:'Poppins',sans-serif;font-size:15px;font-weight:700;color:#8B5A1F;line-height:1.5}
+.warning-box::before{content:"⚠ ";font-weight:800;margin-right:4px}
+
+.elemento-bullet{list-style:none;padding:0;margin:14px 0 0}
+.elemento-bullet li{display:flex;gap:12px;align-items:flex-start;padding:10px 0;font-size:15px;line-height:1.55;color:var(--testo);font-family:'Poppins',sans-serif;border-bottom:1px solid var(--linea)}
+.elemento-bullet li:last-child{border-bottom:none}
+.elemento-bullet li::before{content:"→";color:var(--elem-color, var(--brand));font-weight:800;flex-shrink:0;font-size:16px;margin-top:1px}
+.elemento-bullet strong{color:var(--testo-scuro);font-weight:700}
+
+/* DATE CAMP */
+.date-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:24px 0 12px}
+.data-card{background:white;border-radius:14px;padding:20px 22px;border:1px solid var(--linea);box-shadow:0 4px 14px rgba(15,20,25,0.05);display:flex;align-items:center;gap:14px;transition:transform 0.2s, box-shadow 0.2s;font-family:'Poppins',sans-serif}
+.data-card:hover{transform:translateY(-3px);box-shadow:0 10px 26px rgba(15,20,25,0.08)}
+.data-card .turno-tag{flex-shrink:0;background:var(--brand-soft);color:var(--brand);font-weight:800;font-size:12px;padding:7px 11px;border-radius:100px;letter-spacing:0.8px;text-transform:uppercase;line-height:1}
+.data-card .periodo{font-size:17px;font-weight:700;color:var(--testo-scuro);line-height:1.3;letter-spacing:-0.01em}
+.data-card .nights{display:block;font-size:12px;font-weight:500;color:var(--testo-soft);margin-top:3px;letter-spacing:0.3px}
+@media(max-width:560px){.date-grid{grid-template-columns:1fr}}
+
+/* AMBIENTE TONEZZA */
+.ambiente-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:26px 0 28px}
+.ambiente-card{background:white;border-radius:14px;padding:24px 18px;border:1px solid var(--linea);box-shadow:0 4px 14px rgba(15,20,25,0.05);text-align:center;font-family:'Poppins',sans-serif}
+.ambiente-card .ic{font-size:32px;margin-bottom:12px;display:block;line-height:1}
+.ambiente-card .label{font-size:14px;font-weight:800;color:var(--testo-scuro);line-height:1.3;margin-bottom:6px;letter-spacing:-0.005em}
+.ambiente-card .meta{font-size:13px;color:var(--testo-soft);line-height:1.45;font-weight:500}
+@media(max-width:600px){.ambiente-grid{grid-template-columns:1fr}}
+
+/* MEDIA — Giornali */
+.media-row{background:white;border-radius:14px;padding:22px 26px;border:1px solid var(--linea);box-shadow:0 4px 14px rgba(15,20,25,0.05);margin:18px 0;font-family:'Poppins',sans-serif}
+.media-row .label{font-size:11px;font-weight:800;color:var(--cta);letter-spacing:1.6px;text-transform:uppercase;margin-bottom:14px}
+.media-row p{font-size:16px;line-height:1.55;color:var(--testo);margin-bottom:12px}
+.media-row .testate{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.media-row .testata{background:var(--bg);border-radius:8px;padding:9px 14px;font-size:13px;font-weight:700;color:var(--testo-scuro);border:1px solid var(--linea)}
+
+/* STAFF — check-list credenziali */
+.staff-claim{font-family:'Poppins',sans-serif;font-size:clamp(19px, 4.4vw, 22px);font-weight:800;color:var(--testo-scuro);text-align:center;line-height:1.3;letter-spacing:-0.015em;margin:24px auto 18px;max-width:680px}
+.staff-claim strong{color:var(--cta)}
+
+.credential-list{list-style:none;margin:24px 0 18px;padding:0;display:grid;gap:12px}
+.credential-list li{display:flex;gap:14px;align-items:flex-start;padding:18px 22px;background:white;border-radius:12px;border:1px solid var(--linea);box-shadow:0 4px 14px rgba(15,20,25,0.05);font-family:'Poppins',sans-serif;font-size:16px;line-height:1.55;color:var(--testo)}
+.credential-list .ic{flex-shrink:0;width:32px;height:32px;background:var(--brand);color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:800;box-shadow:0 3px 10px rgba(46,95,43,0.25)}
+.credential-list strong{color:var(--testo-scuro);font-weight:700}
+
+/* TESTIMONIAL — stack verticale */
+.testimonial-grid{display:flex;flex-direction:column;gap:14px;margin:24px 0 28px}
+.testimonial{background:white;border-radius:14px;padding:26px 30px 22px;border:1px solid var(--linea);box-shadow:0 4px 14px rgba(15,20,25,0.05);font-family:'Poppins',sans-serif;position:relative}
+.testimonial::before{content:"\201C";position:absolute;top:10px;left:20px;font-family:Georgia, serif;font-size:64px;color:var(--brand);opacity:0.18;line-height:1;font-weight:700}
+.testimonial .quote{font-size:17px;line-height:1.6;color:var(--testo);font-style:italic;margin-bottom:16px;position:relative;z-index:1}
+.testimonial .author{display:flex;align-items:center;gap:12px;padding-top:14px;border-top:1px solid var(--linea)}
+.testimonial .author .avatar{flex-shrink:0;width:38px;height:38px;background:var(--brand-soft);color:var(--brand);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:14px}
+.testimonial .author .name{font-size:14px;font-weight:700;color:var(--testo-scuro);line-height:1.3}
+.testimonial .author .role{display:block;font-size:12px;color:var(--testo-soft);font-weight:500;margin-top:2px;letter-spacing:0.3px}
+
+/* STAT highlight 3 numeri big */
+.stat-highlight{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:28px 0 8px}
+.stat-big{background:white;border-radius:14px;padding:24px 18px;border:1px solid var(--linea);box-shadow:0 4px 14px rgba(15,20,25,0.05);text-align:center;font-family:'Poppins',sans-serif}
+.stat-big .num{font-size:38px;font-weight:900;color:var(--brand);line-height:1;letter-spacing:-0.03em;margin-bottom:6px;display:block}
+.stat-big .label{font-size:13px;font-weight:600;color:var(--testo);line-height:1.4}
+.stat-big .label strong{color:var(--testo-scuro);font-weight:700}
+@media(max-width:560px){.stat-highlight{grid-template-columns:1fr;gap:10px}.stat-big{padding:18px}.stat-big .num{font-size:32px}}
+
+/* PERCHÉ SCEGLIERCI — 5 card orizzontali stack */
+.perche-grid{display:grid;grid-template-columns:1fr;gap:12px;margin:30px 0 18px}
+.perche-card{background:white;border-radius:14px;padding:20px 24px;border:1px solid var(--linea);box-shadow:0 4px 14px rgba(15,20,25,0.05);font-family:'Poppins',sans-serif;display:flex;align-items:center;gap:18px;transition:transform 0.2s, box-shadow 0.2s}
+.perche-card:hover{transform:translateX(4px);box-shadow:0 8px 22px rgba(15,20,25,0.08)}
+.perche-card .ic{flex-shrink:0;width:54px;height:54px;background:var(--brand-soft);color:var(--brand);border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:26px;line-height:1}
+.perche-card .body{flex:1;min-width:0}
+.perche-card .label{font-size:17px;font-weight:800;color:var(--testo-scuro);line-height:1.25;margin-bottom:4px;letter-spacing:-0.01em}
+.perche-card .desc{font-size:14px;color:var(--testo);line-height:1.5;font-weight:500}
+.perche-card .desc strong{color:var(--testo-scuro);font-weight:700}
+@media(max-width:560px){.perche-card{padding:18px 20px;gap:14px}.perche-card .ic{width:46px;height:46px;font-size:22px}.perche-card .label{font-size:16px}}
+
+/* PRICING — Cosa include */
+.include-box{background:white;border-radius:14px;padding:26px 30px;border:1px solid var(--linea);box-shadow:0 4px 14px rgba(15,20,25,0.05);margin:24px 0;font-family:'Poppins',sans-serif}
+.include-box .label{font-size:11px;font-weight:800;color:var(--brand);letter-spacing:1.8px;text-transform:uppercase;margin-bottom:16px;text-align:center}
+.include-list{list-style:none;padding:0;margin:0;display:grid;gap:11px}
+.include-list li{display:flex;gap:12px;align-items:flex-start;font-size:15px;line-height:1.55;color:var(--testo);font-family:'Poppins',sans-serif}
+.include-list .ar{color:var(--brand);font-weight:800;flex-shrink:0;font-size:18px;line-height:1.5}
+.include-list strong{color:var(--testo-scuro);font-weight:700}
+
+/* BONUS section */
+.bonus-section{margin:34px 0 20px}
+.bonus-head{text-align:center;font-family:'Poppins',sans-serif;font-size:19px;font-weight:700;color:var(--testo-scuro);margin-bottom:18px;letter-spacing:-0.01em;line-height:1.4}
+.bonus-head strong{color:var(--cta)}
+.bonus-card{background:white;border-radius:14px;padding:22px 26px;margin-bottom:12px;border:1px solid var(--linea);box-shadow:0 4px 14px rgba(15,20,25,0.05);display:flex;gap:18px;align-items:flex-start;font-family:'Poppins',sans-serif;transition:transform 0.2s, box-shadow 0.2s}
+.bonus-card:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(15,20,25,0.08)}
+.bonus-card .bonus-ic{flex-shrink:0;width:48px;height:48px;background:linear-gradient(135deg, #5FB880 0%, #2E5F2B 100%);color:white;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:22px;box-shadow:0 4px 14px rgba(46,95,43,0.28)}
+.bonus-card.extra .bonus-ic{background:linear-gradient(135deg, #FFD23F 0%, #E8A722 100%);box-shadow:0 4px 14px rgba(232,167,34,0.3)}
+.bonus-card .bonus-body{flex:1;min-width:0}
+.bonus-card .bonus-title{font-size:17px;font-weight:800;color:var(--testo-scuro);line-height:1.3;margin-bottom:6px;letter-spacing:-0.01em}
+.bonus-card .bonus-valore{display:inline-block;font-size:11px;font-weight:800;color:var(--cta);background:#FCE6E8;padding:5px 12px;border-radius:100px;margin-bottom:10px;letter-spacing:0.8px;text-transform:uppercase}
+.bonus-card.extra .bonus-valore{color:#8B5A1F;background:#FFF6E0}
+.bonus-card p{font-size:14px;color:var(--testo);line-height:1.5;margin:0;font-weight:500}
+.bonus-card strong{color:var(--testo-scuro);font-weight:700}
+
+/* PRICING — Direct response shouty (Offerta Speciale) */
+.pricing-card{background:white;border-radius:20px;padding:46px 30px 34px;margin:40px 0 18px;font-family:'Poppins',sans-serif;text-align:center;position:relative;border:1px solid var(--linea);box-shadow:0 14px 40px rgba(15,20,25,0.1);overflow:visible}
+
+/* Medaglia "Offerta di Lancio" oro */
+.medaglia-offer{position:absolute;top:-22px;right:24px;width:118px;height:118px;background:radial-gradient(circle at 32% 28%, #FFE88A 0%, #FFD23F 28%, #E8A722 65%, #B07F12 100%);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-direction:column;color:#3D2A05;font-family:'Poppins',sans-serif;font-weight:900;font-size:13px;letter-spacing:1.4px;text-transform:uppercase;line-height:1.15;text-align:center;box-shadow:0 10px 24px rgba(176,127,18,0.4), inset 0 -3px 10px rgba(125,80,0,0.35), inset 0 4px 8px rgba(255,255,255,0.6);border:3px solid #B07F12;transform:rotate(7deg);z-index:5}
+.medaglia-offer::before{content:"";position:absolute;inset:6px;border-radius:50%;border:1.5px dashed rgba(125,80,0,0.4)}
+.medaglia-offer span{display:block;position:relative;z-index:1}
+.medaglia-offer .l1{font-size:13px}
+.medaglia-offer .l2{font-size:12px;margin-top:2px}
+
+/* Prezzo vecchio barrato rosso */
+.prezzo-old{font-family:'Poppins',sans-serif;font-size:74px;font-weight:900;color:#E63946;line-height:1;letter-spacing:-0.04em;display:inline-block;position:relative;margin-bottom:24px}
+.prezzo-old::after{content:"";position:absolute;left:-12px;right:-12px;top:48%;height:7px;background:#E63946;border-radius:4px;transform:translateY(-50%) rotate(-4deg);box-shadow:0 2px 4px rgba(230,57,70,0.3)}
+.prezzo-old .e{font-size:42px;vertical-align:top;line-height:1.6;margin-left:2px}
+
+/* Label "Per te, a" */
+.prezzo-label{font-family:'Poppins',sans-serif;font-size:24px;font-weight:700;color:var(--testo-scuro);margin-bottom:6px;letter-spacing:-0.01em;line-height:1.3}
+
+/* Prezzo nuovo gigante verde */
+.prezzo-new{font-family:'Poppins',sans-serif;font-size:128px;font-weight:900;color:var(--brand);line-height:0.95;letter-spacing:-0.05em;display:inline-block;margin-bottom:4px;text-shadow:0 2px 0 rgba(46,95,43,0.08)}
+.prezzo-new .e{font-size:78px;vertical-align:top;line-height:1.35;margin-left:2px;font-weight:900}
+
+/* "Tutto compreso!" highlight */
+.prezzo-incluso{font-family:'Poppins',sans-serif;font-size:32px;font-weight:900;color:var(--brand);letter-spacing:-0.01em;text-transform:uppercase;line-height:1.1;margin-bottom:24px;text-shadow:0 2px 0 rgba(46,95,43,0.08)}
+
+/* Dettagli pacchetto */
+.pricing-detail{font-family:'Poppins',sans-serif;font-size:14px;color:var(--testo-soft);font-weight:500;line-height:1.55;font-style:italic;max-width:480px;margin:0 auto 4px}
+.pricing-detail strong{color:var(--testo-scuro);font-weight:700;font-style:normal}
+
+/* Risparmio strip */
+.risparmio-wrap{margin-top:26px;padding-top:22px;border-top:1.5px dashed rgba(15,20,25,0.15)}
+.risparmio{display:inline-flex;align-items:center;gap:10px;background:linear-gradient(135deg, #E63946 0%, #C9303B 100%);color:white;font-family:'Poppins',sans-serif;font-weight:900;font-size:16px;padding:14px 26px;border-radius:100px;letter-spacing:0.8px;text-transform:uppercase;box-shadow:0 6px 18px rgba(230,57,70,0.35);line-height:1}
+.risparmio::before{content:"⚡";font-size:18px;line-height:1}
+
+@media(max-width:560px){
+  .pricing-card{padding:42px 22px 28px}
+  .medaglia-offer{width:96px;height:96px;font-size:11px;top:-16px;right:12px}
+  .medaglia-offer .l1{font-size:11px}
+  .medaglia-offer .l2{font-size:10px}
+  .prezzo-old{font-size:56px}
+  .prezzo-old .e{font-size:32px}
+  .prezzo-new{font-size:96px}
+  .prezzo-new .e{font-size:60px}
+  .prezzo-incluso{font-size:26px}
+  .prezzo-label{font-size:20px}
+}
+
+/* URGENZA Banner — Scadenza forte */
+.urgency-banner{background:linear-gradient(135deg, #FFF6E0 0%, #FBE3D2 100%);border:2px solid #E8A722;border-radius:14px;padding:18px 24px;margin:18px 0 22px;font-family:'Poppins',sans-serif;text-align:center;display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap}
+.urgency-banner .ic{font-size:24px;line-height:1}
+.urgency-banner .txt{font-size:15px;font-weight:800;color:#8B5A1F;letter-spacing:0.5px}
+.urgency-banner .txt strong{color:#C9303B;font-weight:900;text-transform:uppercase}
+
+/* GARANZIA — nuova struttura split */
+.garanzia-box{background:white;border-radius:16px;padding:30px 34px;margin:32px 0 8px;font-family:'Poppins',sans-serif;border:1px solid var(--linea);box-shadow:0 6px 22px rgba(15,20,25,0.06);position:relative;overflow:hidden}
+.garanzia-box::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg, var(--brand) 0%, #5FB880 50%, var(--brand) 100%)}
+.garanzia-eyebrow{display:inline-block;font-size:11px;font-weight:800;color:var(--brand);letter-spacing:2px;text-transform:uppercase;background:var(--brand-soft);padding:6px 13px;border-radius:100px;margin-bottom:12px;line-height:1}
+.corpo .garanzia-box h3.gar-title{font-size:26px;font-weight:800;color:var(--testo-scuro);line-height:1.2;letter-spacing:-0.02em;margin:0 0 8px;text-align:left}
+.garanzia-tagline{font-size:15px;color:var(--testo-soft);font-style:italic;margin-bottom:22px;line-height:1.5}
+.garanzia-split{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:8px 0 20px}
+.gar-card{background:var(--bg);border-radius:12px;padding:22px 22px;border:1px solid var(--linea);position:relative}
+.gar-card.positive{background:#F0F7EE;border-color:#C5DDC1}
+.gar-card.warning{background:#FDF2EB;border-color:#F0CCB0}
+.gar-card .gar-tempo{display:flex;align-items:center;gap:10px;font-size:11px;font-weight:800;letter-spacing:1.4px;text-transform:uppercase;margin-bottom:10px;line-height:1}
+.gar-card.positive .gar-tempo{color:var(--brand)}
+.gar-card.warning .gar-tempo{color:#B25522}
+.gar-card .gar-tempo .num{flex-shrink:0;width:28px;height:28px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:12px;font-weight:900;color:white;letter-spacing:0;background:var(--brand)}
+.gar-card.warning .gar-tempo .num{background:#D9531E}
+.gar-card .gar-action{font-size:15px;font-weight:800;color:var(--testo-scuro);line-height:1.3;margin-bottom:8px;letter-spacing:-0.01em}
+.gar-card.positive .gar-action{color:var(--brand)}
+.gar-card.warning .gar-action{color:#B25522}
+.gar-card .gar-body{font-size:13px;line-height:1.55;color:var(--testo)}
+.gar-card .gar-body strong{color:var(--testo-scuro);font-weight:700}
+.garanzia-foot{font-size:14px;color:var(--testo);line-height:1.6;padding-top:18px;border-top:1px solid var(--linea);text-align:center}
+.garanzia-foot strong{color:var(--testo-scuro);font-weight:700}
+@media(max-width:600px){.garanzia-split{grid-template-columns:1fr}.garanzia-box{padding:26px 22px}}
+
+/* PULLMAN — Grid città */
+.pullman-intro{text-align:center;font-size:17px;line-height:1.6;color:var(--testo);margin:24px auto 8px;max-width:680px;font-family:'Poppins',sans-serif}
+.pullman-intro strong{color:var(--testo-scuro);font-weight:700}
+.pullman-claim{text-align:center;font-size:18px;font-weight:700;color:var(--testo-scuro);margin:22px auto 16px;max-width:640px;font-family:'Poppins',sans-serif;line-height:1.4}
+.pullman-claim strong{color:var(--cta)}
+.pullman-grid{display:flex;flex-direction:column;gap:14px;margin:26px 0 18px;max-width:620px;margin-left:auto;margin-right:auto}
+.bus-ticket{background:white;border-radius:12px;padding:18px 26px;border:1px solid var(--linea);box-shadow:0 4px 14px rgba(15,20,25,0.06);position:relative;font-family:'Poppins',sans-serif;display:flex;align-items:center;gap:0;transition:transform 0.2s, box-shadow 0.2s}
+.bus-ticket:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(15,20,25,0.09)}
+.bus-ticket::before,.bus-ticket::after{content:"";position:absolute;top:50%;transform:translateY(-50%);width:20px;height:20px;background:var(--ticket-bg, var(--bg));border-radius:50%;border:1px solid var(--linea);z-index:1}
+.bus-ticket::before{left:-10px}
+.bus-ticket::after{right:-10px}
+.bus-ticket .ticket-left{flex-shrink:0;width:80px;text-align:center;padding-right:22px;border-right:2px dashed var(--linea);position:relative}
+.bus-ticket .ticket-label{display:block;font-size:9px;font-weight:800;color:var(--brand);letter-spacing:1.4px;text-transform:uppercase;margin-bottom:6px;line-height:1}
+.bus-ticket .ticket-ic{font-size:30px;line-height:1}
+.bus-ticket .ticket-center{flex:1;min-width:0;padding:0 22px}
+.bus-ticket .ticket-citta{font-size:16px;font-weight:800;color:var(--testo-scuro);line-height:1.3;letter-spacing:-0.01em;margin-bottom:6px}
+.bus-ticket .ticket-tag{display:inline-block;font-size:10px;font-weight:800;color:var(--brand);background:var(--brand-soft);padding:4px 10px;border-radius:100px;letter-spacing:0.8px;text-transform:uppercase;line-height:1}
+.bus-ticket .ticket-right{flex-shrink:0;text-align:right;padding-left:18px;border-left:2px dashed var(--linea)}
+.bus-ticket .ticket-prezzo{font-size:30px;font-weight:900;color:var(--brand);letter-spacing:-0.025em;line-height:1;display:block}
+.bus-ticket .ticket-prezzo-meta{display:block;font-size:10px;color:var(--testo-soft);font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-top:5px}
+@media(max-width:560px){.bus-ticket{padding:16px 22px}.bus-ticket .ticket-left{width:60px;padding-right:14px}.bus-ticket .ticket-center{padding:0 14px}.bus-ticket .ticket-right{padding-left:14px}.bus-ticket .ticket-ic{font-size:24px}.bus-ticket .ticket-citta{font-size:14px}.bus-ticket .ticket-prezzo{font-size:24px}.bus-ticket .ticket-label{font-size:8px}}
+.pullman-save{text-align:center;background:var(--brand-soft);border-radius:12px;padding:16px 22px;margin:18px auto 14px;max-width:640px;font-family:'Poppins',sans-serif;font-size:15px;color:var(--testo);line-height:1.55;border:1px solid #C5DDC1}
+.pullman-save strong{color:var(--brand);font-weight:800}
+.pullman-note{text-align:center;font-size:13px;color:var(--testo-soft);font-style:italic;max-width:640px;margin:0 auto;font-family:'Poppins',sans-serif;line-height:1.5}
+@media(max-width:560px){.pullman-grid{grid-template-columns:1fr}}
+
+/* FAQ — Accordion */
+.faq-list{margin:30px 0 18px;display:grid;gap:12px}
+.faq-item{background:white;border-radius:12px;border:1px solid var(--linea);overflow:hidden;box-shadow:0 3px 12px rgba(15,20,25,0.04);font-family:'Poppins',sans-serif;transition:box-shadow 0.2s}
+.faq-item:hover{box-shadow:0 6px 18px rgba(15,20,25,0.08)}
+.faq-item[open]{box-shadow:0 8px 24px rgba(15,20,25,0.09);border-color:#C5DDC1}
+.faq-item summary{padding:20px 24px;cursor:pointer;font-size:16px;font-weight:700;color:var(--testo-scuro);line-height:1.4;letter-spacing:-0.01em;display:flex;align-items:flex-start;gap:14px;list-style:none;position:relative;user-select:none}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:"+";margin-left:auto;font-size:24px;font-weight:300;color:var(--brand);transition:transform 0.25s;flex-shrink:0;line-height:1}
+.faq-item[open] summary::after{transform:rotate(45deg)}
+.faq-item summary .q-mark{flex-shrink:0;color:var(--cta);font-weight:900;font-size:18px;line-height:1.3}
+.faq-item .answer{padding:0 24px 22px;font-size:15px;line-height:1.65;color:var(--testo);border-top:1px solid var(--linea);padding-top:18px;margin-top:0}
+.faq-item .answer p{margin-bottom:12px}
+.faq-item .answer p:last-child{margin-bottom:0}
+.faq-item .answer strong{color:var(--testo-scuro);font-weight:700}
+.faq-item .answer em{font-style:italic;color:var(--testo-soft)}
+
+/* FORM contatto */
+.form-section{background:white;border-radius:18px;padding:36px 38px;margin:24px 0 18px;border:2px solid var(--brand);box-shadow:0 8px 28px rgba(46,95,43,0.12);font-family:'Poppins',sans-serif}
+.form-section .form-title{font-size:22px;font-weight:800;color:var(--testo-scuro);text-align:center;margin-bottom:6px;line-height:1.3;letter-spacing:-0.015em}
+.form-section .form-sub{font-size:14px;color:var(--testo-soft);text-align:center;margin-bottom:24px;line-height:1.5;font-style:italic}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
+.form-field{display:flex;flex-direction:column;gap:6px}
+.form-field.full{grid-column:1 / -1}
+.form-field label{font-size:12px;font-weight:700;color:var(--testo-scuro);letter-spacing:0.5px;text-transform:uppercase}
+.form-field label .req{color:var(--cta)}
+.form-field input,.form-field select{font-family:'Poppins',sans-serif;font-size:15px;color:var(--testo-scuro);padding:13px 16px;border:1.5px solid var(--linea);border-radius:10px;background:var(--bg);transition:border-color 0.2s, background 0.2s;font-weight:500}
+.form-field input:focus,.form-field select:focus{outline:none;border-color:var(--brand);background:white}
+.form-field input::placeholder{color:#B0B0B0;font-style:italic}
+.form-consent{display:flex;align-items:flex-start;gap:10px;margin:20px 0 20px;font-size:13px;line-height:1.55;color:var(--testo);font-family:'Poppins',sans-serif}
+.form-consent input{flex-shrink:0;margin-top:3px;width:18px;height:18px;accent-color:var(--brand)}
+.form-consent label{cursor:pointer}
+.form-consent .req{color:var(--cta);font-weight:800}
+@media(max-width:560px){.form-grid{grid-template-columns:1fr}.form-section{padding:28px 24px}}
+
+/* STEP list closing */
+.step-list{counter-reset:step;list-style:none;padding:0;margin:24px 0;display:grid;gap:12px}
+.step-list li{counter-increment:step;background:white;border-radius:12px;padding:18px 22px 18px 64px;border:1px solid var(--linea);box-shadow:0 3px 12px rgba(15,20,25,0.04);font-family:'Poppins',sans-serif;font-size:15px;line-height:1.5;color:var(--testo);position:relative}
+.step-list li::before{content:counter(step);position:absolute;left:18px;top:50%;transform:translateY(-50%);width:32px;height:32px;background:var(--brand);color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:14px;box-shadow:0 3px 10px rgba(46,95,43,0.25)}
+.step-list strong{color:var(--testo-scuro);font-weight:700}
+
+/* P.S. section */
+.ps-section{font-family:'Poppins',sans-serif;margin:24px 0 18px;text-align:left}
+.ps-mark{display:inline-block;font-family:Georgia, serif;font-size:54px;font-weight:900;color:var(--cta);line-height:1;letter-spacing:-0.04em;margin-bottom:14px;line-height:1}
+.ps-section p{font-size:17px;line-height:1.7;color:var(--testo);margin-bottom:18px}
+.ps-section p:last-child{margin-bottom:0}
+.ps-section strong{color:var(--testo-scuro);font-weight:700}
+.ps-section .scadenza-hl{background:#FFF6E0;color:#8B5A1F;font-weight:800;padding:2px 8px;border-radius:4px}
+.ps-section .risparmio-hl{color:var(--cta);font-weight:800}
+
+/* CTA finale big */
+.cta-finale{margin:36px 0 8px;text-align:center}
+.cta-finale-title{font-family:'Poppins',sans-serif;font-size:22px;font-weight:800;color:var(--testo-scuro);margin-bottom:18px;letter-spacing:-0.015em;line-height:1.3}
+
+/* Foto placeholder generico */
+.foto-placeholder{width:100%;aspect-ratio:16/9;border-radius:14px;background:linear-gradient(135deg,#7A8190 0%,#3F4750 100%);position:relative;overflow:hidden;margin:18px 0;box-shadow:0 6px 20px rgba(15,20,25,0.12)}
+.foto-placeholder::before{content:attr(data-label);position:absolute;inset:0;display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;color:white;font-family:'Poppins',sans-serif;font-size:12px;font-weight:600;letter-spacing:1px;text-transform:uppercase;background:rgba(15,20,25,0.45);line-height:1.5}
+
+@media(max-width:560px){
+  .giorno{padding-left:60px;padding-bottom:32px}
+  .giorno::before{left:19px;top:46px}
+  .giorno .pallino{width:42px;height:42px;font-size:17px;border-width:2px}
+  .giorno-title{font-size:20px}
+  .giorno-sub{font-size:16px}
+}
+
+@media(max-width:640px){body{font-size:16px}.cta-btn{padding:20px 24px}.foto-hero{border-radius:12px}}
+
+/* Mobile consolidato: safety overflow + iOS anti-zoom + touch target + watermark contenuto */
+@media(max-width:600px){
+  html,body{overflow-x:hidden}
+  input,textarea,select{font-size:16px}
+  .wrap-narrow{padding:0 20px}
+  .punto-item::after{font-size:100px;right:-4px;bottom:-22px}
+}
+
+/* ===== THANK YOU PAGE — stili specifici ===== */
+.hero-ty{background:linear-gradient(180deg, #E8F0E5 0%, #D5E5CF 100%);text-align:center;padding:40px 0 44px;border-bottom:1px solid var(--linea);position:relative}
+.hero-ty::after{content:"";position:absolute;bottom:-1px;left:50%;transform:translateX(-50%);width:84px;height:5px;background:var(--brand);border-radius:4px 4px 0 0}
+.hero-ty h1{font-family:'Poppins',sans-serif;font-weight:800;font-size:clamp(26px, 6.5vw, 36px);line-height:1.18;letter-spacing:-0.02em;color:var(--testo-scuro);margin:0 auto 18px;max-width:760px;text-wrap:balance}
+.hero-ty .sub{font-family:'Poppins',sans-serif;font-size:clamp(17px, 4.4vw, 20px);line-height:1.5;color:var(--testo);margin:0 auto;font-weight:400;max-width:620px}
+.hero-ty .sub strong{color:var(--testo-scuro);font-weight:700}
+.checkmark-circle{width:84px;height:84px;background:var(--brand);color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:44px;font-weight:900;margin:0 auto 20px;box-shadow:0 8px 24px rgba(46,95,43,0.35);line-height:1;animation:checkPop 0.5s cubic-bezier(0.34,1.56,0.64,1) both}
+@keyframes checkPop{0%{transform:scale(0)}100%{transform:scale(1)}}
+.eyebrow-success{display:inline-block;font-family:'Poppins',sans-serif;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:1.8px;color:var(--brand);background:white;padding:7px 14px;border-radius:100px;margin:0 auto 18px;line-height:1;box-shadow:0 2px 8px rgba(46,95,43,0.12)}
+.ty-cosa-succede{background:white;border-radius:18px;padding:30px 32px;border:1px solid var(--linea);box-shadow:0 6px 20px rgba(15,20,25,0.06);margin:0 auto 8px;max-width:680px}
+.ty-cosa-succede h2{font-family:'Poppins',sans-serif;font-weight:800;font-size:clamp(20px, 4.8vw, 24px);color:var(--testo-scuro);text-align:center;margin:0 auto 22px;letter-spacing:-0.015em;line-height:1.25}
+.ty-leggi-faq{font-family:'Poppins',sans-serif;font-size:clamp(16px, 4vw, 18px);line-height:1.55;color:var(--testo);margin:30px auto 0;max-width:680px;text-align:center}
+.ty-leggi-faq strong{color:var(--testo-scuro);font-weight:700}
+@media(max-width:600px){
+  .ty-cosa-succede{padding:24px 22px}
+}
+
+</style>
+</head>
+<body>
+
+<section class="hero-ty" id="hero-section">
+  <div class="wrap-narrow">
+    <div class="checkmark-circle">✓</div>
+    <span class="eyebrow-success">Prenotazione confermata</span>
+    <h1>Grazie per aver prenotato la chiamata!</h1>
+    <p class="sub">Verrai contattato sul tuo numero <strong>WhatsApp</strong> al più presto dallo Staff dell'Hotel Bucaneve, così potrete organizzarvi su quando sentirvi a voce telefonicamente.</p>
+  </div>
+</section>
+
+<!-- ============ COSA SUCCEDE ORA ============ -->
+<section class="corpo" id="cosa-succede-section" style="background:var(--bg);padding:48px 0 40px">
+  <div class="wrap-narrow">
+
+    <div class="ty-cosa-succede">
+      <h2>Cosa succede adesso</h2>
+      <ol class="step-list">
+        <li><strong>Lo staff dell'Hotel Bucaneve</strong> ti scrive su WhatsApp al numero che hai indicato nel modulo, di solito entro <strong>poche ore</strong>.</li>
+        <li>Vi accordate su <strong>giorno e ora</strong> per la chiamata telefonica vera e propria, quando ti torna comodo.</li>
+        <li>Durante la chiamata, lo staff risponde a tutte le tue domande sul Camp. <strong>Senza alcun impegno di iscrizione</strong> da parte tua.</li>
+      </ol>
+    </div>
+
+    <p class="ty-leggi-faq">Nel frattempo, ti invitiamo a leggere attentamente le <strong>Domande Frequenti</strong> qui sotto: potrebbero tornarti utili per avere le idee più chiare durante la chiamata.</p>
+
+  </div>
+</section>
+
+<!-- ============ FAQ DOMANDE GENITORI ============ -->
+<section class="corpo band-crema-scuro" id="faq-genitori-section">
+  <div class="wrap-narrow">
+
+    <h2 class="tw-block" data-tw-name="H2 — Domande genitori">Domande che <span class="tm">altri genitori</span> hanno fatto.</h2>
+
+    <div class="faq-list">
+
+      <details class="faq-item tw-block" data-tw-name="FAQ — Sentire figlio">
+        <summary><span class="q-mark">?</span><span>Mio figlio potrà sentirmi durante il Camp? Come funziona col telefono?</span></summary>
+        <div class="answer">
+          <p>A Tonezza del Cimone c'è copertura cellulare normale. Se tuo figlio ha portato uno smartphone, viene custodito in cassaforte. Se non ne ha uno (capita spesso fra i 7 e gli 11 anni), va benissimo lo stesso: ogni sera userà il telefono dell'animatore.</p>
+          <p><strong>Intorno alle 18:30, lo staff dà a ciascun ragazzo 10-15 minuti per chiamare casa</strong>, davanti agli animatori. Quei 10-15 minuti servono a fare la chiamata, non sono "tempo libero col cellulare in mano": niente Instagram, niente WhatsApp, niente TikTok, niente giochi. Finita la chiamata, il dispositivo torna in cassaforte.</p>
+          <p>Tu, intanto, hai il gruppo WhatsApp staff→famiglie con foto e video quotidiani di tutte le attività, e lo staff è reperibile <strong>24 ore su 24</strong> per urgenze.</p>
+        </div>
+      </details>
+
+      <details class="faq-item tw-block" data-tw-name="FAQ — Otto giorni troppo pochi">
+        <summary><span class="q-mark">?</span><span>Ma otto giorni non sono troppo pochi per cambiare qualcosa di vero?</span></summary>
+        <div class="answer">
+          <p>Otto giorni cadono dentro la finestra in cui la letteratura scientifica documenta benefici misurabili dell'astinenza: la ricerca di Tromholt (Università di Copenaghen) ha mostrato <strong>+0,37 punti di soddisfazione di vita</strong> dopo una sola settimana di disattivazione di Facebook (p&lt;0,001).</p>
+          <p>Lo studio randomizzato controllato pubblicato su <strong>JAMA Network Open nel 2024</strong> (Schmidt-Persson, Università del Sud della Danimarca, condotto su bambini) ha misurato miglioramenti significativi nel comportamento sociale dopo due settimane di sostanziale riduzione dell'uso di smartphone.</p>
+          <p>Otto giorni del Camp sono dentro questa finestra. Quello che continua dopo dipende da quello che fate a casa nei mesi successivi, e per quello esistono il <strong>Diario di Bordo</strong> e l'<strong>Impegno Scritto</strong> del giorno 7.</p>
+        </div>
+      </details>
+
+      <details class="faq-item tw-block" data-tw-name="FAQ — Si rifiuta di partire">
+        <summary><span class="q-mark">?</span><span>E se mio figlio si rifiuta di partire? Lui non vuole andare via per otto giorni.</span></summary>
+        <div class="answer">
+          <p>È prevedibile, e succede ogni anno a una buona parte delle famiglie che poi prenotano. Il pattern documentato in oltre quindici recensioni pubbliche è: primo giorno difficile (a volte pianti al telefono), <strong>dal giorno 2 in poi la posizione si inverte</strong>.</p>
+          <p>Babab Alloon racconta: <em>«Alla sera mi telefonava velocemente perché aveva fretta di tornare con i compagni di avventura.»</em> Roberta Laurenti scrive che suo figlio l'ha <em>«pregata di prolungare il soggiorno.»</em></p>
+          <p>Per il colloquio con tuo figlio, lo staff ti accompagna nella chiamata precedente alla partenza, e contatta il ragazzo (se vuoi) prima della partenza per capire da lui stesso come si sente.</p>
+        </div>
+      </details>
+
+      <details class="faq-item tw-block" data-tw-name="FAQ — Differenze altri camp">
+        <summary><span class="q-mark">?</span><span>Mio figlio ha già fatto camp di calcio e oratori, in che cosa si differenzia da questo?</span></summary>
+        <div class="answer">
+          <p>Nei camp di calcio, tennis, inglese, scout e oratorio il telefono di norma resta accessibile al ragazzo, in tasca, nello zaino o in dormitorio. Quei camp hanno obiettivi diversi (sportivo, linguistico, religioso).</p>
+          <p><strong>Camp ComeUnaVolta è progettato dal 2012 specificamente per il digital detox residenziale</strong>: la consegna del dispositivo al giorno 1 è la condizione iniziale, e il resto del programma è costruito attorno a questa condizione.</p>
+        </div>
+      </details>
+
+      <details class="faq-item tw-block" data-tw-name="FAQ — Prima volta dormire fuori">
+        <summary><span class="q-mark">?</span><span>Mio figlio non ha mai dormito fuori casa più di una notte. Come gestite la prima volta?</span></summary>
+        <div class="answer">
+          <p>Una buona percentuale delle famiglie del Camp è alla prima esperienza residenziale del figlio. Il dato che ricorre nelle recensioni di queste famiglie è la coppia <strong>"primo giorno difficile + non voleva tornare a casa"</strong>.</p>
+          <p>Il gruppo WhatsApp staff→famiglie ti dà informazioni costanti su come sta tuo figlio, in tempo reale. Lo staff è <strong>reperibile 24 ore su 24</strong>, ogni giorno del Camp. E ogni sera tuo figlio ti chiama dal telefono dello staff o dal proprio, davanti all'animatore, per raccontarti la giornata.</p>
+        </div>
+      </details>
+
+      <details class="faq-item tw-block" data-tw-name="FAQ — Allergie alimentazione">
+        <summary><span class="q-mark">?</span><span>Mio figlio ha allergie, intolleranze o segue un'alimentazione particolare. Riuscite a gestirlo?</span></summary>
+        <div class="answer">
+          <p>Sì. La cucina dell'Hotel Bucaneve gestisce ogni regime alimentare segnalato in fase di iscrizione: <strong>allergie, intolleranze</strong> (glutine, lattosio, frutta secca), alimentazione vegetariana, vegana, oppure motivi religiosi.</p>
+          <p>Lo staff Camp riceve la scheda di ogni ragazzo prima della partenza, e i pasti vengono preparati di conseguenza.</p>
+        </div>
+      </details>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ INFO PRATICHE FAQ ============ -->
+<section class="corpo band-crema-scuro" id="info-pratiche-section">
+  <div class="wrap-narrow">
+
+    <h2 class="tw-block" data-tw-name="H2 — Info pratiche">📋 Informazioni <span class="tm">pratiche</span>.</h2>
+
+    <div class="faq-list">
+
+      <details class="faq-item tw-block" data-tw-name="FAQ — Quando sentire figlio">
+        <summary><span class="q-mark">?</span><span>Quando posso sentire mia/o figlia/o al telefono?</span></summary>
+        <div class="answer">
+          <p>Ogni sera, intorno alle <strong>18:30</strong>, diamo a ogni ragazzo 10-15 minuti per chiamare casa. Per urgenze siamo sempre reperibili al cellulare di gruppo dello staff, <strong>24 ore su 24</strong>.</p>
+        </div>
+      </details>
+
+      <details class="faq-item tw-block" data-tw-name="FAQ — Quanti in camera">
+        <summary><span class="q-mark">?</span><span>In quanti dormono in camera? Come vengono divisi?</span></summary>
+        <div class="answer">
+          <p>I ragazzi vengono divisi per <strong>fascia d'età</strong> e per <strong>sesso</strong>, in camere da 3-4 posti letto.</p>
+        </div>
+      </details>
+
+      <details class="faq-item tw-block" data-tw-name="FAQ — Quanti animatori">
+        <summary><span class="q-mark">?</span><span>Quanti animatori ci sono per ogni gruppo?</span></summary>
+        <div class="answer">
+          <p>Ogni animatore segue <strong>15-16 ragazzi</strong>. Non andiamo oltre questa soglia per garantire che ognuno venga seguito nel migliore dei modi.</p>
+        </div>
+      </details>
+
+      <details class="faq-item tw-block" data-tw-name="FAQ — Si ammala durante">
+        <summary><span class="q-mark">?</span><span>Cosa succede se un ragazzo si ammala durante il Camp?</span></summary>
+        <div class="answer">
+          <p>Non prendiamo nessuna iniziativa senza aver <strong>prima parlato con i genitori</strong>. Lo staff resta in contatto telefonico costante con la famiglia per ogni evento medico.</p>
+        </div>
+      </details>
+
+      <details class="faq-item tw-block" data-tw-name="FAQ — Si ammala prima">
+        <summary><span class="q-mark">?</span><span>Cosa succede se mio figlio si ammala il giorno prima del Camp?</span></summary>
+        <div class="answer">
+          <p>La quota viene accantonata e potrai sfruttarla per gli <strong>altri camp estivi e invernali</strong>, per un soggiorno con la famiglia all'Hotel o per altri eventi della struttura. In ogni caso ci accordiamo con te per la migliore soluzione.</p>
+        </div>
+      </details>
+
+      <details class="faq-item tw-block" data-tw-name="FAQ — Certificato medico">
+        <summary><span class="q-mark">?</span><span>Devo portare un certificato medico?</span></summary>
+        <div class="answer">
+          <p>Va bene un <strong>certificato medico sportivo</strong>, oppure un'autocertificazione del genitore che attesta la buona salute del figlio.</p>
+        </div>
+      </details>
+
+      <details class="faq-item tw-block" data-tw-name="FAQ — Disciplina">
+        <summary><span class="q-mark">?</span><span>Come viene gestita la disciplina durante il Camp?</span></summary>
+        <div class="answer">
+          <p>Ci sono regole base che vanno rispettate. Per ogni situazione particolare avvisiamo prima la famiglia per confrontarci. <strong>Educazione e rispetto vengono prima di tutto</strong>.</p>
+        </div>
+      </details>
+
+      <details class="faq-item tw-block" data-tw-name="FAQ — Nostalgia">
+        <summary><span class="q-mark">?</span><span>Cosa succede se mio figlio ha nostalgia e vuole tornare a casa durante il Camp?</span></summary>
+        <div class="answer">
+          <p>Per nostra esperienza, solo <strong>1-2 bambini su 100</strong> chiedono di tornare a casa durante i nostri Camp. Anche noi siamo genitori: sappiamo che se trasmettiamo ai bambini le nostre paure, la possibilità che vogliano tornare aumenta. <strong>Ai bambini interessa giocare, divertirsi e condividere le emozioni con i loro nuovi amici.</strong></p>
+        </div>
+      </details>
+
+    </div>
+
+  </div>
+</section>
+
+<script>
+(function(){
+  var DURATION=1200;
+  function ease(t){return t<0.5?2*t*t:1-Math.pow(-2*t+2,2)/2;}
+  document.addEventListener('click',function(e){
+    var link=e.target.closest&&e.target.closest('a[href^="#"]');
+    if(!link)return;
+    var id=link.getAttribute('href');
+    if(!id||id==='#')return;
+    var target=document.querySelector(id);
+    if(!target)return;
+    e.preventDefault();
+    if(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+      target.scrollIntoView();return;
+    }
+    var startY=window.pageYOffset||document.documentElement.scrollTop;
+    var endY=target.getBoundingClientRect().top+startY-16;
+    var startT=performance.now();
+    function step(now){
+      var p=Math.min((now-startT)/DURATION,1);
+      window.scrollTo(0,startY+(endY-startY)*ease(p));
+      if(p<1)requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  },false);
+})();
+</script>
+</body>
+</html>
